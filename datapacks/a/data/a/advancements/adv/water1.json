@@ -1,0 +1,41 @@
+{
+	"display": {
+    "icon": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "title": {
+      "text": "前方禁止通行"
+    },
+	"description": {
+      "text": "往前就會撞到赫斯克"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+    "criteria": {
+        "adv": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "position": {
+                    "x": {
+                        "min": -60,
+                        "max": -58
+                    },
+                    "y": {
+                        "min": 65,
+                        "max": 67
+                    },
+                    "z": {
+                        "min": 87,
+                        "max": 89
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+    },
+    "parent": "a:adv/water"
+}

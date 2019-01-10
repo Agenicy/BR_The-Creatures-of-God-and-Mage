@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+	{
+      "item": "minecraft:saddle"
+    }
+  ],
+  "result": {
+    "item": "minecraft:golden_horse_armor",
+	"count":1	
+	}
+}

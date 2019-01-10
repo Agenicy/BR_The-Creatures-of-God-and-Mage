@@ -1,0 +1,20 @@
+{
+  "a:root": {
+    "criteria": {
+      "auto": "2018-08-24 14:49:37 +0800"
+    },
+    "done": true
+  },
+  "a:adv/root": {
+    "criteria": {
+      "auto": "2018-08-24 14:49:37 +0800"
+    },
+    "done": true
+  },
+  "a:b1": {
+    "criteria": {
+      "unlock": "2018-10-28 23:31:41 +0800"
+    },
+    "done": true
+  }
+}

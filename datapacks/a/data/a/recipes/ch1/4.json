@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:shears"
+    },
+	{
+      "item": "minecraft:vine"
+    }
+  ],
+  "result": {
+    "item": "minecraft:trident",
+	"count":1	
+	}
+}

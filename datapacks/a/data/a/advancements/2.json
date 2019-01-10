@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "ender_eye"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "a:ch1/2"
+    },
+    "parent": "a:root"
+}

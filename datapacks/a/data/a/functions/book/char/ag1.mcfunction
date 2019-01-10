@@ -1,0 +1,3 @@
+scoreboard players set @a[tag=player] ag 0
+tellraw @a {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+give @a written_book{pages:["{\"text\":\"本作主角，也就是以前的我。身為半精靈的我必須在出生的森林中連續待上二十年才可以獲得自然力，在那段時間內，我切身感受到因為缺乏自然力造成的實力差距，身邊的強者太多，自己的力量太小，導致我在遇到困難時常會求助於別人。害怕自己出力，認為自己什麼都辦不到、別人都做得比我更好……\"}]","{\"text\":\"我主修風系與水系魔法，當年就可以使用到中階等級。雖然以年紀來說實力不凡，但因為少了自然力的輔佐而常在比試中輸給同儕。\"}","{\"text\":\"[\\u5c07\\u66f8\\u672c\\u653e\\u5165\\u66f8\\u5eab]\",\"bold\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function a:book/char/-ag1\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"\\u9ede\\u9078\\u4f7f\\u7528\"}}"],author:"",title:"亞加尼西 ‧ 戴洛克斯"}
