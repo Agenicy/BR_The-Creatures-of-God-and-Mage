@@ -27,6 +27,10 @@ scoreboard players set @a check_target 0
 #書庫
 scoreboard objectives add book minecraft.used:minecraft.carrot_on_a_stick
 
+#水池 see news
+scoreboard objectives add news dummy {"text":"news答案計數器news"}
+scoreboard players set #news news 0
+
 #水池 水平面
 scoreboard objectives add water_level dummy {"text":"實際水平面water_level"}
 scoreboard objectives add wl dummy {"text":"預計水平面wl"}
@@ -53,5 +57,5 @@ scoreboard objectives add br1 dummy {"text":"測試用分岐br1"}
 scoreboard objectives add br2 dummy {"text":"測試用分岐br2"}
 scoreboard objectives add br3 dummy {"text":"測試用分岐br3"}
 
-#腳色故事(這不是錯字)
-scoreboard objectives add ag dummy {"text":"腳色故事 - 亞加尼西 ‧ 戴洛克斯ag"}
+#角色故事
+scoreboard objectives add ag dummy {"text":"角色故事 - 亞加尼西 ‧ 戴洛克斯ag"}
