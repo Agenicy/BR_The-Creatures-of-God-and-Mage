@@ -79,7 +79,7 @@ for index,line in enumerate(lines):
 			tmp.write('clear @a minecraft:written_book{title:"' + title + '"}')			
 	else:
 		with io.open('%s.mcfunction'%construct,'a',encoding='utf8')as tmp:
-			last += line[0:-1] + r'\\\n'
+			last += line[0:-1] + r'\\n'
 			tmp.write(line[0:-1])
 			tmp.write(r'\\n')
 
