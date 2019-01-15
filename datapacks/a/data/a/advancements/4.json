@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "trident"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "a:ch1/4"
+    },
+    "parent": "a:root"
+}

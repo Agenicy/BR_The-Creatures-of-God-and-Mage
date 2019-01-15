@@ -1,0 +1,29 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "# E",
+        "G  ",
+        " TD"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:iron_bars"
+        },
+        "E": {
+            "item": "minecraft:ender_eye"
+        },
+        "G": {
+            "item": "minecraft:golden_horse_armor"
+        },
+        "T": {
+            "item": "minecraft:trident"
+        },
+        "D": {
+            "item": "minecraft:diamond_axe"
+        }
+    },
+    "result": {
+        "item": "minecraft:nether_star",
+        "count": 1
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "diamond_block"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "a:ch2/1"
+    },
+    "parent": "a:root"
+}
