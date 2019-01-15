@@ -1,7 +1,5 @@
-
 *.ini
-*.dat
 *.dat
 level.dat_old
 session.lock
-stats/2f831d97-2894-405b-9a78-f94a50bb2796.json
+stats/.json
