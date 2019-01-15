@@ -59,3 +59,4 @@ scoreboard objectives add br3 dummy {"text":"測試用分岐br3"}
 
 #角色故事
 scoreboard objectives add ag dummy {"text":"角色故事 - 亞加尼西 ‧ 戴洛克斯ag"}
+scoreboard objectives add h_a_m_ dummy {"text":"其他資料 - 小遊戲 - 赫斯克與人類h_a_m_"}

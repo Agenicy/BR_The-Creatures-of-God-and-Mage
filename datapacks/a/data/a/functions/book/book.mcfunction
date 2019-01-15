@@ -10,6 +10,7 @@ tellraw @a {"text":"● 分類: 神祇","color":"green","hoverEvent":{"action":"
 
 tellraw @a {"text":"● 分類: 世界觀","color":"green","hoverEvent":{"action":"show_text","value":"世界觀與大陸背景的解說"},"clickEvent":{"action":"run_command","value":"/function a:book/define/book"}}
 
+tellraw @a {"text":"● 分類: 其他文件","color":"green","hoverEvent":{"action":"show_text","value":"在關卡中取得，助於解開謎題的文件"},"clickEvent":{"action":"run_command","value":"/function a:book/stage/book"}}
 
 
 tellraw @a {"text":"------------------------------","color":"gold"}
