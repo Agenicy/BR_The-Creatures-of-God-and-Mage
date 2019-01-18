@@ -5,6 +5,6 @@ tellraw @a[tag=player,scores={st=3}] {"text":"<貝露> 嗯……我可以感受�
 tellraw @a[tag=player,scores={st=4}] {"text":"<格藍> 見證過大戰又如何？難道因為是古蹟就可以阻擋我們的去路嗎？","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[tag=player,scores={st=5}] {"text":"<卡司> 話當然不是這麼說的。只是我們該怎麼通過這個柵欄呢？","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[tag=player,scores={st=6}] {"text":"<亞加> 我想，或許我們可以……","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
-tellraw @a[tag=player,scores={st=6}] {"text":"→〔分析〕強行通過？","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set 4"}}4
-tellraw @a[tag=player,scores={st=6}] {"text":"→〔分析〕找其他路線？","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set 13"}}13
+tellraw @a[tag=player,scores={st=6}] {"text":"→〔分析〕強行通過？","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set 4"}}
+tellraw @a[tag=player,scores={st=6}] {"text":"→〔分析〕找其他路線？","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set 13"}}
 scoreboard players enable @a dia_choose

@@ -9,6 +9,14 @@ for index,line in enumerate(lines):
 		newline = temp[1]
 		with io.open('%s.mcfunction'%file,'a',encoding='utf8')as tmp:
 			tmp.write(newline + '\n')
+	elif line[0:17] == 'execute if entity':
+		funcLine = line[0:-1].split('/')
+		funcName = funcLine[1]
+		with io.open('%s.mcfunction'%funcName,'a',encoding='utf8')as tmp:
+			tmp.close()
+		with io.open('%s.mcfunction'%file,'a',encoding='utf8')as tmp:
+			tmp.write(line)
 	else:
 		with io.open('%s.mcfunction'%file,'a',encoding='utf8')as tmp:
 			tmp.write(line)
+			

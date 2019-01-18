@@ -1,0 +1,6 @@
+tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+execute if entity @a[tag=player,scores={st=0}] run function a:ch1_1_1/show_bonus
+tellraw @a[tag=player,scores={st=1}] {"text":"【存檔】要保存進度嗎？","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
+tellraw @a[tag=player,scores={st=1}] {"text":"→〔繼續遊戲〕確認存檔","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set 26"}}
+tellraw @a[tag=player,scores={st=1}] {"text":"→〔捨棄進度〕重新開始這一段落","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set 27"}}
+scoreboard players enable @a dia_choose
