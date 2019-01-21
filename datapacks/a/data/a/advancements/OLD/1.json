@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "iron_bars"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "a:ch1/1"
+    },
+    "parent": "a:root"
+}

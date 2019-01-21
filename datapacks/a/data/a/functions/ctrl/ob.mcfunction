@@ -1,20 +1,22 @@
 #蹲下對話
 scoreboard objectives add sn minecraft.custom:minecraft.sneak_time {"text":"蹲下時間sn"}
 scoreboard objectives add st dummy {"text":"蹲下次數st"}
-scoreboard objectives add diat dummy {"text":"自動跳轉diat"}
-scoreboard objectives add dias dummy {"text":"播放倍率dias"}
-scoreboard objectives add diak dummy {"text":"劇情種類diak"}
+#scoreboard objectives add diat dummy {"text":"自動跳轉diat"}
+#scoreboard objectives add dias dummy {"text":"播放倍率dias"}
+#scoreboard objectives add diak dummy {"text":"劇情種類diak"}
 scoreboard objectives add stb dummy {"text":"蹲下次數stb"}
 scoreboard objectives add dia_choose trigger {"text":"分支劇情記號dia_choose"}
 scoreboard objectives add dia_st dummy {"text":"選項確認dia_st"}
 
 #技能檢定
 scoreboard objectives add str dummy {"text":"力量str"}
+scoreboard objectives add dex dummy {"text":"靈巧dex"}
 scoreboard objectives add agi dummy {"text":"敏捷agi"}
+scoreboard objectives add con dummy {"text":"體質con"}
+scoreboard objectives add wil dummy {"text":"意志wil"}
 scoreboard objectives add int dummy {"text":"智力int"}
 scoreboard objectives add men dummy {"text":"精神men"}
 scoreboard objectives add luk dummy {"text":"幸運luk"}
-scoreboard objectives add app dummy {"text":"魅力app"}
 
 scoreboard objectives add D20 dummy {"text":"骰子D20"}
 scoreboard objectives add dia_st dummy {"text":"檢定需求值dia_st"}
@@ -52,11 +54,11 @@ scoreboard players set num8 num 8
 scoreboard players set num9 num 9
 scoreboard players set num10 num 10
 
-#故事分支
-scoreboard objectives add br1 dummy {"text":"測試用分岐br1"}
-scoreboard objectives add br2 dummy {"text":"測試用分岐br2"}
-scoreboard objectives add br3 dummy {"text":"測試用分岐br3"}
-
 #角色故事
 scoreboard objectives add ag dummy {"text":"角色故事 - 亞加尼西 ‧ 戴洛克斯ag"}
 scoreboard objectives add h_a_m_ dummy {"text":"其他資料 - 小遊戲 - 赫斯克與人類h_a_m_"}
+
+#當前目標
+scoreboard objectives add goal dummy {"text":"當前目標"}
+scoreboard objectives setdisplay sidebar goal
+scoreboard players set   goal 0
