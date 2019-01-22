@@ -5,6 +5,6 @@
         }
     },
     "rewards": {
-        "function": "a:test"
+        "function": "a:load"
     }
 }

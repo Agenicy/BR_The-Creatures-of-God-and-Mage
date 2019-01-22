@@ -5,14 +5,14 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "golden_horse_armor"
+                        "item": "fishing_rod"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "a:ch1/3"
+        "function": "a:inventory_changed/fishing_rod"
     },
-    "parent": "a:root"
+    "parent": "a:door_skyeye/root"
 }
