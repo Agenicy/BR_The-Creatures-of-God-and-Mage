@@ -5,14 +5,14 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "diamond_block"
+                        "item": "cod"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "a:ch2/1"
+        "function": "a:inventory_changed/cod"
     },
-    "parent": "a:inventory_changed/diamond_block"
+    "parent": "a:skyeye/root"
 }

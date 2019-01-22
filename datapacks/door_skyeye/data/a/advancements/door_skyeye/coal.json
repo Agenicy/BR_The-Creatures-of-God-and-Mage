@@ -5,14 +5,14 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "diamond_block"
+                        "item": "coal"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "a:ch2/1"
+        "function": "a:inventory_changed/coal"
     },
-    "parent": "a:inventory_changed/diamond_block"
+    "parent": "a:door_skyeye/root"
 }

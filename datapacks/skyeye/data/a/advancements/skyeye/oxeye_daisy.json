@@ -5,14 +5,14 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "diamond_block"
+                        "item": "oxeye_daisy"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "a:ch2/1"
+        "function": "a:inventory_changed/oxeye_daisy"
     },
-    "parent": "a:inventory_changed/diamond_block"
+    "parent": "a:skyeye/root"
 }

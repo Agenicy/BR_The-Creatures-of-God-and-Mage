@@ -5,14 +5,14 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "diamond_block"
+                        "item": "dragon_breath"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "a:ch2/1"
+        "function": "a:inventory_changed/dragon_breath"
     },
-    "parent": "a:inventory_changed/diamond_block"
+    "parent": "a:door_skyeye/root"
 }

@@ -5,14 +5,14 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "diamond_block"
+                        "item": "fishing_rod"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "a:ch2/1"
+        "function": "a:inventory_changed/fishing_rod"
     },
-    "parent": "a:inventory_changed/diamond_block"
+    "parent": "a:skyeye/root"
 }

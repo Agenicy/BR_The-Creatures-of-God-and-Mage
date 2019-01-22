@@ -5,14 +5,14 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "diamond_block"
+                        "item": "tube_coral"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "a:ch2/1"
+        "function": "a:inventory_changed/tube_coral"
     },
-    "parent": "a:inventory_changed/diamond_block"
+    "parent": "a:door_skyeye/root"
 }
