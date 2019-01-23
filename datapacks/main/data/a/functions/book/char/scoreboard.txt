@@ -1,0 +1,1 @@
+scoreboard objectives add ag dummy {"text":"角色故事 - 亞加尼西 ‧ 戴洛克斯ag"}

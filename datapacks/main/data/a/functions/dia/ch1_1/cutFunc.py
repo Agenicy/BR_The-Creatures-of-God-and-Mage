@@ -1,5 +1,5 @@
 import io
-with open('a.txt','r') as f:
+with open('a.txt','r',encoding='utf-8-sig') as f:
 	lines = f.readlines()
 for index,line in enumerate(lines):
 	line = line.replace('\t','')

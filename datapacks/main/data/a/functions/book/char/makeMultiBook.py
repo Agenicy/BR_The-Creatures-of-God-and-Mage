@@ -22,12 +22,17 @@ for index,line in enumerate(lines):
 		data.bookData = line[2:-1].split(':')#讀取文字
 		data.fileName = data.bookData[0]#txt檔名
 		data.title = data.bookData[1]#書名
+		with open('gen/scoreboard.txt','a',encoding='utf8') as tmp:
+			str1 = 'scoreboard objectives add '
+			str2 = ' dummy {"text":"角色故事 - '
+			str3 = '"}'
+			tmp.write(str1 + data.bookData[0] + str2 + data.bookData[1] + data.bookData[0] + str3 +'\n')
 		
 	elif line[0] == '$':#版本號
 		data.fileNum = line[1:-1]#總共有幾個版本
 
 	elif line[0] == '-':#一次寫入檔案
-		with io.open('%s.mcfunction'%data.className,'a',encoding='utf8')as tmp:
+		with io.open('gen/%s.mcfunction'%data.className,'a',encoding='utf8')as tmp:
 			titleOne = r'tellraw @a {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n------","color":"gold","extra":[{"text":"☆神奇的魔法書庫☆","color":"yellow"},{"text":"------","color":"gold"}]}'
 			titleTwo = r'tellraw @a {"text":"目前分頁: ","color":"gold","extra":[{"text":"其他文件","color":"aqua"},{"text":"  [回首頁]","color":"dark_green","hoverEvent":{"action":"show_text","value":"點選回首頁"},"clickEvent":{"action":"run_command","value":"/function a:book/book"}}]}'
 			tmp.write(titleOne+'\n'+titleTwo+'\n')
@@ -46,6 +51,7 @@ changePageText = '\\"}]","{\\"text\\":\\"'
 endText1 = '\\"}","{\\"text\\":\\"[\\\\u5c07\\\\u66f8\\\\u672c\\\\u653e\\\\u5165\\\\u66f8\\\\u5eab]\\",\\"bold\\":true,\\"color\\":\\"blue\\",\\"clickEvent\\":{\\"action\\":\\"run_command\\",\\"value\\":\\"' + data.localPath
 endText2 = '\\"},\\"hoverEvent\\":{\\"action\\":\\"show_text\\",\\"value\\":\\"\\\\u9ede\\\\u9078\\\\u4f7f\\\\u7528\\"}}"],author:"",title:"'
 endText3 = '"}'
+pageNumber = 0
 with open('info.txt','r') as f:
 	lines = f.readlines()
 for index,line in enumerate(lines):
@@ -61,27 +67,27 @@ for index,line in enumerate(lines):
 		construct = fileName + fileNum
 		destruct = '-' + fileName + fileNum
 		
-		with io.open('%s.mcfunction'%construct,'a',encoding='utf8')as tmp:
+		with io.open('gen/%s.mcfunction'%construct,'a',encoding='utf8')as tmp:
 			tmp.write(last)
 			
 	elif line[0] == '&':
-		with io.open('%s.mcfunction'%construct,'a',encoding='utf8')as tmp:
+		with io.open('gen/%s.mcfunction'%construct,'a',encoding='utf8')as tmp:
 			last += changePageText
 			tmp.write(changePageText)
 			
 	elif line[0] == '-':
-		with io.open('%s.mcfunction'%construct,'a',encoding='utf8')as tmp:
+		with io.open('gen/%s.mcfunction'%construct,'a',encoding='utf8')as tmp:
 			tmp.write(endText1)
 			tmp.write(destruct)
 			tmp.write(endText2)
 			tmp.write(title)
 			tmp.write(endText3 + '\n')
 			
-		with io.open('%s.mcfunction'%destruct,'a',encoding='utf8')as tmp:
+		with io.open('gen/%s.mcfunction'%destruct,'a',encoding='utf8')as tmp:
 			tmp.write('scoreboard players set @a[tag=player] ' + fileName + ' ' + fileNum + '\n')
 			tmp.write('clear @a minecraft:written_book{title:"' + title + '"}')			
 	else:
-		with io.open('%s.mcfunction'%construct,'a',encoding='utf8')as tmp:
+		with io.open('gen/%s.mcfunction'%construct,'a',encoding='utf8')as tmp:
 			last += line[0:-1] + r'\\n'
 			tmp.write(line[0:-1])
 			tmp.write(r'\\n')

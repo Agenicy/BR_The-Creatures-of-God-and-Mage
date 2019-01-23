@@ -1,6 +1,6 @@
-@/function a:book/stage/door_skyeye/
-+yrs
+@/function a:book/char/gen/
++dlx
 ##ag:亞加尼西 ‧ 戴洛克斯
-$2
-一個以赫斯克與人類數量作為提示的猜數字遊戲的說明文件
+$1
+亞加，也就是我
 -

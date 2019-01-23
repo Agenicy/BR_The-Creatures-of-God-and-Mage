@@ -1,419 +1,419 @@
-##0001#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> ¥d¥q¡A¨ä¹ê³o­Ó¤èªk¦æ¤£³q¹ï§a¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<®æÂÅ> ªGµM¥u¦³Å]ªk¬O¥i¥H«H¥ôªºªF¦è¡X¡X§á¦±¥ú½uÁô¨­¤°»òªº®Ú¥»¬O¨¸Å]¬n¹D¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¥d¥q> ¬Û«H§Ú´N¹ï¤F¡A§Ú¤§«e¤£¬O´N³o¼Ë±a§A­Ì¤J«°¹L¤F¶Ü¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<ªÜ«½> ¹ï°Ú¡A¬Û«H¥d¥q¤j­ô°Õ¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	<¨©ÅS> ¥i¬O¡K¡K¨º®É­Ôªº®ğª^¨S¦³²{¦b³o»ò¥i©È¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=6}] {"text":"	<¥d¥q> ¬İ¨Ó§Ú±o¦A­«¥Ó¤@¦¸¡A²{¦b§Ú­ÌÁöµM¬İªº¨ì©¼¦¹¡A¦ı±q¤­¤½¤Ø¥~ªº¦a¤è¬İ¹L¨Ó´N¸ò¨S¦³ªF¦è¤@¼Ë¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=7}] {"text":"	<¥d¥q> ¥u­n§Ú­Ì¤£­nµo¥X¤Ó¤jªºÁn­µ¡A©ñ»´¸}¨BºCºC¨«¡A¨º¨Ç»®´µ§J¬O¤£¥i¯àµo²{§Ú­Ìªº¡A¦n¶Ü¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=8}] {"text":"	<¨È¥[> ¡]¡K¡K®æÂÅ¡I¡^	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=9}] {"text":"	<®æÂÅ> ¡]¤@¦³ª¬ªp´NÀş¶¡²¾°Ê¹ï§a¡A¤F¸Ñ¡I¡^	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=10}] {"text":"	<¥d¥q> ¡K¡Kºâ¤F¡A¬JµM§A­Ì©È¦¨³o¼Ë¡A§Ú­ÌÁÙ¬O¥ı¸ú¶i·t«Ñ§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=11}] {"text":"	¡i·í«e¥Ø¼Ğ¡j¨«¶i¤@®Çªº«Ñ¤l¸Ì	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	execute if entity @a[tag=player,scores={st=11}] run scoreboard objectives modify goal displayname [{"text":"·í«e¥Ø¼Ğ: ","color":"gold"},{"text":"¨«¶i¤@®Çªº«Ñ¤l¸Ì","color":"aqua"}]			
+ï»¿##0001#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > å¡å¸ï¼Œå…¶å¯¦é€™å€‹æ–¹æ³•è¡Œä¸é€šå°å§ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<æ ¼è—> æœç„¶åªæœ‰é­”æ³•æ˜¯å¯ä»¥ä¿¡ä»»çš„æ±è¥¿â€”â€”æ‰­æ›²å…‰ç·šéš±èº«ä»€éº¼çš„æ ¹æœ¬æ˜¯é‚ªé­”æ­ªé“ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<å¡å¸> ç›¸ä¿¡æˆ‘å°±å°äº†ï¼Œæˆ‘ä¹‹å‰ä¸æ˜¯å°±é€™æ¨£å¸¶ä½ å€‘å…¥åŸéäº†å—ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<èŠ™å¨ƒ> å°å•Šï¼Œç›¸ä¿¡å¡å¸å¤§å“¥å•¦ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	<è²éœ²> å¯æ˜¯â€¦â€¦é‚£æ™‚å€™çš„æ°£æ°›æ²’æœ‰ç¾åœ¨é€™éº¼å¯æ€•â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	<å¡å¸> çœ‹ä¾†æˆ‘å¾—å†é‡ç”³ä¸€æ¬¡ï¼Œç¾åœ¨æˆ‘å€‘é›–ç„¶çœ‹çš„åˆ°å½¼æ­¤ï¼Œä½†å¾äº”å…¬å°ºå¤–çš„åœ°æ–¹çœ‹éä¾†å°±è·Ÿæ²’æœ‰æ±è¥¿ä¸€æ¨£ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=7}] {"text":"	<å¡å¸> åªè¦æˆ‘å€‘ä¸è¦ç™¼å‡ºå¤ªå¤§çš„è²éŸ³ï¼Œæ”¾è¼•è…³æ­¥æ…¢æ…¢èµ°ï¼Œé‚£äº›èµ«æ–¯å…‹æ˜¯ä¸å¯èƒ½ç™¼ç¾æˆ‘å€‘çš„ï¼Œå¥½å—ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=8}] {"text":"	<äºåŠ > ï¼ˆâ€¦â€¦æ ¼è—ï¼ï¼‰	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=9}] {"text":"	<æ ¼è—> ï¼ˆä¸€æœ‰ç‹€æ³å°±ç¬é–“ç§»å‹•å°å§ï¼Œäº†è§£ï¼ï¼‰	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=10}] {"text":"	<å¡å¸> â€¦â€¦ç®—äº†ï¼Œæ—¢ç„¶ä½ å€‘æ€•æˆé€™æ¨£ï¼Œæˆ‘å€‘é‚„æ˜¯å…ˆèº²é€²æš—å··å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=11}] {"text":"	ã€ç•¶å‰ç›®æ¨™ã€‘èµ°é€²ä¸€æ—çš„å··å­è£¡	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	execute if entity @a[tag=player,scores={st=11}] run scoreboard objectives modify goal displayname [{"text":"ç•¶å‰ç›®æ¨™: ","color":"gold"},{"text":"èµ°é€²ä¸€æ—çš„å··å­è£¡","color":"aqua"}]			
 	execute if entity @a[tag=player,scores={st=11}] run function a:dia/fin			
-##0002#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¥d¥q> ¯u¬Oªº¡A¥Xµo«e¤£¬O°İ¹L§A­Ì¡A§A­Ì¤]³£»{¬°¨S°İÃD¤F¶Ü¡H«ç»òÁÙ©È¦¨³o¼Ë¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¨©ÅS> ¸£¤¤¼ÒÀÀªº¸ò¹ê»ÚÅéÅç®t«Ü¦h°Ú¡A·í®É¤S¤£ª¾¹D³o¸Ì·|·t¦¨³o¼Ë¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<®æÂÅ> ´N¬O¹À¡I¤§«e§A»¡¹L¤@±ø·Ë¨S¤°»ò¡A«á¨ÓÁÙ¤£¬O©È±o­n¦º¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<¥d¥q> ³Ş³Ş¡A¿ß©È¤ô¬O¤Ñ¸g¦a¸qªº¨Æ±¡¡I³o¬O¥»©Ê°Ú¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	<®æÂÅ> ®@¡H§A¤£¬O¦³¤@¥b¤HÃş¦å²Î¶Ü¡AÀ³¸Ó¨S¨º»ò©È§a¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=6}] {"text":"	<ªÜ«½> ¦º§¯ºëµ¹§Ú³¬¼L¡I¤£­ã³o¼Ë»¡¥d¥q¤j­ô¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=7}] {"text":"	<¥d¥q> ­ó¡A²{¦b¬O­n¾ÔºØ±Ú¶Ü¡H§A¥D¤H¬O¥b­ÓºëÆFÁÙ¤£¬O¤£·|¥Î¦ÛµM¤O¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=8}] {"text":"	<¨È¥[> ¼K¡I§Ú¤£·|¥Î¦ÛµM¤OÃª¨ì§A°Õ¡H§è§Ú¨­¤W·F¹À¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=9}] {"text":"	<¥d¥q> §c¡B©êºp¡A¤@®É¥¢¨¥¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=10}] {"text":"	<®æÂÅ> «¢¡A³Q½|¤F§a¡I§A³o°¦¥¢¨¥¿ß¡I¤p¤ß·|¥¢¨¥·|¶V¨Ó¶VªÎ³á¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=11}] {"text":"	<ªÜ«½> §A³oµL²zªº³Ã¥ë¡X¡X	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=12}] {"text":"	<¨©ÅS> ®æÂÅ¡A³¬¼L¡C¡]¦ù¤â§ì¡^	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=13}] {"text":"	<®æÂÅ> ¶ã«z¡I¦í¤â¡I¤£­n¥Î¥Rº¡¯«¤Oªº¤â¸I§Ú¡I§Úªº¨­Åé¦b¿Ä¸Ñ¤F¡I¤j¦W¹©¹©ªºµLÄİ§¯ºë®æÂÅ­n®ø¥¢¦b¥@¬É¤W¤F¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=14}] {"text":"	<¨©ÅS> Ä@¨C¦¸¤£©¯³£·|±a¨Ó©¯¹B¡A¥Hµá¨Èº¸¤§¦W¯¬ºÖ±z¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=15}] {"text":"	<®æÂÅ> §Ú¡K¡K§Ú¯à·P¨ü¨ìÅ]¤O¥»·½ªº¥l³ê¡K¡K¥D¤H¡A§Ú¤£¦æ¤F¡A§ÚÁÙ¨Ó¤£¤Î¬ã¨s¥X¬I®i¤jÅ]ªkªº¤èªk´N­n®ø¥¢¤F¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=16}] {"text":"	<¨È¥[> §A®Ú¥»¤@ÂI¨Æ³£¨S¦³¦n¶Ü¡A¥¿¸g¤@ÂI¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=17}] {"text":"	<®æÂÅ> äM¡H¹ïäM¡AÃø©Ç¨S¤°»òµhÄ±¡C¦ı¥¿±`¨Ó»¡¯«¤O¤£¬O·|¬»Ä²ºc¦¨§ÚªºÅ]¤O¶Ü¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=18}] {"text":"	<¥d¥q> «y¡B«y¡A¤T¦ì¡AÅ]ªkÁÙ¬O¯«³N¤°»òªº¡Aµ¥§Ú­Ì¨Æ¦¨¤§«á¦AºCºC²á¦n¶Ü¡H§Ú­ÌÁÙ¦b¥ô°È¤¤¡A¤£¶È®ÇÃä¦³´X¸s»®´µ§J¦b¨µÅŞ¡A¤Ñ²´ÁÙ¤@ª½¨nµÛ§Ú­Ì¡AÄµ·V¤@ÂI¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=19}] {"text":"	<¥d¥q> ÁöµM§Ú­Ì°¾Â÷¤F¹w©w¸ô½u¡A¦ı¨«³o±ø«Ñ¤lÀ³¸Ó¤]¯à¨ì¹F¤Ñ²´¡C§Ú­Ì±o¦b¤Ñ¯T®y¤É¨ì¤Ñ³»¤§«e»°¨ì¨ºÃä¤~¦æ¡A®É¶¡¤w¸g©Ò³Ñ¤£¦h¤F¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=20}] {"text":"	¡i·í«e¥Ø¼Ğ¡j³q¹L¤p«Ñ¤l	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	execute if entity @a[tag=player,scores={st=20}] run scoreboard objectives modify goal displayname [{"text":"·í«e¥Ø¼Ğ: ","color":"gold"},{"text":"³q¹L¤p«Ñ¤l","color":"aqua"}]			
+##0002#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<å¡å¸> çœŸæ˜¯çš„ï¼Œå‡ºç™¼å‰ä¸æ˜¯å•éä½ å€‘ï¼Œä½ å€‘ä¹Ÿéƒ½èªç‚ºæ²’å•é¡Œäº†å—ï¼Ÿæ€éº¼é‚„æ€•æˆé€™æ¨£ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<è²éœ²> è…¦ä¸­æ¨¡æ“¬çš„è·Ÿå¯¦éš›é«”é©—å·®å¾ˆå¤šå•Šï¼Œç•¶æ™‚åˆä¸çŸ¥é“é€™è£¡æœƒæš—æˆé€™æ¨£â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<æ ¼è—> å°±æ˜¯å˜›ï¼ä¹‹å‰ä½ èªªéä¸€æ¢æºªæ²’ä»€éº¼ï¼Œå¾Œä¾†é‚„ä¸æ˜¯æ€•å¾—è¦æ­»ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<å¡å¸> å–‚å–‚ï¼Œè²“æ€•æ°´æ˜¯å¤©ç¶“åœ°ç¾©çš„äº‹æƒ…ï¼é€™æ˜¯æœ¬æ€§å•Šï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	<æ ¼è—> å“¦ï¼Ÿä½ ä¸æ˜¯æœ‰ä¸€åŠäººé¡è¡€çµ±å—ï¼Œæ‡‰è©²æ²’é‚£éº¼æ€•å§ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	<èŠ™å¨ƒ> æ­»å¦–ç²¾çµ¦æˆ‘é–‰å˜´ï¼ä¸å‡†é€™æ¨£èªªå¡å¸å¤§å“¥ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=7}] {"text":"	<å¡å¸> å“¼ï¼Œç¾åœ¨æ˜¯è¦æˆ°ç¨®æ—å—ï¼Ÿä½ ä¸»äººæ˜¯åŠå€‹ç²¾éˆé‚„ä¸æ˜¯ä¸æœƒç”¨è‡ªç„¶åŠ›ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=8}] {"text":"	<äºåŠ > å˜¿ï¼æˆ‘ä¸æœƒç”¨è‡ªç„¶åŠ›ç¤™åˆ°ä½ å•¦ï¼Ÿæ‰¯æˆ‘èº«ä¸Šå¹¹å˜›ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=9}] {"text":"	<å¡å¸> å‘ƒã€æŠ±æ­‰ï¼Œä¸€æ™‚å¤±è¨€â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=10}] {"text":"	<æ ¼è—> å“ˆï¼Œè¢«ç½µäº†å§ï¼ä½ é€™éš»å¤±è¨€è²“ï¼å°å¿ƒæœƒå¤±è¨€æœƒè¶Šä¾†è¶Šè‚¥å–”ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=11}] {"text":"	<èŠ™å¨ƒ> ä½ é€™ç„¡ç†çš„å‚¢ä¼™â€”â€”	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=12}] {"text":"	<è²éœ²> æ ¼è—ï¼Œé–‰å˜´ã€‚ï¼ˆä¼¸æ‰‹æŠ“ï¼‰	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=13}] {"text":"	<æ ¼è—> å—šå“‡ï¼ä½æ‰‹ï¼ä¸è¦ç”¨å……æ»¿ç¥åŠ›çš„æ‰‹ç¢°æˆ‘ï¼æˆ‘çš„èº«é«”åœ¨èè§£äº†ï¼å¤§åé¼é¼çš„ç„¡å±¬å¦–ç²¾æ ¼è—è¦æ¶ˆå¤±åœ¨ä¸–ç•Œä¸Šäº†ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=14}] {"text":"	<è²éœ²> é¡˜æ¯æ¬¡ä¸å¹¸éƒ½æœƒå¸¶ä¾†å¹¸é‹ï¼Œä»¥è²äºçˆ¾ä¹‹åç¥ç¦æ‚¨ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=15}] {"text":"	<æ ¼è—> æˆ‘â€¦â€¦æˆ‘èƒ½æ„Ÿå—åˆ°é­”åŠ›æœ¬æºçš„å¬å–šâ€¦â€¦ä¸»äººï¼Œæˆ‘ä¸è¡Œäº†ï¼Œæˆ‘é‚„ä¾†ä¸åŠç ”ç©¶å‡ºæ–½å±•å¤§é­”æ³•çš„æ–¹æ³•å°±è¦æ¶ˆå¤±äº†â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=16}] {"text":"	<äºåŠ > ä½ æ ¹æœ¬ä¸€é»äº‹éƒ½æ²’æœ‰å¥½å—ï¼Œæ­£ç¶“ä¸€é»ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=17}] {"text":"	<æ ¼è—> èª’ï¼Ÿå°èª’ï¼Œé›£æ€ªæ²’ä»€éº¼ç—›è¦ºã€‚ä½†æ­£å¸¸ä¾†èªªç¥åŠ›ä¸æ˜¯æœƒç‰´è§¸æ§‹æˆæˆ‘çš„é­”åŠ›å—ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=18}] {"text":"	<å¡å¸> å’³ã€å’³ï¼Œä¸‰ä½ï¼Œé­”æ³•é‚„æ˜¯ç¥è¡“ä»€éº¼çš„ï¼Œç­‰æˆ‘å€‘äº‹æˆä¹‹å¾Œå†æ…¢æ…¢èŠå¥½å—ï¼Ÿæˆ‘å€‘é‚„åœ¨ä»»å‹™ä¸­ï¼Œä¸åƒ…æ—é‚Šæœ‰å¹¾ç¾¤èµ«æ–¯å…‹åœ¨å·¡é‚ï¼Œå¤©çœ¼é‚„ä¸€ç›´ç›¯è‘—æˆ‘å€‘ï¼Œè­¦æ…ä¸€é»ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=19}] {"text":"	<å¡å¸> é›–ç„¶æˆ‘å€‘åé›¢äº†é å®šè·¯ç·šï¼Œä½†èµ°é€™æ¢å··å­æ‡‰è©²ä¹Ÿèƒ½åˆ°é”å¤©çœ¼ã€‚æˆ‘å€‘å¾—åœ¨å¤©ç‹¼åº§å‡åˆ°å¤©é ‚ä¹‹å‰è¶•åˆ°é‚£é‚Šæ‰è¡Œï¼Œæ™‚é–“å·²ç¶“æ‰€å‰©ä¸å¤šäº†ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=20}] {"text":"	ã€ç•¶å‰ç›®æ¨™ã€‘é€šéå°å··å­	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	execute if entity @a[tag=player,scores={st=20}] run scoreboard objectives modify goal displayname [{"text":"ç•¶å‰ç›®æ¨™: ","color":"gold"},{"text":"é€šéå°å··å­","color":"aqua"}]			
 	execute if entity @a[tag=player,scores={st=20}] run function a:dia/fin			
-##0101#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> ³o¬O¡K¡KÅK¬]Äæ¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<ªÜ«½> ³o¸Ì¥H«e´¿³Q·í§@©è¿mµÜ¼Ú¥dªº¨¾½u¨Ï¥Î¡A¤j·§¬O¨º®É¯d¤U¨Óªº«Ì»Ù§a¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¨©ÅS> ¶â¡K¡K§Ú¥i¥H·P¨ü¨ì¾Ôª§»Pµh­Wªº®ğ®§¡AÀ³¸Ó¬O¨£ÃÒ¹L¤j¾Ôªº²£ª«¨S¿ù¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<®æÂÅ> ¨£ÃÒ¹L¤j¾Ô¤S¦p¦ó¡HÃø¹D¦]¬°¬O¥jÂİ´N¥i¥Hªı¾×§Ú­Ìªº¥h¸ô¶Ü¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	<¥d¥q> ¸Ü·íµM¤£¬O³o»ò»¡ªº¡C¥u¬O§Ú­Ì¸Ó«ç»ò³q¹L³o­Ó¬]Äæ©O¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=6}] {"text":"	<¨È¥[> §Ú·Q¡A©Î³\§Ú­Ì¥i¥H¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=6}] {"text":"	¡÷¡e¤ÀªR¡f±j¦æ³q¹L¡H	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 4"}}
-	tellraw @a[tag=player,scores={st=6}] {"text":"	¡÷¡e¤ÀªR¡f§ä¨ä¥L¸ô½u¡H	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 13"}}
-	scoreboard players enable @a dia_choose			
-##0102#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> ¡]¨º»ò¡K¡K¡^	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=1}] {"text":"	¡÷¡e¤O¶q¡ş´¶³q¡f®{¤â¯}Ãa§a¡I¡]·|¨ü¶Ë¡H¡^	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 5"}}
-	tellraw @a[tag=player,scores={st=1}] {"text":"	¡÷¡e·N§Ó¡şÂ²³æ¡f§u°Û­·¤b³N¤Á¶}¬]Äæ¡C¡]µo¥X¾¸­µ¡H¡^	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 8"}}
-	tellraw @a[tag=player,scores={st=1}] {"text":"	¡÷¡e¦¨¥\¡fÁÙ¬O¥æµ¹¥d¥q¨Ó§a¡K¡K¡]·N§Ó-1¡^	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 10"}}
-	tellraw @a[tag=player,scores={st=1,pliers=1}] {"text":"	¡÷¡e¦¨¥\¡şÁôÂÃ¸ô½u¡f¨Ï¥Î¹X¤l¬İ¬İ¡I	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 11"}}
-	tellraw @a[tag=player,scores={st=1}] {"text":"	¡÷¦A·Q·Q¬İ¦n¤F¡K¡K	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 12"}}
-	scoreboard players enable @a dia_choose			
+##0101#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > é€™æ˜¯â€¦â€¦éµæŸµæ¬„ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<èŠ™å¨ƒ> é€™è£¡ä»¥å‰æ›¾è¢«ç•¶ä½œæŠµç¦¦èŠæ­å¡çš„é˜²ç·šä½¿ç”¨ï¼Œå¤§æ¦‚æ˜¯é‚£æ™‚ç•™ä¸‹ä¾†çš„å±éšœå§ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<è²éœ²> å—¯â€¦â€¦å¾æœ¨é ­çš„é¡è‰²ä¾†çœ‹ï¼Œæ‡‰è©²æ˜¯è¦‹è­‰éå¤§æˆ°çš„ç”¢ç‰©æ²’éŒ¯ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<æ ¼è—> è¦‹è­‰éå¤§æˆ°åˆå¦‚ä½•ï¼Ÿé›£é“å› ç‚ºæ˜¯å¤è¹Ÿå°±å¯ä»¥é˜»æ“‹æˆ‘å€‘çš„å»è·¯å—ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	<å¡å¸> è©±ç•¶ç„¶ä¸æ˜¯é€™éº¼èªªçš„ã€‚åªæ˜¯æˆ‘å€‘è©²æ€éº¼é€šéé€™å€‹æŸµæ¬„å‘¢ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	<äºåŠ > æˆ‘æƒ³ï¼Œæˆ–è¨±æˆ‘å€‘å¯ä»¥â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	â†’ï¼»åˆ†æï¼½å¼·è¡Œé€šéï¼Ÿ	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 4"}}
+	tellraw @a[scores={st=6}] {"text":"	â†’ï¼»åˆ†æï¼½æ‰¾å…¶ä»–è·¯ç·šï¼Ÿ	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 13"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0102#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > ï¼ˆé‚£éº¼â€¦â€¦ï¼‰	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=1}] {"text":"	â†’ï¼»åŠ›é‡ï¼æ™®é€šï¼½å¾’æ‰‹ç ´å£å§ï¼ï¼ˆæœƒå—å‚·ï¼Ÿï¼‰	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 5"}}
+	tellraw @a[scores={st=1}] {"text":"	â†’ï¼»æ„å¿—ï¼ç°¡å–®ï¼½åŸå”±é¢¨åˆƒè¡“åˆ‡é–‹æŸµæ¬„ã€‚ï¼ˆç™¼å‡ºå™ªéŸ³ï¼Ÿï¼‰	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 8"}}
+	tellraw @a[scores={st=1}] {"text":"	â†’ï¼»æˆåŠŸï¼½é‚„æ˜¯äº¤çµ¦å¡å¸ä¾†å§â€¦â€¦ï¼ˆæ„å¿—-1ï¼‰	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 10"}}
+	tellraw @a[scores={st=1,pliers=1}] {"text":"	â†’ï¼»æˆåŠŸï¼éš±è—è·¯ç·šï¼½ä½¿ç”¨é‰—å­çœ‹çœ‹ï¼	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 11"}}
+	tellraw @a[scores={st=1}] {"text":"	â†’å†æƒ³æƒ³çœ‹å¥½äº†â€¦â€¦	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 12"}}
+	scoreboard players enable @a[tag=player] dia_choose			
 ##0102a#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		16	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		str	
-	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"¤O¶q\"}"}			
-	tellraw @a[tag=player,scores={st=2,check_success=1}] {"text":"	¡÷¡e¦¨¥\¡f­ó¡A¤p·N«ä¡C	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 24"}}
-	tellraw @a[tag=player,scores={st=2,check_success=0}] {"text":"	¡÷¡e¥¢±Ñ¡f¡eÆF¥©¡ş´¶³q¡fÁV¿|¡A¤â·Æ¤F¡I	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 6"}}
-	scoreboard players enable @a dia_choose			
+	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"åŠ›é‡\"}"}			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	â†’ï¼»æˆåŠŸï¼½å“¼ï¼Œå°æ„æ€ã€‚	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 24"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	â†’ï¼»å¤±æ•—ï¼½ï¼»éˆå·§ï¼æ™®é€šï¼½ç³Ÿç³•ï¼Œæ‰‹æ»‘äº†ï¼	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 6"}}
+	scoreboard players enable @a[tag=player] dia_choose			
 ##0102a0#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		14	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		dex	
-	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"ÆF¥©\"}"}			
-	tellraw @a[tag=player,scores={st=2,check_success=1}] {"text":"	¡÷¡e¦w¥ş¡fÁÙ¦n¨S¦³¨ü¶Ë¡K¡K¦A·Q·Q¿ìªk§a¡C	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 4"}}
-	tellraw @a[tag=player,scores={st=2,check_success=0}] {"text":"	¡÷¡e¨ü¶Ë¡f¦nµh¡K¡K¦n¹³³Î¨ì¤â¤F¡K¡K¡]Åé½è-1¡^	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 7"}}
-	scoreboard players enable @a dia_choose			
-##0102a1#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"éˆå·§\"}"}			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	â†’ï¼»å®‰å…¨ï¼½é‚„å¥½æ²’æœ‰å—å‚·â€¦â€¦å†æƒ³æƒ³è¾¦æ³•å§ã€‚	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 4"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	â†’ï¼»å—å‚·ï¼½å¥½ç—›â€¦â€¦å¥½åƒå‰²åˆ°æ‰‹äº†â€¦â€¦ï¼ˆé«”è³ª-1ï¼‰	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 7"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0102a1#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	scoreboard players remove 	#ag	 con 1	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¨È¥[> ¡]·íªìÀ³¸Ó¾ÇÂIªvÀøÅ]ªkªº¡A¨©ÅSªºªvÀø¯«³N·|¸ò§ÚªºÅ]¤O½Ä¬ğ©Ò¥H¤£¯à¥Î¡AÃÄ¤ô¤S¨S±a¨Ó¡K¡K¡^	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	¡÷¬İ¨Ó³o¤£¬O­Ó¦n¿ìªk¡C	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 4"}}
-	scoreboard players enable @a dia_choose			
+	tellraw @a[scores={st=2}] {"text":"	<äºåŠ > ï¼ˆç•¶åˆæ‡‰è©²å­¸é»æ²»ç™‚é­”æ³•çš„ï¼Œè²éœ²çš„æ²»ç™‚ç¥è¡“æœƒè·Ÿæˆ‘çš„é­”åŠ›è¡çªæ‰€ä»¥ä¸èƒ½ç”¨ï¼Œè—¥æ°´åˆæ²’å¸¶ä¾†â€¦â€¦ï¼‰	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	â†’çœ‹ä¾†é€™ä¸æ˜¯å€‹å¥½è¾¦æ³•ã€‚	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 4"}}
+	scoreboard players enable @a[tag=player] dia_choose			
 ##0102b#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		11	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		wil	
-	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"·N§Ó\"}"}			
-	tellraw @a[tag=player,scores={st=2,check_success=1}] {"text":"	¡÷¡e¦¨¥\¡f¼A¶}ÅK¬]Äæ¤F¡I	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 24"}}
-	tellraw @a[tag=player,scores={st=2,check_success=0}] {"text":"	¡÷¡e¥¢±Ñ¡f¡eºë¯«¡ş´¶³q¡f¥¢¤â¤F¡I	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 9"}}
-	scoreboard players enable @a dia_choose			
+	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"æ„å¿—\"}"}			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	â†’ï¼»æˆåŠŸï¼½åŠˆé–‹éµæŸµæ¬„äº†ï¼	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 24"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	â†’ï¼»å¤±æ•—ï¼½ï¼»ç²¾ç¥ï¼æ™®é€šï¼½å¤±æ‰‹äº†ï¼	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 9"}}
+	scoreboard players enable @a[tag=player] dia_choose			
 ##0102b0#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		16	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		men	
-	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"ºë¯«\"}"}			
-	tellraw @a[tag=player,scores={st=2,check_success=1}] {"text":"	¡÷¡e¦w¥ş¡fÁÙ¦n¨S¦³»s³y¤°»ò¾¸­µ¡C¦A¸Õ¸Õ¬İ§a¡C	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 4"}}
-	tellraw @a[tag=player,scores={st=2,check_success=0}] {"text":"	¡÷¡e¡H¡f§Æ±æ­è­èªºÁn­µ¨S¦³¤Ş¨Ó»®´µ§J¡K¡K	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 16"}}
-	scoreboard players enable @a dia_choose			
-##0102c#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"ç²¾ç¥\"}"}			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	â†’ï¼»å®‰å…¨ï¼½é‚„å¥½æ²’æœ‰è£½é€ ä»€éº¼å™ªéŸ³ã€‚å†è©¦è©¦çœ‹å§ã€‚	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 4"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	â†’ï¼»ï¼Ÿï¼½å¸Œæœ›å‰›å‰›çš„è²éŸ³æ²’æœ‰å¼•ä¾†èµ«æ–¯å…‹â€¦â€¦	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 16"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0102c#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	scoreboard players remove 	#ag	 men 1	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¥d¥q> Åı§Ú¨Ó¶Ü¡H¨S°İÃD¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	¡÷¡e¦¨¥\¡fªGµM¡A§ÚÁÙ¬O°µ¤£¨ì¥ô¦ó¨Æ¡K¡K	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_negitive run trigger dia_choose set 24"}}
-	scoreboard players enable @a dia_choose			
-##0102d#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> ÁöµM¤£ª¾¹D¬°¤°»ò¦³¹X¤l¦b³o¸Ì¡A¦ı¥X²{ªº¯u¬O¤Î®É¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¥d¥q> ¨º­Ó¹X¤l¥i¯à¬O·íªì¬[³]ÅK¬]Äæ®É¨Ï¥Îªº¡A©Î³\¬O¦]¬°¨S¥Î¤F¤~³Q¥á¤U¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<ªÜ«½> ¬O°Ú¡A¾Ôª§´N¬O³o¼Ë¡A¨S¥ÎªºªF¦è¬O¤£·|³Q±a¨«ªº¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<¨©ÅS> ­ô­ô¨S°İÃD¶Ü¡H¬O¤£¬O¹J¨ì§xÃø¤F¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	<¨È¥[> §Ú¨S°İÃDªº¡I§Ú¥u¬O¤£¤Ó¾Õªø°Å³o¨Ç¤H³yª«¦Ó¤w¡X¡X¦¨¥\¤F¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=6}] {"text":"	<®æÂÅ> «¢¡A°Ï°ÏÅK¬]Äæ¤]·Q¾×¦í§Ú­Ìªº¥ô°È¡Aªù³£¨S¦³¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=6}] {"text":"	¡÷¡e¦¨¥\¡f³q¹LÅK¬]Äæ	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_positive run trigger dia_choose set 24"}}
-	scoreboard players enable @a dia_choose			
-##0101m#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> ©Î³\§Ú­Ì¥i¥H¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=1}] {"text":"	¡÷¡e¤ÀªR¡f±j¦æ³q¹L¡H	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 4"}}
-	tellraw @a[tag=player,scores={st=1}] {"text":"	¡÷¡e¤ÀªR¡f§ä¨ä¥L¸ô½u¡H	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 13"}}
-	scoreboard players enable @a dia_choose			
-##0103#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> ¨º»ò´N¦bªşªñ·j¯Á¬İ¬İ§a¡A©Î³\¯à§ä¨ì§Oªº¸ô½u©Î¬O¤°»ò¤u¨ã¤]»¡¤£©w¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<å¡å¸> è®“æˆ‘ä¾†å—ï¼Ÿæ²’å•é¡Œã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	â†’ï¼»æˆåŠŸï¼½æœç„¶ï¼Œæˆ‘é‚„æ˜¯åšä¸åˆ°ä»»ä½•äº‹â€¦â€¦	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_negitive run trigger dia_choose set 24"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0102d#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > é›–ç„¶ä¸çŸ¥é“ç‚ºä»€éº¼æœ‰é‰—å­åœ¨é€™è£¡ï¼Œä½†å‡ºç¾çš„çœŸæ˜¯åŠæ™‚ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<å¡å¸> é‚£å€‹é‰—å­å¯èƒ½æ˜¯ç•¶åˆæ¶è¨­éµæŸµæ¬„æ™‚ä½¿ç”¨çš„ï¼Œæˆ–è¨±æ˜¯å› ç‚ºæ²’ç”¨äº†æ‰è¢«ä¸Ÿä¸‹ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<èŠ™å¨ƒ> æ˜¯å•Šï¼Œæˆ°çˆ­å°±æ˜¯é€™æ¨£ï¼Œæ²’ç”¨çš„æ±è¥¿æ˜¯ä¸æœƒè¢«å¸¶èµ°çš„â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<è²éœ²> å“¥å“¥æ²’å•é¡Œå—ï¼Ÿæ˜¯ä¸æ˜¯é‡åˆ°å›°é›£äº†ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	<äºåŠ > æˆ‘æ²’å•é¡Œçš„ï¼æˆ‘åªæ˜¯ä¸å¤ªæ“…é•·å‰ªé€™äº›äººé€ ç‰©è€Œå·²â€”â€”æˆåŠŸäº†ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	<æ ¼è—> å“ˆï¼Œå€å€éµæŸµæ¬„ä¹Ÿæƒ³æ“‹ä½æˆ‘å€‘çš„ä»»å‹™ï¼Œé–€éƒ½æ²’æœ‰ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	â†’ï¼»æˆåŠŸï¼½é€šééµæŸµæ¬„	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_positive run trigger dia_choose set 24"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0101m#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > æˆ–è¨±æˆ‘å€‘å¯ä»¥â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=1}] {"text":"	â†’ï¼»åˆ†æï¼½å¼·è¡Œé€šéï¼Ÿ	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 4"}}
+	tellraw @a[scores={st=1}] {"text":"	â†’ï¼»åˆ†æï¼½æ‰¾å…¶ä»–è·¯ç·šï¼Ÿ	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 13"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0103#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > é‚£éº¼å°±åœ¨é™„è¿‘æœç´¢çœ‹çœ‹å§ï¼Œæˆ–è¨±èƒ½æ‰¾åˆ°åˆ¥çš„è·¯ç·šæˆ–æ˜¯ä»€éº¼å·¥å…·ä¹Ÿèªªä¸å®šã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	execute if entity @a[tag=player,scores={st=1}] run function a:dia/fin			
-##0103a#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> ³o¬O¡K¡K¹X¤l¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=1}] {"text":"	¡÷¡e¸ÑÂê¸ô½u¡f®³°_¹X¤l	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_pliers run trigger dia_choose set 0"}}
-	scoreboard players enable @a dia_choose			
-##0103b#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> ³oÃä¦n¹³¥i¥Hª½±µ¸ó¹L¥h¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<®æÂÅ> µ¥µ¥¡A»·³Bªº­ï¶ğ¤W¦³»®´µ§J¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¨È¥[> ¦pªG¶TµM¸ó¹L¥h¥i¯à·|³Q¬İ¨ì¡K¡K§Ú­ÌÀ³¸Ó­n¨«³o±ø¸ô¶Ü¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	¡÷¡e±Ó±¶¡ş´¶³q¡f¸ó¹L¥h	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 17"}}
-	tellraw @a[tag=player,scores={st=3}] {"text":"	¡÷¤£­n¶TµM¦æ¨Æ¦n¤F¡C	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 0"}}
-	scoreboard players enable @a dia_choose			
-##0102b1#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<ªÜ«½> ¨È¥[¡A§A¤Ó¤jÁn¤F¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<®æÂÅ> ¦³¨Ç»®´µ§J¹L¨Ó¤F¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¥d¥q> ¸Ó¦º¡K¡KÅı§Ú¨Ó¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+##0103a#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > é€™æ˜¯â€¦â€¦é‰—å­ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=1}] {"text":"	â†’ï¼»è§£é–è·¯ç·šï¼½æ‹¿èµ·é‰—å­	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_pliers run trigger dia_choose set 0"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0103b#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > é€™é‚Šå¥½åƒå¯ä»¥ç›´æ¥è·¨éå»â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<æ ¼è—> ç­‰ç­‰ï¼Œé è™•çš„å“¨å¡”ä¸Šæœ‰èµ«æ–¯å…‹ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<äºåŠ > å¦‚æœè²¿ç„¶è·¨éå»å¯èƒ½æœƒè¢«çœ‹åˆ°â€¦â€¦æˆ‘å€‘æ‡‰è©²è¦èµ°é€™æ¢è·¯å—ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	â†’ï¼»æ•æ·ï¼æ™®é€šï¼½è·¨éå»	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 17"}}
+	tellraw @a[scores={st=3}] {"text":"	â†’ä¸è¦è²¿ç„¶è¡Œäº‹å¥½äº†ã€‚	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 0"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0102b1#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<èŠ™å¨ƒ> äºåŠ ï¼Œä½ å¤ªå¤§è²äº†ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<æ ¼è—> æœ‰äº›èµ«æ–¯å…‹éä¾†äº†ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<å¡å¸> è©²æ­»â€¦â€¦è®“æˆ‘ä¾†ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	%execute if entity @a[tag=player,scores={st=3}] run function a:ch1_1/	destroy_ironbar		
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<¥d¥q> ¸ô³q¤F¡A¤j®a§Ö°k¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	¡÷¡e¥Ø¼Ğ¥¢±Ñ¡f­Ü¬Ó°k¶]	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_fail run trigger dia_choose set 22"}}
-	scoreboard players enable @a dia_choose			
+	tellraw @a[scores={st=4}] {"text":"	<å¡å¸> è·¯é€šäº†ï¼Œå¤§å®¶å¿«é€ƒï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	â†’ï¼»ç›®æ¨™å¤±æ•—ï¼½å€‰çš‡é€ƒè·‘	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_fail run trigger dia_choose set 22"}}
+	scoreboard players enable @a[tag=player] dia_choose			
 ##0103b0#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		15	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		agi	
-	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"±Ó±¶\"}"}			
-	tellraw @a[tag=player,scores={st=2,check_success=1}] {"text":"	¡÷¡e¦¨¥\¡f­ì¨Ó§Ú¨­¤âÁÙ¤£¿à¹À¡C	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 18"}}
-	tellraw @a[tag=player,scores={st=2,check_success=0}] {"text":"	¡÷¡e¥¢±Ñ¡f¡e©¯¹B¡ş´¶³q¡fÂ½¤ÓºC¤F¡I§Æ±æ¨S¦³³Q¬İ¨ì¡K¡K	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 19"}}
-	scoreboard players enable @a dia_choose			
-##0103b1#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> ­ó­ó¡A¦U¦ì¡A§Ú¹L¨Ó°Õ¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<®æÂÅ> ÄÛ±i¤°»ò¡A­n¤ñªº¸Ü§Úª½±µ­¸¹LÅK¬]Äæ´N¤ñ§A§Ö¤F¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<ªÜ«½> äM¡H©~µM¦³«e¤H¨S°ô¦íªº¸ô½u¶Ü¡K¡K¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<¥d¥q> Â½¹L¨ºÃä½T¹ê¬O­Ó¤èªk¡A¤£¹L§Ú°O±o°ª³B¤]¦³¤£¤Ö»®´µ§J¤~¹ï¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	<¥d¥q> ¤£¹L¦³§Ú¦b´N¨S°İÃD¤F¡A¨â¦ì¡A§Ú±a§A­ÌÁô¨­¹L¥h§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	¡÷¡e¥Ø¼Ğ¹F¦¨¡f³q¹L¤p«Ñ¤l	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_positive run trigger dia_choose set 24"}}
-	scoreboard players enable @a dia_choose			
+	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"æ•æ·\"}"}			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	â†’ï¼»æˆåŠŸï¼½åŸä¾†æˆ‘èº«æ‰‹é‚„ä¸è³´å˜›ã€‚	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 18"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	â†’ï¼»å¤±æ•—ï¼½ï¼»å¹¸é‹ï¼æ™®é€šï¼½ç¿»å¤ªæ…¢äº†ï¼å¸Œæœ›æ²’æœ‰è¢«çœ‹åˆ°â€¦â€¦	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 19"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0103b1#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > å“¼å“¼ï¼Œå„ä½ï¼Œæˆ‘éä¾†å•¦ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<æ ¼è—> å›‚å¼µä»€éº¼ï¼Œè¦æ¯”çš„è©±æˆ‘ç›´æ¥é£›ééµæŸµæ¬„å°±æ¯”ä½ å¿«äº†ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<èŠ™å¨ƒ> èª’ï¼Ÿå±…ç„¶æœ‰å‰äººæ²’å µä½çš„è·¯ç·šå—â€¦â€¦ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<å¡å¸> ç¿»éé‚£é‚Šç¢ºå¯¦æ˜¯å€‹æ–¹æ³•ï¼Œä¸éæˆ‘è¨˜å¾—é«˜è™•ä¹Ÿæœ‰ä¸å°‘èµ«æ–¯å…‹æ‰å°ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	<å¡å¸> ä¸éæœ‰æˆ‘åœ¨å°±æ²’å•é¡Œäº†ï¼Œå…©ä½ï¼Œæˆ‘å¸¶ä½ å€‘éš±èº«éå»å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	â†’ï¼»ç›®æ¨™é”æˆï¼½é€šéå°å··å­	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_positive run trigger dia_choose set 24"}}
+	scoreboard players enable @a[tag=player] dia_choose			
 ##0103b2#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		16	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		luk	
-	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"©¯¹B\"}"}			
-	tellraw @a[tag=player,scores={st=2,check_success=1}] {"text":"	¡÷¡e¦w¥ş¡f¦n¹³¨S¤°»òÁn­µªº¼Ë¤l¡H	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 20"}}
-	tellraw @a[tag=player,scores={st=2,check_success=0}] {"text":"	¡÷¡e¥¢±Ñ¡f¥i´c¡IÁÙ¬O³Qµo²{¤F¶Ü¡H	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 21"}}
-	scoreboard players enable @a dia_choose			
-##0103b3#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<®æÂÅ> ¬İ¤W¥h¬O¨S³Qµo²{¡C§A¤]¤Ó²õ¼²¤F§a¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¨È¥[> §ÚÄ±±o¥i¥H¹À¡K¡K¨Æ¹ê¤£¤]ÃÒ©ú¨S°İÃD¶Ü¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¥d¥q> §c¡B§A­Ì¤°»ò®É­Ô¨ì¹F¨º¸Ìªº¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<¨©ÅS> ³á³á¡I­ô­ô¦n¼F®`¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	<¨È¥[> ¼K¡A­è­è¬İ¨ì¦³±ø±K¹D´N¹L¨Ó¤F¡A¼F®`§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=6}] {"text":"	<¥d¥q> ÁöµM¼F®`¡A¦ıÁÙ¬O¤Ó¦MÀI¤F¡C¨â¦ì¡A§Ú±a§A­ÌÁô¨­¹L¥h§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=6}] {"text":"	¡÷¡e¥Ø¼Ğ¹F¦¨¡f³q¹L¤p«Ñ¤l	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_positive run trigger dia_choose set 24"}}
-	scoreboard players enable @a dia_choose			
-##0103b4#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<®æÂÅ> ¤£¦n¡A»®´µ§J¹L¨Ó¤F¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¥d¥q> ­ø¡B§A­Ì¤°»ò®É­Ô¨ì«Î³»¤W¤F¡K¡K§Ö¤U¨Ó¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<ªÜ«½> §A­Ì´N¤£¯à§NÀR°µ¨Æ¶Ü¡H²{¦b«ç»ò¿ì¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<¥d¥q> ¬JµM³£³Qµo²{¤F¡A¨º´Nª½±µÆZ¤O¬ğ¯}§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"å¹¸é‹\"}"}			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	â†’ï¼»å®‰å…¨ï¼½å¥½åƒæ²’ä»€éº¼è²éŸ³çš„æ¨£å­ï¼Ÿ	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 20"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	â†’ï¼»å¤±æ•—ï¼½å¯æƒ¡ï¼é‚„æ˜¯è¢«ç™¼ç¾äº†å—ï¼Ÿ	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 21"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0103b3#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<æ ¼è—> çœ‹ä¸Šå»æ˜¯æ²’è¢«ç™¼ç¾ã€‚ä½ ä¹Ÿå¤ªè½æ’äº†å§ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<äºåŠ > æˆ‘è¦ºå¾—å¯ä»¥å˜›â€¦â€¦äº‹å¯¦ä¸ä¹Ÿè­‰æ˜æ²’å•é¡Œå—ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<å¡å¸> å‘ƒã€ä½ å€‘ä»€éº¼æ™‚å€™åˆ°é”é‚£è£¡çš„ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<è²éœ²> å–”å–”ï¼å“¥å“¥å¥½å²å®³ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	<äºåŠ > å˜¿ï¼Œå‰›å‰›çœ‹åˆ°æœ‰æ¢å¯†é“å°±éä¾†äº†ï¼Œå²å®³å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	<å¡å¸> é›–ç„¶å²å®³ï¼Œä½†é‚„æ˜¯å¤ªå±éšªäº†ã€‚å…©ä½ï¼Œæˆ‘å¸¶ä½ å€‘éš±èº«éå»å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	â†’ï¼»ç›®æ¨™é”æˆï¼½é€šéå°å··å­	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_positive run trigger dia_choose set 24"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0103b4#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<æ ¼è—> ä¸å¥½ï¼Œèµ«æ–¯å…‹éä¾†äº†ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<å¡å¸> å””ã€ä½ å€‘ä»€éº¼æ™‚å€™åˆ°å±‹é ‚ä¸Šäº†â€¦â€¦å¿«ä¸‹ä¾†ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<èŠ™å¨ƒ> ä½ å€‘å°±ä¸èƒ½å†·éœåšäº‹å—ï¼Ÿç¾åœ¨æ€éº¼è¾¦ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<å¡å¸> æ—¢ç„¶éƒ½è¢«ç™¼ç¾äº†ï¼Œé‚£å°±ç›´æ¥è »åŠ›çªç ´å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	%execute if entity @a[tag=player,scores={st=4}] run function a:ch1_1/	destroy_ironbar		
-	tellraw @a[tag=player,scores={st=5}] {"text":"	<¨È¥[> §c§c¡K¡K©êºp¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	¡÷¡e¥Ø¼Ğ¥¢±Ñ¡f­Ü¬Ó°k¶]	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_fail run trigger dia_choose set 22"}}
-	scoreboard players enable @a dia_choose			
-##0104#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=5}] {"text":"	<äºåŠ > å‘ƒå‘ƒâ€¦â€¦æŠ±æ­‰â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	â†’ï¼»ç›®æ¨™å¤±æ•—ï¼½å€‰çš‡é€ƒè·‘	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_fail run trigger dia_choose set 22"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0104#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	%execute if entity @a[tag=player,scores={st=1}] run function a:ch1_1/	escape		
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¥d¥q> «e­±¦³±ø¤p«Ñ¡A§ÖÂà¶i¥h¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¨©ÅS> ¦ı¬O¡B§Ú­Ì§Ö³Q°l¤W¤F¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<¨È¥[> §Ú­Ì¤£¯à¦b³oÃäµ²§ô°Ú¡X¡X	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	¡÷¡e±Ó±¶¡ş§xÃø¡f¦b³Q§ì¦í«eÅs¶i¤p«Ñ¤l	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 23"}}
-	scoreboard players enable @a dia_choose			
+	tellraw @a[scores={st=2}] {"text":"	<å¡å¸> å‰é¢æœ‰æ¢å°å··ï¼Œå¿«è½‰é€²å»ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<è²éœ²> ä½†æ˜¯ã€æˆ‘å€‘å¿«è¢«è¿½ä¸Šäº†ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<äºåŠ > æˆ‘å€‘ä¸èƒ½åœ¨é€™é‚ŠçµæŸå•Šâ€”â€”	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	â†’ï¼»æ•æ·ï¼å›°é›£ï¼½åœ¨è¢«æŠ“ä½å‰å½é€²å°å··å­	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 23"}}
+	scoreboard players enable @a[tag=player] dia_choose			
 ##0104b#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		18	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		agi	
-	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"±Ó±¶\"}"}			
-	tellraw @a[tag=player,scores={st=2,check_success=1}] {"text":"	¡÷¡e¦¨¥\¡f©I¡K¡K§Ú­Ì°µ¨ì¤F¡I	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 45"}}
-	tellraw @a[tag=player,scores={st=2,check_success=0}] {"text":"	¡÷¡e¥¢±Ñ¡f¥i´c¡I´N®t³o»ò¤@ÂI¡X¡X	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
-	scoreboard players enable @a dia_choose			
-##0105#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨©ÅS> ³o¼Ë´N¦¨¥\³q¹L¤F©O¡C±µ¤U¨Ó­n¥h­ş¸Ì©O¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¥d¥q> ³o­Ó¤è¦Vªº¸Ü¡A¤j·§¦A³q¹L¨â­Óµó¹D´N¥i¥H¦^¨ì¹w­pªº¦w¥ş¸ô®|¤W¤F¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<ªÜ«½> §Ú­Ì¼È®É¥ı¥ğ®§¤@¤U§a¡H«İ·|ªº¾B½ªª«¦³ÂI¤Ö¡A§Ú·Q½T»{ªşªñÁÙ¦³­ş¨Ç»®´µ§J¦b¨µÅŞ¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<¥d¥q> ³Â·Ğ§A¤F¡A´N³o»ò¿ì§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"æ•æ·\"}"}			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	â†’ï¼»æˆåŠŸï¼½å‘¼â€¦â€¦æˆ‘å€‘åšåˆ°äº†ï¼	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 45"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	â†’ï¼»å¤±æ•—ï¼½å¯æƒ¡ï¼å°±å·®é€™éº¼ä¸€é»â€”â€”	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0105#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<è²éœ²> é€™æ¨£å°±æˆåŠŸé€šéäº†å‘¢ã€‚æ¥ä¸‹ä¾†è¦å»å“ªè£¡å‘¢ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<å¡å¸> é€™å€‹æ–¹å‘çš„è©±ï¼Œå¤§æ¦‚å†é€šéå…©å€‹è¡—é“å°±å¯ä»¥å›åˆ°é è¨ˆçš„å®‰å…¨è·¯å¾‘ä¸Šäº†ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<èŠ™å¨ƒ> æˆ‘å€‘æš«æ™‚å…ˆä¼‘æ¯ä¸€ä¸‹å§ï¼Ÿå¾…æœƒçš„é®è”½ç‰©æœ‰é»å°‘ï¼Œæˆ‘æƒ³ç¢ºèªé™„è¿‘é‚„æœ‰å“ªäº›èµ«æ–¯å…‹åœ¨å·¡é‚ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<å¡å¸> éº»ç…©ä½ äº†ï¼Œå°±é€™éº¼è¾¦å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	scoreboard players add 	#ag	 con 1	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	¡÷¡e³q¹L¼úÀy¡fÅé½è+1	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 25"}}
-	scoreboard players enable @a dia_choose			
-##0106#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=4}] {"text":"	â†’ï¼»é€šéçå‹µï¼½é«”è³ª+1	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 25"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0106#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	%execute if entity @a[tag=player,scores={st=1}] run function a:ch1_1/	show_bonus		
-	tellraw @a[tag=player,scores={st=2}] {"text":"	¡i¦sÀÉ¡j­n«O¦s¶i«×¶Ü¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	¡÷¡eÄ~Äò¹CÀ¸¡f½T»{¦sÀÉ	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 26"}}
-	tellraw @a[tag=player,scores={st=2}] {"text":"	¡÷¡e±Ë±ó¶i«×¡f­«·s¶}©l³o¤@¬q¸¨	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 27"}}
-	scoreboard players enable @a dia_choose			
-##0106a#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¥d¥q> ¦pªG§A­ÌÄ±±o¥i¥H¤W¸ô¤F¡A´N¸ò§Ú»¡¤@Án¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¨©ÅS> ­ô­ô¡I³oÃä¦n¹³¦³ÂIªF¦è¡A§A­n¤£­n¬İ¤@¤U¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¨È¥[> §Ú³o´N¹L¥h¡Aµ¥§Ú¤@¤U¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	¡i·í«e¥Ø¼Ğ¡j·Ç³Æ¦n«á¡A»P¥d¥q¹ï¸Ü	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	execute if entity @a[tag=player,scores={st=4}] run scoreboard objectives modify goal displayname [{"text":"·í«e¥Ø¼Ğ: ","color":"gold"},{"text":"·Ç³Æ¦n«á¡A»P¥d¥q¹ï¸Ü","color":"aqua"}]			
+	tellraw @a[scores={st=2}] {"text":"	ã€å­˜æª”ã€‘è¦ä¿å­˜é€²åº¦å—ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	â†’ï¼»ç¹¼çºŒéŠæˆ²ï¼½ç¢ºèªå­˜æª”	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 26"}}
+	tellraw @a[scores={st=2}] {"text":"	â†’ï¼»æ¨æ£„é€²åº¦ï¼½é‡æ–°é–‹å§‹é€™ä¸€æ®µè½	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 27"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0106a#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<å¡å¸> å¦‚æœä½ å€‘è¦ºå¾—å¯ä»¥ä¸Šè·¯äº†ï¼Œå°±è·Ÿæˆ‘èªªä¸€è²ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<è²éœ²> å“¥å“¥ï¼é€™é‚Šå¥½åƒæœ‰é»æ±è¥¿ï¼Œä½ è¦ä¸è¦çœ‹ä¸€ä¸‹ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<äºåŠ > æˆ‘é€™å°±éå»ï¼Œç­‰æˆ‘ä¸€ä¸‹ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	ã€ç•¶å‰ç›®æ¨™ã€‘æº–å‚™å¥½å¾Œï¼Œèˆ‡å¡å¸å°è©±	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	execute if entity @a[tag=player,scores={st=4}] run scoreboard objectives modify goal displayname [{"text":"ç•¶å‰ç›®æ¨™: ","color":"gold"},{"text":"æº–å‚™å¥½å¾Œï¼Œèˆ‡å¡å¸å°è©±","color":"aqua"}]			
 	execute if entity @a[tag=player,scores={st=4}] run function a:dia/fin			
-##0106b#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	¡iÄµ§i¡j¥»¬q¸¨ªº¹Cª±¬ö¿ı±N³Q±Ë±ó¡AµLªk¥Î¥ô¦ó¤èªk´_­ì	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	½T©w­n­«·s¶}©l¬q¸¨¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	¡÷¡eÄ~Äò¹CÀ¸¡f½T»{¦sÀÉ	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 26"}}
-	tellraw @a[tag=player,scores={st=2}] {"text":"	¡÷¡e½T»{±Ë±ó¡f­«·s¶}©l³o¤@¬q¸¨	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 28"}}
-	scoreboard players enable @a dia_choose			
-##01rest#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+##0106b#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	ã€è­¦å‘Šã€‘æœ¬æ®µè½çš„éŠç©ç´€éŒ„å°‡è¢«æ¨æ£„ï¼Œç„¡æ³•ç”¨ä»»ä½•æ–¹æ³•å¾©åŸ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	ç¢ºå®šè¦é‡æ–°é–‹å§‹æ®µè½ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	â†’ï¼»ç¹¼çºŒéŠæˆ²ï¼½ç¢ºèªå­˜æª”	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 26"}}
+	tellraw @a[scores={st=2}] {"text":"	â†’ï¼»ç¢ºèªæ¨æ£„ï¼½é‡æ–°é–‹å§‹é€™ä¸€æ®µè½	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 28"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##01rest#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	%execute if entity @a[tag=player,scores={st=1}] run function a:ch1_1/	restart		
 	execute if entity @a[tag=player,scores={st=1}] run function a:dia/fin			
-##0200#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> ¥d¥q¡A§Ú­Ì·Ç³Æ¦n¤F¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¥d¥q> ¬O¶Ü¡H¤ñ§Ú¹w´Áªº§Ö¤F¤@ÂI¡CªÜ«½ÁÙ¦b°»¬d©O¡A§Ú­Ìµ¹¦o¤@¨Ç®É¶¡§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¨©ÅS> ¡K¡K¥d¥q¡A¥i¥H°İ§A¤@­Ó°İÃD¶Ü¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<¥d¥q> ½Ğ»¡¡H§Ú¤]®¼¦n©_µá¨Èº¸ªº²½¥q¬O¥Î¤°»òÆ[ÂI¦b¬İµÛ§Ú­Ì³o¨Ç¼w¶®°lÀHªÌªº¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	<¨©ÅS> ³o»ò°İ¥i¯à¦³ÂI«_¥Ç¡A¤£¹L§A¤]»¡¹L¡A¦b§Ú­Ì¤T¤H¨Ó³o¸Ì¤§«e¡A§A­Ì¤Ï§Ü­x¹ï©óµÜ¼Ú¥dªº¯«³N§¹¥ş¨S¦³¤ÏÀ»¤§¤O¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=6}] {"text":"	<¨©ÅS> ¨º»ò§A­Ì¬°¤°»òÁÙ­n°í«ù¤U¨Ó¡H§Ú¡B§Úªº·N«ä¬O¡A´NºâµÜ¼Ú¥d§¹¥ş²Îªv¤F³o­Ó«°¥«¡B¬Æ¦Ü­é¹Ü§A­Ìªº¯«©ú»P¦Û¥Ñ¡A¥L­ÌÁÙ¬O±o¥ô©R«°¤ºªº¤H·í©x¡B´xÅv¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=7}] {"text":"	<¨©ÅS> Ãø¹D§A­Ì¨S¦³·Q¹L©ñ±óÂi­±¤Wªº©è§Ü¡A¨ú±o«H¥ô«á±q¤º³¡¥Ë¸Ñ¥L­Ì¶Ü¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=8}] {"text":"	<¥d¥q> ³o­Ó¹À¡A³o¼Ë»¡¦n¤F¡C¨©ÅS¡AÄ@¬P¥úÀHµÛ±zªº¨B¥ï°{Ã{¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=9}] {"text":"	<¨©ÅS> Ä@¡BÄ@¾D¹J¦M¾÷®ÉÁ`·|¥X²{Âà¾÷¡K¡K¬°¤°»ò­n¬ğµM¥´©Û©I©O¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=10}] {"text":"	<¥d¥q> ©Û©I»yÁöµM´¶³q¡A¦ı«o¯à»¡©úµá¨Èº¸»P¼w¶®ªº®t§O¡C§Ú­Ì¤£¬Û«Hµo¥ÍÃa¨Æ«á¤@©w·|¦³¦n¨Æ¡A¬Æ¦Ü¥i¯à·|¤@ª½Ãa¤U¥h¤]»¡¤£©w¡F¬Û¤Ïªº¡A§Ú­Ì¬Û«Hªº¬O¹Îµ²ªº¤O¶q¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=11}] {"text":"	<¥d¥q> ¦@·P»P¬P¥úªº¼w¶®¡A±Ğ¸q¬O¡u¤¬§U¦X§@¡B¥Ã¤£©ñ±ó¡v¡C¦Ó³o¤]¬O§Ú­Ì®æÄõ¼w©~¥Áªº¦@¦P«H¥õ¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=12}] {"text":"	<¥d¥q> §A­Ì¤]¬İ¨ì¤ÑªÅ¤¤°{Ã{ªº¬P¥ú¤F§a¡H¬P¥ú¬O¼w¶®ªº¤Æ¨­¡A¦Ó§Ú­Ì¡A¼w¶®ªº°lÀHªÌ¡B®æÄõ¼w¤Ï§Ü­xªº©Ò¦³¦¨­û¡A´N¬O¨º¨Ç¬P¬P¡CÁöµM¬P¬PµLªk¹³¤Ó¶§¤@¼Ë±a¨Ó¥ú©ú¡A¦ı­Y¨S¤F¬P¬P¡A¥@¬É´N·|³´¤J¥şµMªº¶Â·t¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=13}] {"text":"	<¥d¥q> ¦bªø»·ªº¶Â©]¤§¤¤¡A¬P¬P¥²µM·|¸¨¤U¡A¦ı¦P®É§ó¦hªº¬P¬P¤]·|ºò±µµÛ¤É°_¡CÁöµM§Ú­Ìªº°^Äm¥i¯à·L¤£¨¬¹D¡A¦ı§Ú­Ì½T¹ê¦b¤@¨B¨Bªº±µªñ¥ú©ú¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=14}] {"text":"	<¥d¥q> ¨º»ò¡A¬JµM¦³±øªÖ©w·|¦¨¥\ªº¹D¸ô¦b¡A§Ú­Ì¦ó¥²©ñ±ó¡Aµ¥«İµÜ¼Ú¥d¹ï§Ú­Ì©ñ¤U§Ù¤ßªº¨º¤Ñ©O¡H­n¤Ï§Ü¡A´N­n±q¤@¦Ó²×¡A¤£µ¹¥L­Ì¥ô¦ó¥Ë¸Ñ§Ú­Ìªº¾÷·|¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=15}] {"text":"	<¨©ÅS> ­ì¨Ó¦p¦¹¡K¡K¦]¬°§A­Ì¤£¬O©t­x¾Ä°«¶Ü¡K¡K§ÚÁA¸Ñ¤F¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+##0200#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > å¡å¸ï¼Œæˆ‘å€‘æº–å‚™å¥½äº†ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<å¡å¸> æ˜¯å—ï¼Ÿæ¯”æˆ‘é æœŸçš„å¿«äº†ä¸€é»ã€‚èŠ™å¨ƒé‚„åœ¨åµæŸ¥å‘¢ï¼Œæˆ‘å€‘çµ¦å¥¹ä¸€äº›æ™‚é–“å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<è²éœ²> â€¦â€¦å¡å¸ï¼Œå¯ä»¥å•ä½ ä¸€å€‹å•é¡Œå—ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<å¡å¸> è«‹èªªï¼Ÿæˆ‘ä¹ŸæŒºå¥½å¥‡è²äºçˆ¾çš„ç¥­å¸æ˜¯ç”¨ä»€éº¼è§€é»åœ¨çœ‹è‘—æˆ‘å€‘é€™äº›å¾·é›…è¿½éš¨è€…çš„ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	<è²éœ²> é€™éº¼å•å¯èƒ½æœ‰é»å†’çŠ¯ï¼Œä¸éä½ ä¹Ÿèªªéï¼Œåœ¨æˆ‘å€‘ä¸‰äººä¾†é€™è£¡ä¹‹å‰ï¼Œä½ å€‘åæŠ—è»å°æ–¼èŠæ­å¡çš„ç¥è¡“å®Œå…¨æ²’æœ‰åæ“Šä¹‹åŠ›â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	<è²éœ²> é‚£éº¼ä½ å€‘ç‚ºä»€éº¼é‚„è¦å …æŒä¸‹ä¾†ï¼Ÿæˆ‘ã€æˆ‘çš„æ„æ€æ˜¯ï¼Œå°±ç®—èŠæ­å¡å®Œå…¨çµ±æ²»äº†é€™å€‹åŸå¸‚ã€ç”šè‡³å‰å¥ªä½ å€‘çš„ç¥æ˜èˆ‡è‡ªç”±ï¼Œä»–å€‘é‚„æ˜¯å¾—ä»»å‘½åŸå…§çš„äººç•¶å®˜ã€æŒæ¬Šâ€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=7}] {"text":"	<è²éœ²> é›£é“ä½ å€‘æ²’æœ‰æƒ³éæ”¾æ£„æª¯é¢ä¸Šçš„æŠµæŠ—ï¼Œå–å¾—ä¿¡ä»»å¾Œå¾å…§éƒ¨ç“¦è§£ä»–å€‘å—ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=8}] {"text":"	<å¡å¸> é€™å€‹å˜›ï¼Œé€™æ¨£èªªå¥½äº†ã€‚è²éœ²ï¼Œé¡˜æ˜Ÿå…‰éš¨è‘—æ‚¨çš„æ­¥ä¼é–ƒçˆï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=9}] {"text":"	<è²éœ²> é¡˜ã€é¡˜é­é‡å±æ©Ÿæ™‚ç¸½æœƒå‡ºç¾è½‰æ©Ÿâ€¦â€¦ç‚ºä»€éº¼è¦çªç„¶æ‰“æ‹›å‘¼å‘¢ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=10}] {"text":"	<å¡å¸> æ‹›å‘¼èªé›–ç„¶æ™®é€šï¼Œä½†å»èƒ½èªªæ˜è²äºçˆ¾èˆ‡å¾·é›…çš„å·®åˆ¥ã€‚æˆ‘å€‘ä¸ç›¸ä¿¡ç™¼ç”Ÿå£äº‹å¾Œä¸€å®šæœƒæœ‰å¥½äº‹ï¼Œç”šè‡³å¯èƒ½æœƒä¸€ç›´å£ä¸‹å»ä¹Ÿèªªä¸å®šï¼›ç›¸åçš„ï¼Œæˆ‘å€‘ç›¸ä¿¡çš„æ˜¯åœ˜çµçš„åŠ›é‡ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=11}] {"text":"	<å¡å¸> å…±æ„Ÿèˆ‡æ˜Ÿå…‰çš„å¾·é›…ï¼Œæ•™ç¾©æ˜¯ã€Œäº’åŠ©åˆä½œã€æ°¸ä¸æ”¾æ£„ã€ã€‚è€Œé€™ä¹Ÿæ˜¯æˆ‘å€‘æ ¼è˜­å¾·å±…æ°‘çš„å…±åŒä¿¡ä»°ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=12}] {"text":"	<å¡å¸> ä½ å€‘ä¹Ÿçœ‹åˆ°å¤©ç©ºä¸­é–ƒçˆçš„æ˜Ÿå…‰äº†å§ï¼Ÿæ˜Ÿå…‰æ˜¯å¾·é›…çš„åŒ–èº«ï¼Œè€Œæˆ‘å€‘ï¼Œå¾·é›…çš„è¿½éš¨è€…ã€æ ¼è˜­å¾·åæŠ—è»çš„æ‰€æœ‰æˆå“¡ï¼Œå°±æ˜¯é‚£äº›æ˜Ÿæ˜Ÿã€‚é›–ç„¶æ˜Ÿæ˜Ÿç„¡æ³•åƒå¤ªé™½ä¸€æ¨£å¸¶ä¾†å…‰æ˜ï¼Œä½†è‹¥æ²’äº†æ˜Ÿæ˜Ÿï¼Œä¸–ç•Œå°±æœƒé™·å…¥å…¨ç„¶çš„é»‘æš—ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=13}] {"text":"	<å¡å¸> åœ¨é•·é çš„é»‘å¤œä¹‹ä¸­ï¼Œæ˜Ÿæ˜Ÿå¿…ç„¶æœƒè½ä¸‹ï¼Œä½†åŒæ™‚æ›´å¤šçš„æ˜Ÿæ˜Ÿä¹Ÿæœƒç·Šæ¥è‘—å‡èµ·ã€‚é›–ç„¶æˆ‘å€‘çš„è²¢ç»å¯èƒ½å¾®ä¸è¶³é“ï¼Œä½†æˆ‘å€‘ç¢ºå¯¦åœ¨ä¸€æ­¥æ­¥çš„æ¥è¿‘å…‰æ˜ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=14}] {"text":"	<å¡å¸> é‚£éº¼ï¼Œæ—¢ç„¶æœ‰æ¢è‚¯å®šæœƒæˆåŠŸçš„é“è·¯åœ¨ï¼Œæˆ‘å€‘ä½•å¿…æ”¾æ£„ï¼Œç­‰å¾…èŠæ­å¡å°æˆ‘å€‘æ”¾ä¸‹æˆ’å¿ƒçš„é‚£å¤©å‘¢ï¼Ÿè¦åæŠ—ï¼Œå°±è¦å¾ä¸€è€Œçµ‚ï¼Œä¸çµ¦ä»–å€‘ä»»ä½•ç“¦è§£æˆ‘å€‘çš„æ©Ÿæœƒã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=15}] {"text":"	<è²éœ²> åŸä¾†å¦‚æ­¤â€¦â€¦å› ç‚ºä½ å€‘ä¸æ˜¯å­¤è»å¥®é¬¥å—â€¦â€¦æˆ‘ç­è§£äº†ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	%execute if entity @a[tag=player,scores={st=15}] run function a:ch1_1/	fua_appear		
-	tellraw @a[tag=player,scores={st=16}] {"text":"	<ªÜ«½> §o¡A¥d¥q¤j­ô¡A§Ú§ì¨ì¤@°¦·o³Jªº§¯ºë¤F¡A¸Ó®³¥L«ç»ò¿ì°Ú¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=17}] {"text":"	<¨È¥[> ®æÂÅ¡H¥L«ç»òµê®z¦¨³o¼Ë¡H§â¥LÁÙ§Ú¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=18}] {"text":"	<ªÜ«½> ­n´N®³¥h§a¡]¥á¡^¡C¥i§O»~·|¡A¬O¥L¥ı§ä§Ú³Â·Ğªº¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=16}] {"text":"	<èŠ™å¨ƒ> å¶ï¼Œå¡å¸å¤§å“¥ï¼Œæˆ‘æŠ“åˆ°ä¸€éš»æ—è›‹çš„å¦–ç²¾äº†ï¼Œè©²æ‹¿ä»–æ€éº¼è¾¦å•Šï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=17}] {"text":"	<äºåŠ > æ ¼è—ï¼Ÿä»–æ€éº¼è™›å¼±æˆé€™æ¨£ï¼ŸæŠŠä»–é‚„æˆ‘ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=18}] {"text":"	<èŠ™å¨ƒ> è¦å°±æ‹¿å»å§ï¼ˆä¸Ÿï¼‰ã€‚å¯åˆ¥èª¤æœƒï¼Œæ˜¯ä»–å…ˆæ‰¾æˆ‘éº»ç…©çš„ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	%execute if entity @a[tag=player,scores={st=18}] run function a:ch1_1/	glan_back		
-	tellraw @a[tag=player,scores={st=19}] {"text":"	¡i·í«e¥Ø¼Ğ¡jÀË¬d®æÂÅªº¶Ë¶Õ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	execute if entity @a[tag=player,scores={st=19}] run scoreboard objectives modify goal displayname [{"text":"·í«e¥Ø¼Ğ: ","color":"gold"},{"text":"ÀË¬d®æÂÅªº¶Ë¶Õ","color":"aqua"}]			
+	tellraw @a[scores={st=19}] {"text":"	ã€ç•¶å‰ç›®æ¨™ã€‘æª¢æŸ¥æ ¼è—çš„å‚·å‹¢	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	execute if entity @a[tag=player,scores={st=19}] run scoreboard objectives modify goal displayname [{"text":"ç•¶å‰ç›®æ¨™: ","color":"gold"},{"text":"æª¢æŸ¥æ ¼è—çš„å‚·å‹¢","color":"aqua"}]			
 	execute if entity @a[tag=player,scores={st=19}] run function a:dia/fin			
-##0201#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<®æÂÅ> §Ú¡B§Úªº¯Í»H§Ö¿Ä¤Æ¤F¡K¡K¨º¤k¤Hªº¯«¤O¿@«×¤Ó°ª¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¨È¥[> ¨SÃö«Y¡AÄéÂIÅ]¤O´N·|¦^¨Óªº¡C§A¥ı¥ğ®§¤@¤U¡A§ÚÀ°§A³B²z¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¥d¥q> ªÜ«½¡A¯«³N¨Ï¨­¤Wªº¯«¤O¹ï§¯ºë¦³®`¡A¦ı¤£¦Ü©óÅı¥L¶Ë¦¨³o¼Ë§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<ªÜ«½>  ¥d¥q¤j­ô§A«ç»ò¥ıÃhºÃ§Ú°Ú¡H§Ú¦n¤ï¦³­ÓÂå¥Í§Ì§Ì¡A¤~¤£·|³o»ò¨S¹D¼w¦n¶Ü¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	<ªÜ«½> ³£¬O¨º¦º§¯ºë°Õ¡A¥L¦b§Ú±´¬d»®´µ§J®É¦b§Ú¨­Ãä­¸¨Ó­¸¥hªº¡A§Ú¤~§Ô¤£¦í§â¥L§ì°_¨Ó¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=6}] {"text":"	<¥d¥q> §A©ú©ú¥i¥H½Ğ¥LÂ÷¶}¡A©ÎªÌ¦Ü¤Ö¥ı¸Ñ°£¬I³N§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=7}] {"text":"	<ªÜ«½> ¥i¡B¥i¬O¡K¡K­üËç¡A³£¬O¥L¤Ó·Ğ¤H°Õ¡A¤~µ¹¥L¤@ÂI±Ğ°V¦Ó¤w¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=8}] {"text":"	<¥d¥q> ¨È¥[¡A§Ú¥NªíªÜ«½¦V§A¹Dºp¡A§Æ±æ¦o¤@®Éªº¹L¿ù¤£·|¹ï®æÂÅ³y¦¨¤Ó¤jªº¶Ë®`¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=9}] {"text":"	<¨È¥[> ¡K¡K¨SÃö«Yªº¡AÅı¥L¥ğ®§¤@¤U´N·|¦n¤F¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=10}] {"text":"	<¨È¥[> ¡K¡K¤£´£³o­Ó¡A¬JµMªÜ«½¤w¸g¦^¨Ó¤F¡A§Ú­Ì¬O¤£¬O­nÄ~Äò»°¸ô¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=11}] {"text":"	<¥d¥q> ¨º´NÅıªÜ«½»¡©ú¤@¤U±´¬dµ²ªG§a¡CªÜ«½¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=12}] {"text":"	<ªÜ«½> °Ú¡A¬O¡I§Ú­Ì¶ZÂ÷¤Ñ²´¤w¸g¤£»·¤F¡A¥u­n³q¹L«e­±ªºµó¹D«á´N¯à¶i¤J¦w¥ş¸ô¬q¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=13}] {"text":"	<ªÜ«½> «e­±³o±øµó¬O§Ú­Ìªº°Ó·~¤j¹D¡A¦]¦¹¤ñ¸û¼e¼s¡A¨µÅŞªº»®´µ§J¤]¤ñ¸û¦h¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+##0201#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<æ ¼è—> æˆ‘ã€æˆ‘çš„ç¿…è†€å¿«èåŒ–äº†â€¦â€¦é‚£å¥³äººçš„ç¥åŠ›æ¿ƒåº¦å¤ªé«˜â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<äºåŠ > æ²’é—œä¿‚ï¼ŒçŒé»é­”åŠ›å°±æœƒå›ä¾†çš„ã€‚ä½ å…ˆä¼‘æ¯ä¸€ä¸‹ï¼Œæˆ‘å¹«ä½ è™•ç†â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<å¡å¸> èŠ™å¨ƒï¼Œç¥è¡“ä½¿èº«ä¸Šçš„ç¥åŠ›å°å¦–ç²¾æœ‰å®³ï¼Œä½†ä¸è‡³æ–¼è®“ä»–å‚·æˆé€™æ¨£å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<èŠ™å¨ƒ>  å¡å¸å¤§å“¥ä½ æ€éº¼å…ˆæ‡·ç–‘æˆ‘å•Šï¼Ÿæˆ‘å¥½æ­¹æœ‰å€‹é†«ç”Ÿå¼Ÿå¼Ÿï¼Œæ‰ä¸æœƒé€™éº¼æ²’é“å¾·å¥½å—ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	<èŠ™å¨ƒ> éƒ½æ˜¯é‚£æ­»å¦–ç²¾å•¦ï¼Œä»–åœ¨æˆ‘æ¢æŸ¥èµ«æ–¯å…‹æ™‚åœ¨æˆ‘èº«é‚Šé£›ä¾†é£›å»çš„ï¼Œæˆ‘æ‰å¿ä¸ä½æŠŠä»–æŠ“èµ·ä¾†â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	<å¡å¸> ä½ æ˜æ˜å¯ä»¥è«‹ä»–é›¢é–‹ï¼Œæˆ–è€…è‡³å°‘å…ˆè§£é™¤æ–½è¡“å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=7}] {"text":"	<èŠ™å¨ƒ> å¯ã€å¯æ˜¯â€¦â€¦å”‰å‘¦ï¼Œéƒ½æ˜¯ä»–å¤ªç…©äººå•¦ï¼Œæ‰çµ¦ä»–ä¸€é»æ•™è¨“è€Œå·²ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=8}] {"text":"	<å¡å¸> äºåŠ ï¼Œæˆ‘ä»£è¡¨èŠ™å¨ƒå‘ä½ é“æ­‰ï¼Œå¸Œæœ›å¥¹ä¸€æ™‚çš„ééŒ¯ä¸æœƒå°æ ¼è—é€ æˆå¤ªå¤§çš„å‚·å®³ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=9}] {"text":"	<äºåŠ > â€¦â€¦æ²’é—œä¿‚çš„ï¼Œè®“ä»–ä¼‘æ¯ä¸€ä¸‹å°±æœƒå¥½äº†ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=10}] {"text":"	<äºåŠ > â€¦â€¦ä¸æé€™å€‹ï¼Œæ—¢ç„¶èŠ™å¨ƒå·²ç¶“å›ä¾†äº†ï¼Œæˆ‘å€‘æ˜¯ä¸æ˜¯è¦ç¹¼çºŒè¶•è·¯ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=11}] {"text":"	<å¡å¸> é‚£å°±è®“èŠ™å¨ƒèªªæ˜ä¸€ä¸‹æ¢æŸ¥çµæœå§ã€‚èŠ™å¨ƒï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=12}] {"text":"	<èŠ™å¨ƒ> å•Šï¼Œæ˜¯ï¼æˆ‘å€‘è·é›¢å¤©çœ¼å·²ç¶“ä¸é äº†ï¼Œåªè¦é€šéå‰é¢çš„è¡—é“å¾Œå°±èƒ½é€²å…¥å®‰å…¨è·¯æ®µã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=13}] {"text":"	<èŠ™å¨ƒ> å‰é¢é€™æ¢è¡—æ˜¯æˆ‘å€‘çš„å•†æ¥­å¤§é“ï¼Œå› æ­¤æ¯”è¼ƒå¯¬å»£ï¼Œå·¡é‚çš„èµ«æ–¯å…‹ä¹Ÿæ¯”è¼ƒå¤šã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	%execute if entity @a[tag=player,scores={st=13}] run function a:ch1_1/	cam_street_road		
-	tellraw @a[tag=player,scores={st=14}] {"text":"	<ªÜ«½> ¥Ñ©ó¤ñ¸ûªÅÃmªºÃö«Y¡A¨Ã¨S¦³¿ìªk¹³¥H«e¤@¼Ë°½·È¹L¥h¡A·Q¥²¥u¯à¾a¥d¥q¤j­ô±a§Ú­ÌÁô¨­³q¹L¤F¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=14}] {"text":"	<èŠ™å¨ƒ> ç”±æ–¼æ¯”è¼ƒç©ºæ› çš„é—œä¿‚ï¼Œä¸¦æ²’æœ‰è¾¦æ³•åƒä»¥å‰ä¸€æ¨£å·æºœéå»ï¼Œæƒ³å¿…åªèƒ½é å¡å¸å¤§å“¥å¸¶æˆ‘å€‘éš±èº«é€šéäº†ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	%execute if entity @a[tag=player,scores={st=14}] run function a:ch1_1/	cam_street_air		
-	tellraw @a[tag=player,scores={st=15}] {"text":"	<ªÜ«½> ¦¹¥~¡A³oÃä¨µ¦uªº¬O¹ê¤O¤ñ¸û¦nªº»®´µ§J¡A°£¤F°Ê§@±Ó±¶¡AÅ¥¤O¤]¯S§O¦n¡C§Y¨ÏÁô¨­¹L¥h¤]±o¤p¤ß¸}¨B¤~¦æ¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=15}] {"text":"	<èŠ™å¨ƒ> æ­¤å¤–ï¼Œé€™é‚Šå·¡å®ˆçš„æ˜¯å¯¦åŠ›æ¯”è¼ƒå¥½çš„èµ«æ–¯å…‹ï¼Œé™¤äº†å‹•ä½œæ•æ·ï¼Œè½åŠ›ä¹Ÿç‰¹åˆ¥å¥½ã€‚å³ä½¿éš±èº«éå»ä¹Ÿå¾—å°å¿ƒè…³æ­¥æ‰è¡Œã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	%execute if entity @a[tag=player,scores={st=15}] run function a:ch1_1/	cam_husk		
-	tellraw @a[tag=player,scores={st=16}] {"text":"	<ªÜ«½> ¥H¤W´N¬O³oªşªñªº³ø§i¤ÀªR¡A¥d¥q¤j­ô¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=16}] {"text":"	<èŠ™å¨ƒ> ä»¥ä¸Šå°±æ˜¯é€™é™„è¿‘çš„å ±å‘Šåˆ†æï¼Œå¡å¸å¤§å“¥ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	%execute if entity @a[tag=player,scores={st=16}] run function a:ch1_1/	cam_default		
-	tellraw @a[tag=player,scores={st=17}] {"text":"	<¥d¥q> ¨º»ò¡A§Ú­ÌÀ³¸Ó¦³¨â±ø¸ô¥i¨«¡G¥á­Ó»¤»ç§l¤Ş¥L­Ìª`·N¡A©Î¬Oª½±µÁô¨­¹L¥h¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=18}] {"text":"	<¥d¥q> Áô¨­¹L¥h¦ÛµM¬O¨S°İÃD¡A¦ı¬O¨È¥[§A­Ì¦n¹³¤£¤Ó²ßºD¡H¬JµM¦p¦¹¡A§A¨M©w­n«ç»ò°µ§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=19}] {"text":"	<¨È¥[> §Ú¶Ü¡H¨º»ò¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	execute if entity @a[tag=player,scores={st=19}] run scoreboard objectives modify goal displayname [{"text":"·í«e¥Ø¼Ğ: ","color":"gold"},{"text":"³q¹Lµó¹D","color":"aqua"}]			
-	tellraw @a[tag=player,scores={st=19}] {"text":"	¡÷¡e¤ÀªR¡f¥á­Ó»¤»ç¹L¥h¡H	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 31"}}
-	tellraw @a[tag=player,scores={st=19}] {"text":"	¡÷¡e¡H¡fª½±µ³q¹L§a¡C	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 38"}}
-	scoreboard players enable @a dia_choose			
-##0201a#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> ¦pªG­n¥á»¤»çªº¸Ü¡A¦³­ş¨Ç¿ï¾Ü©O¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¥d¥q> §Úªº¸Ü¥i¥H¥á´X§â­¸¤M¥X¥h¡A§A­Ì©O¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¨È¥[> §Ú¥i¥H¨Ï¥Î­·¤b³N¡K¡KÁöµM¤£¤Ó¦³§â´¤¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<ªÜ«½> ­n¥á»¤»çªº¸Ü¡A¤£¬O¦³°¦²{¦¨ªº§¯ºë¶Ü¡H¤Ï¥¿§¯ºë¥i¥HÀH®É¦^¨ì¥D¤H¨­Ãä¹À¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	<¥d¥q> ¡K¡K¦n¡A¨º»ò´N¬O¨âºØ¿ï¾Ü¤F¡C§A¬Û«H¦Û¤vªº¹ê¤O¶Ü¡H¿ï¤@­Ó§a¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	¡÷¡e©¯¹B¡ş´¶³q¡fÁÙ¬O³Â·Ğ§A¥á­¸¤M§a¡A§Ú´N¤£·m¾WÀY¤F	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 34"}}
-	tellraw @a[tag=player,scores={st=5}] {"text":"	¡÷¡e·N§Ó¡ş´¶³q¡f§Ú·Q¸Õ¸Õ­·¤b³N	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 35"}}
-	tellraw @a[tag=player,scores={st=5}] {"text":"	¡÷§Ú±o¦A·Q·Q¡K¡K	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 32"}}
-	scoreboard players enable @a dia_choose			
-##0201m#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> ¡]¨º»òÀ³¸Ó­n¡K¡K¡^	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=1}] {"text":"	¡÷¡e¤ÀªR¡f¥á­Ó»¤»ç¹L¥h¡H	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 33"}}
-	tellraw @a[tag=player,scores={st=1}] {"text":"	¡÷¡e¡H¡fª½±µ³q¹L§a¡C	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 38"}}
-	scoreboard players enable @a dia_choose			
-##0201aa#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> ¡]¦pªG­n¥á»¤»çªº¸Ü¡K¡K¡^	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=1}] {"text":"	¡÷¡e©¯¹B¡ş´¶³q¡fÅı¥d¥q¥á­¸¤M	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 34"}}
-	tellraw @a[tag=player,scores={st=1}] {"text":"	¡÷¡e·N§Ó¡ş´¶³q¡f¦Û¤v¥Î­·¤b³N	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 35"}}
-	tellraw @a[tag=player,scores={st=1}] {"text":"	¡÷§Ú±o¦A·Q·Q¡K¡K	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 32"}}
-	scoreboard players enable @a dia_choose			
+	tellraw @a[scores={st=17}] {"text":"	<å¡å¸> é‚£éº¼ï¼Œæˆ‘å€‘æ‡‰è©²æœ‰å…©æ¢è·¯å¯èµ°ï¼šä¸Ÿå€‹èª˜é¤Œå¸å¼•ä»–å€‘æ³¨æ„ï¼Œæˆ–æ˜¯ç›´æ¥éš±èº«éå»ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=18}] {"text":"	<å¡å¸> éš±èº«éå»è‡ªç„¶æ˜¯æ²’å•é¡Œï¼Œä½†æ˜¯äºåŠ ä½ å€‘å¥½åƒä¸å¤ªç¿’æ…£ï¼Ÿæ—¢ç„¶å¦‚æ­¤ï¼Œä½ æ±ºå®šè¦æ€éº¼åšå§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=19}] {"text":"	<äºåŠ > æˆ‘å—ï¼Ÿé‚£éº¼â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	execute if entity @a[tag=player,scores={st=19}] run scoreboard objectives modify goal displayname [{"text":"ç•¶å‰ç›®æ¨™: ","color":"gold"},{"text":"é€šéè¡—é“","color":"aqua"}]			
+	tellraw @a[scores={st=19}] {"text":"	â†’ï¼»åˆ†æï¼½ä¸Ÿå€‹èª˜é¤Œéå»ï¼Ÿ	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 31"}}
+	tellraw @a[scores={st=19}] {"text":"	â†’ï¼»ï¼Ÿï¼½ç›´æ¥é€šéå§ã€‚	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 38"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0201a#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > å¦‚æœè¦ä¸Ÿèª˜é¤Œçš„è©±ï¼Œæœ‰å“ªäº›é¸æ“‡å‘¢ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<å¡å¸> æˆ‘çš„è©±å¯ä»¥ä¸Ÿå¹¾æŠŠé£›åˆ€å‡ºå»ï¼Œä½ å€‘å‘¢ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<äºåŠ > æˆ‘å¯ä»¥ä½¿ç”¨é¢¨åˆƒè¡“â€¦â€¦é›–ç„¶ä¸å¤ªæœ‰æŠŠæ¡ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<èŠ™å¨ƒ> è¦ä¸Ÿèª˜é¤Œçš„è©±ï¼Œä¸æ˜¯æœ‰éš»ç¾æˆçš„å¦–ç²¾å—ï¼Ÿåæ­£å¦–ç²¾å¯ä»¥éš¨æ™‚å›åˆ°ä¸»äººèº«é‚Šå˜›ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	<å¡å¸> â€¦â€¦å¥½ï¼Œé‚£éº¼å°±æ˜¯å…©ç¨®é¸æ“‡äº†ã€‚ä½ ç›¸ä¿¡è‡ªå·±çš„å¯¦åŠ›å—ï¼Ÿé¸ä¸€å€‹å§ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	â†’ï¼»å¹¸é‹ï¼æ™®é€šï¼½é‚„æ˜¯éº»ç…©ä½ ä¸Ÿé£›åˆ€å§ï¼Œæˆ‘å°±ä¸æ¶é‹’é ­äº†	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 34"}}
+	tellraw @a[scores={st=5}] {"text":"	â†’ï¼»æ„å¿—ï¼æ™®é€šï¼½æˆ‘æƒ³è©¦è©¦é¢¨åˆƒè¡“	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 35"}}
+	tellraw @a[scores={st=5}] {"text":"	â†’æˆ‘å¾—å†æƒ³æƒ³â€¦â€¦	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 32"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0201m#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > ï¼ˆé‚£éº¼æ‡‰è©²è¦â€¦â€¦ï¼‰	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=1}] {"text":"	â†’ï¼»åˆ†æï¼½ä¸Ÿå€‹èª˜é¤Œéå»ï¼Ÿ	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 33"}}
+	tellraw @a[scores={st=1}] {"text":"	â†’ï¼»ï¼Ÿï¼½ç›´æ¥é€šéå§ã€‚	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 38"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0201aa#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > ï¼ˆå¦‚æœè¦ä¸Ÿèª˜é¤Œçš„è©±â€¦â€¦ï¼‰	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=1}] {"text":"	â†’ï¼»å¹¸é‹ï¼æ™®é€šï¼½è®“å¡å¸ä¸Ÿé£›åˆ€	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 34"}}
+	tellraw @a[scores={st=1}] {"text":"	â†’ï¼»æ„å¿—ï¼æ™®é€šï¼½è‡ªå·±ç”¨é¢¨åˆƒè¡“	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 35"}}
+	tellraw @a[scores={st=1}] {"text":"	â†’æˆ‘å¾—å†æƒ³æƒ³â€¦â€¦	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 32"}}
+	scoreboard players enable @a[tag=player] dia_choose			
 ##0202#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		12	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		luk	
-	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"©¯¹B\"}"}			
-	tellraw @a[tag=player,scores={st=2,check_success=1}] {"text":"	¡÷¡e¦¨¥\¡f»®´µ§J³Q§l¤Ş¹L¥h¤F¡I	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 36"}}
-	tellraw @a[tag=player,scores={st=2,check_success=0}] {"text":"	¡÷¡e¥¢±Ñ¡f¦n¹³¨S¤°»ò®ÄªG¡H	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 37"}}
-	scoreboard players enable @a dia_choose			
+	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"å¹¸é‹\"}"}			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	â†’ï¼»æˆåŠŸï¼½èµ«æ–¯å…‹è¢«å¸å¼•éå»äº†ï¼	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 36"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	â†’ï¼»å¤±æ•—ï¼½å¥½åƒæ²’ä»€éº¼æ•ˆæœï¼Ÿ	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 37"}}
+	scoreboard players enable @a[tag=player] dia_choose			
 ##0203#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		15	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		wil	
-	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"·N§Ó\"}"}			
-	tellraw @a[tag=player,scores={st=2,check_success=1}] {"text":"	¡÷¡e¦¨¥\¡f»®´µ§J³Q§l¤Ş¹L¥h¤F¡I	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 36"}}
-	tellraw @a[tag=player,scores={st=2,check_success=0}] {"text":"	¡÷¡e¥¢±Ñ¡f¦n¹³¨S¤°»ò®ÄªG¡H	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 37"}}
-	scoreboard players enable @a dia_choose			
-##0204#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¥d¥q> ®@¡H¨S·Q¨ì»¤»ç·N¥~ªº¦³®Ä°Ú¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¨©ÅS> ²{¦b§Ú­ÌÀ³¸Ó¥i¥H©ñ¤ß³q¹L¤F¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<ªÜ«½> ²{¦b»®´µ§Jªºª`·N¤O³£¦b¨ºÃä¡Aµy¬°Áô½ª¤@¤UÀ³¸Ó´N¥i¥H¹L¥h¤F¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<¥d¥q> ¨º»ò§Ú­Ì´Nª½¹F¤Ñ²´§a¡A§Æ±æ§O¦A¥X¤°»ò¨Æ±¡¥´¶Ã­pµe¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"æ„å¿—\"}"}			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	â†’ï¼»æˆåŠŸï¼½èµ«æ–¯å…‹è¢«å¸å¼•éå»äº†ï¼	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 36"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	â†’ï¼»å¤±æ•—ï¼½å¥½åƒæ²’ä»€éº¼æ•ˆæœï¼Ÿ	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 37"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0204#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<å¡å¸> å“¦ï¼Ÿæ²’æƒ³åˆ°èª˜é¤Œæ„å¤–çš„æœ‰æ•ˆå•Šï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<è²éœ²> å“¥å“¥æœç„¶å²å®³ã€‚ç¾åœ¨æˆ‘å€‘æ‡‰è©²å¯ä»¥æ”¾å¿ƒé€šéäº†ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<èŠ™å¨ƒ> ç¾åœ¨èµ«æ–¯å…‹çš„æ³¨æ„åŠ›éƒ½åœ¨é‚£é‚Šï¼Œç¨ç‚ºéš±è”½ä¸€ä¸‹æ‡‰è©²å°±å¯ä»¥éå»äº†ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<å¡å¸> é‚£éº¼æˆ‘å€‘å°±ç›´é”å¤©çœ¼å§ï¼Œå¸Œæœ›åˆ¥å†å‡ºä»€éº¼äº‹æƒ…æ‰“äº‚è¨ˆç•«ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	scoreboard players add 	#ag	 men 1	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	¡÷¡e³q¹L¼úÀy¡fºë¯«¡Ï¢°	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 47"}}
-	scoreboard players enable @a dia_choose			
-##0201¢õb#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	¡÷¡e¡H¡f¬İ¨Ó¥u¯àª½±µ³q¹L¤F	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 38"}}
-	scoreboard players enable @a dia_choose			
-##0201b#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=4}] {"text":"	â†’ï¼»é€šéçå‹µï¼½ç²¾ç¥ï¼‹ï¼‘	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 47"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0201mb#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	â†’ï¼»ï¼Ÿï¼½çœ‹ä¾†åªèƒ½ç›´æ¥é€šéäº†	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 38"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0201b#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	%execute if entity @a[tag=player,scores={st=1}] run function a:ch1_1/	walk_in_road		
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¨©ÅS> ¡K¡K¦³¨Ç»®´µ§J¹L¨Ó¤F¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¥d¥q> ¬Û«H§Ú¡A¤£·|¦³¨Æªº¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<¨È¥[> ¡]«ö·Ó¤§«eªÜ«½ªº»¡©ú¨Ó¬İ¡A³o®É­ÔÀ³¸Ó¡K¡K¡^	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	¡÷¡e©¯¹B¡ş¡H¡f¤£¸Ó¦A«e¶i¤F¡A§Ö°±¤U¨Ó¡I	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 42"}}
-	tellraw @a[tag=player,scores={st=4}] {"text":"	¡÷¡e·N§Ó¡ş¡H¡fºû«ù¸}¨BÄ~Äò¨«¡A¥H§K¼²¤W»®´µ§J¡C	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 40"}}
-	tellraw @a[tag=player,scores={st=4}] {"text":"	¡÷¡e±Ó±¶¡ş¡H¡f¦b¥L­Ì¾aªñ«e§Ö°k¶]¡I¦AºC´N¨Ó¤£¤Î¤F¡I	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 43"}}
-	scoreboard players enable @a dia_choose			
+	tellraw @a[scores={st=2}] {"text":"	<è²éœ²> â€¦â€¦æœ‰äº›èµ«æ–¯å…‹éä¾†äº†ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<å¡å¸> ç›¸ä¿¡æˆ‘ï¼Œä¸æœƒæœ‰äº‹çš„ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<äºåŠ > ï¼ˆæŒ‰ç…§ä¹‹å‰èŠ™å¨ƒçš„èªªæ˜ä¾†çœ‹ï¼Œé€™æ™‚å€™æ‡‰è©²â€¦â€¦ï¼‰	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	â†’ï¼»å¹¸é‹ï¼ï¼Ÿï¼½ä¸è©²å†å‰é€²äº†ï¼Œå¿«åœä¸‹ä¾†ï¼	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 42"}}
+	tellraw @a[scores={st=4}] {"text":"	â†’ï¼»æ„å¿—ï¼ï¼Ÿï¼½ç¶­æŒè…³æ­¥ç¹¼çºŒèµ°ï¼Œä»¥å…æ’ä¸Šèµ«æ–¯å…‹ã€‚	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 40"}}
+	tellraw @a[scores={st=4}] {"text":"	â†’ï¼»æ•æ·ï¼ï¼Ÿï¼½åœ¨ä»–å€‘é è¿‘å‰å¿«é€ƒè·‘ï¼å†æ…¢å°±ä¾†ä¸åŠäº†ï¼	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 43"}}
+	scoreboard players enable @a[tag=player] dia_choose			
 ##0205a#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		8	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		luk	
-	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"©¯¹B\"}"}			
-	tellraw @a[tag=player,scores={st=2,check_success=1}] {"text":"	¡÷¡e¦¨¥\¡f¥L­Ì§¹¥ş¨Sµo²{§Ú­Ì©O¡A¬İ¨Ó¬O¦w¥ş¤F¡C	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 46"}}
-	tellraw @a[tag=player,scores={st=2,check_success=0}] {"text":"	¡÷¡e¥¢±Ñ¡f¥L­Ì«ç»òÂà¹L¨Ó¤F¡IÃø¹D¬O©I§l¤Ó¤jÁn¤F¶Ü¡H	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
-	scoreboard players enable @a dia_choose			
+	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"å¹¸é‹\"}"}			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	â†’ï¼»æˆåŠŸï¼½ä»–å€‘å®Œå…¨æ²’ç™¼ç¾æˆ‘å€‘å‘¢ï¼Œçœ‹ä¾†æ˜¯å®‰å…¨äº†ã€‚	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 46"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	â†’ï¼»å¤±æ•—ï¼½ä»–å€‘æ€éº¼è½‰éä¾†äº†ï¼é›£é“æ˜¯å‘¼å¸å¤ªå¤§è²äº†å—ï¼Ÿ	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
+	scoreboard players enable @a[tag=player] dia_choose			
 ##0206#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		12	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		wil	
-	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"·N§Ó\"}"}			
-	tellraw @a[tag=player,scores={st=2,check_success=1}] {"text":"	¡÷¡e¦¨¥\¡f¬İ¨Ó¬Û«H¥d¥q¬O¥¿½Tªº¡C	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 46"}}
-	tellraw @a[tag=player,scores={st=2,check_success=0}] {"text":"	¡÷¡e¥¢±Ñ¡fÁV¿|¡B½ğ¨ì¥ÛÀY¤F¡I	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
-	scoreboard players enable @a dia_choose			
+	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"æ„å¿—\"}"}			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	â†’ï¼»æˆåŠŸï¼½çœ‹ä¾†ç›¸ä¿¡å¡å¸æ˜¯æ­£ç¢ºçš„ã€‚	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 46"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	â†’ï¼»å¤±æ•—ï¼½ç³Ÿç³•ã€è¸¢åˆ°çŸ³é ­äº†ï¼	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
+	scoreboard players enable @a[tag=player] dia_choose			
 ##0207a#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		15	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		agi	
-	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"±Ó±¶\"}"}			
-	tellraw @a[tag=player,scores={st=2,check_success=1}] {"text":"	¡÷¡e¦¨¥\¡f³q¹Lµó¹D¤F¡IªGµM¥ı¶]¬O¥¿½Tªº¡I	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 46"}}
-	tellraw @a[tag=player,scores={st=2,check_success=0}] {"text":"	¡÷¡e¥¢±Ñ¡f¥i´c¡B³Q°l¤W¤F¡I	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
-	scoreboard players enable @a dia_choose			
-##0205#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> µ¥µ¥¡AªÜ«½»¡¹L¥L­ÌÅ¥¤O¯S§O¦n¹ï§a¡H§Ú­ÌÀ³¸Ó°±¤U¨Ó¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¥d¥q> ¸}¨BÁn·|¤Ş°_ª`·N¶Ü¡H§ÚÀ´¤F¡A¨º§Ú­Ì¥ı§O©¹«e¨«¤F¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<ªÜ«½> ³Ş³Ş¡A³o¼Ë·|¤£·|¤Ó¦MÀI°Ú¡I§Ú­Ì¯¸¦b¸ô¤¤¶¡äM¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	¡÷µ¥«İ»®´µ§J¾aªñ§a¡X¡X¡I	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 39"}}
-	scoreboard players enable @a dia_choose			
-##0207#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<¨È¥[> ªÜ«½¤£¬O»¡¹L¥L­ÌÅ¥¤O¯S§O¦n¶Ü¡H³o¼Ë¤U¥h·|³Qµo²{ªº¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¨©ÅS> °Ú¡A©Ò¥H¥L­ÌÅ¥±o¨ì§Ú­ÌªºÁn­µ¡I³o¼ËÁô¨­´N¨S¦³¥Î¤F¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¥d¥q> µ¥¤@¤U¡A§A­Ì¨â­Ó§NÀR¤@ÂI¡X¡X	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<ªÜ«½> ¦pªG¥L­Ì³s©I§lÁn³£Å¥±o¨ì¡A¨º§Ú­ÌÁÙ¬O¨«¬°¤Wµ¦§a¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	<¥d¥q> ¤Á¡K¡K¦n§a¡I¾Ô²¤©ÊÁ×¶}¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=6}] {"text":"	<»®´µ§J­Ì> ¬O½Ö¡I§Ö°l¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=6}] {"text":"	¡÷§Ö¶]°Ú¡I	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 41"}}
-	scoreboard players enable @a dia_choose			
-##0191#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"æ•æ·\"}"}			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	â†’ï¼»æˆåŠŸï¼½é€šéè¡—é“äº†ï¼æœç„¶å…ˆè·‘æ˜¯æ­£ç¢ºçš„ï¼	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 46"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	â†’ï¼»å¤±æ•—ï¼½å¯æƒ¡ã€è¢«è¿½ä¸Šäº†ï¼	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0205#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > ç­‰ç­‰ï¼ŒèŠ™å¨ƒèªªéä»–å€‘è½åŠ›ç‰¹åˆ¥å¥½å°å§ï¼Ÿæˆ‘å€‘æ‡‰è©²åœä¸‹ä¾†ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<å¡å¸> è…³æ­¥è²æœƒå¼•èµ·æ³¨æ„å—ï¼Ÿæˆ‘æ‡‚äº†ï¼Œé‚£æˆ‘å€‘å…ˆåˆ¥å¾€å‰èµ°äº†ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<èŠ™å¨ƒ> å–‚å–‚ï¼Œé€™æ¨£æœƒä¸æœƒå¤ªå±éšªå•Šï¼æˆ‘å€‘ç«™åœ¨è·¯ä¸­é–“èª’ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	â†’ç­‰å¾…èµ«æ–¯å…‹é è¿‘å§â€”â€”ï¼	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 39"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0207#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<äºåŠ > èŠ™å¨ƒä¸æ˜¯èªªéä»–å€‘è½åŠ›ç‰¹åˆ¥å¥½å—ï¼Ÿé€™æ¨£ä¸‹å»æœƒè¢«ç™¼ç¾çš„ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<è²éœ²> å•Šï¼Œæ‰€ä»¥ä»–å€‘è½å¾—åˆ°æˆ‘å€‘çš„è²éŸ³ï¼é€™æ¨£éš±èº«å°±æ²’æœ‰ç”¨äº†ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<å¡å¸> ç­‰ä¸€ä¸‹ï¼Œä½ å€‘å…©å€‹å†·éœä¸€é»â€”â€”	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<èŠ™å¨ƒ> å¦‚æœä»–å€‘é€£å‘¼å¸è²éƒ½è½å¾—åˆ°ï¼Œé‚£æˆ‘å€‘é‚„æ˜¯èµ°ç‚ºä¸Šç­–å§â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	<å¡å¸> åˆ‡â€¦â€¦å¥½å§ï¼æˆ°ç•¥æ€§é¿é–‹ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	<èµ«æ–¯å…‹å€‘> æ˜¯èª°ï¼å¿«è¿½ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	â†’å¿«è·‘å•Šï¼	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 41"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0191#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	%execute if entity @a[tag=player,scores={st=1}] run function a:ch1_1/	battle		
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<»®´µ§J> ¯¸¦í¡I©ñ¤U¡BªZ¾¹¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¨©ÅS> ³Q§ì¨ì¤F¡I	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<¥d¥q> ¥i´c¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	<¨È¥[> ®æÂÅ¡A¥i¥H¥ÎÀş¶¡²¾°Ê¶Ü¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=6}] {"text":"	<®æÂÅ> ¤£¦æ°Õ¡K¡K§Ú¤O¶qÁÙ¨S«ì´_¡K¡K´Nºâ«ì´_¤F¤]¥u¯à±a¤@­Ó¤H¨«¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=7}] {"text":"	<¥d¥q> ¤j®aª`·N¡A¤£­n¤Ï®g©Ê¦a©Ş¥XªZ¾¹¨Ó°Ú¡A·|³Q¤Ñ²´¨n¤Wªº¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=8}] {"text":"	<¥d¥q> ³oÃä¥æµ¹§Ú´N¦n¡A§A­Ì°h«á¤@ÂI¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<èµ«æ–¯å…‹> ç«™ä½ï¼æ”¾ä¸‹ã€æ­¦å™¨ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<è²éœ²> è¢«æŠ“åˆ°äº†ï¼	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<å¡å¸> å¯æƒ¡â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	<äºåŠ > æ ¼è—ï¼Œå¯ä»¥ç”¨ç¬é–“ç§»å‹•å—ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	<æ ¼è—> ä¸è¡Œå•¦â€¦â€¦æˆ‘åŠ›é‡é‚„æ²’æ¢å¾©â€¦â€¦å°±ç®—æ¢å¾©äº†ä¹Ÿåªèƒ½å¸¶ä¸€å€‹äººèµ°â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=7}] {"text":"	<å¡å¸> å¤§å®¶æ³¨æ„ï¼Œä¸è¦åå°„æ€§åœ°æ‹”å‡ºæ­¦å™¨ä¾†å•Šï¼Œæœƒè¢«å¤©çœ¼ç›¯ä¸Šçš„ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=8}] {"text":"	<å¡å¸> é€™é‚Šäº¤çµ¦æˆ‘å°±å¥½ï¼Œä½ å€‘é€€å¾Œä¸€é»ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	%execute if entity @a[tag=player,scores={st=8}] run function a:ch1_1/	battle_fin		
-	tellraw @a[tag=player,scores={st=9}] {"text":"	<¥d¥q> ¡K¡K³o¼Ë´NÂ\¥­¤F¡A¥i±¤¨ü¤FÂI¶Ë¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=10}] {"text":"	<¨©ÅS> ¤£­nºò§a¡H§Ú³oÃä¦³¨ÇÃÄ«~¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=11}] {"text":"	<¥d¥q> §Ú¨SÃö«Yªº¡A¥ğ¾i¤@¤U´N·|¦n¤F¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=11}] {"text":"	¡÷Ä~Äò²¾°Ê§a¡K¡K	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 47"}}
-	scoreboard players enable @a dia_choose			
-##0190#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=9}] {"text":"	<å¡å¸> â€¦â€¦é€™æ¨£å°±æ“ºå¹³äº†ï¼Œå¯æƒœå—äº†é»å‚·â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=10}] {"text":"	<è²éœ²> ä¸è¦ç·Šå§ï¼Ÿæˆ‘é€™é‚Šæœ‰äº›è—¥å“â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=11}] {"text":"	<å¡å¸> æˆ‘æ²’é—œä¿‚çš„ï¼Œä¼‘é¤Šä¸€ä¸‹å°±æœƒå¥½äº†â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=11}] {"text":"	â†’ç¹¼çºŒç§»å‹•å§â€¦â€¦	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 47"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0190#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	%execute if entity @a[tag=player,scores={st=1}] run function a:ch1_1/	in_street		
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¨©ÅS> ¥Ï¶}¤F¶Ü¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¥d¥q> À³¸Ó¬O¦w¥ş¤F¡A¦ı¬OÁÙ¬O¤£­n°±¯d¤Ó¤[¤ñ¸û¦n¡A¶XµÛ¦u½Ã³£³Q§l¤Ş¹L¨Óªº®É­Ô»°§Ö¥h¤Ñ²´§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	¡÷Ä~Äò²¾°Ê§a¡K¡K	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 47"}}
-	scoreboard players enable @a dia_choose			
-##0208#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=2}] {"text":"	<è²éœ²> ç”©é–‹äº†å—â€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<å¡å¸> æ‡‰è©²æ˜¯å®‰å…¨äº†ï¼Œä½†æ˜¯é‚„æ˜¯ä¸è¦åœç•™å¤ªä¹…æ¯”è¼ƒå¥½ï¼Œè¶è‘—å®ˆè¡›éƒ½è¢«å¸å¼•éä¾†çš„æ™‚å€™è¶•å¿«å»å¤©çœ¼å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	â†’ç¹¼çºŒç§»å‹•å§â€¦â€¦	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 47"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0208#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	%execute if entity @a[tag=player,scores={st=1}] run function a:ch1_1/	pass		
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¨È¥[> ³o¼Ë´N¦w¥ş³q¹L¤F©O¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<äºåŠ > é€™æ¨£å°±å®‰å…¨é€šéäº†å‘¢ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	scoreboard players add 	#ag	 men 1	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<¥d¥q> ¬O°Ú¡A±µ¤U¨Óªº¸ô¬q´N¦w¥ş¦h¤F¡A¥ı»°¨ì¤Ñ²´¨ºÃä¦A¥ğ®§§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	¡÷¡e³q¹L¼úÀy¡fºë¯«¡Ï¢°	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 47"}}
-	scoreboard players enable @a dia_choose			
-##0210#	tellraw @a[tag=player,scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[tag=player,scores={st=1}] {"text":"	<®æÂÅ> ³o´N¬O¡K¡K¤Ñ²´¶Ü¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	execute if entity @a[tag=player,scores={st=1}] run scoreboard objectives modify goal displayname [{"text":"·í«e¥Ø¼Ğ: ","color":"gold"},{"text":"µL","color":"aqua"}]			
+	tellraw @a[scores={st=3}] {"text":"	<å¡å¸> æ˜¯å•Šï¼Œæ¥ä¸‹ä¾†çš„è·¯æ®µå°±å®‰å…¨å¤šäº†ï¼Œå…ˆè¶•åˆ°å¤©çœ¼é‚£é‚Šå†ä¼‘æ¯å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	â†’ï¼»é€šéçå‹µï¼½ç²¾ç¥+1	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 47"}}
+	scoreboard players enable @a[tag=player] dia_choose			
+##0210#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	tellraw @a[scores={st=1}] {"text":"	<æ ¼è—> é€™å°±æ˜¯â€¦â€¦å¤©çœ¼å—ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	execute if entity @a[tag=player,scores={st=1}] run scoreboard objectives modify goal displayname [{"text":"ç•¶å‰ç›®æ¨™: ","color":"gold"},{"text":"ç„¡","color":"aqua"}]			
 	%execute if entity @a[tag=player,scores={st=1}] run function a:ch1_1/	arrive_skyeye		
-	tellraw @a[tag=player,scores={st=2}] {"text":"	<¨È¥[> ¯uÃe¤jªº«Ø¿vª«¡K¡K¸ò¯«¤ì¦³±o¤ñ°Ú¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=3}] {"text":"	<ªÜ«½> ¨º»ò¥d¥q¤j­ô¡A§Ú´N«ö·Ó­pµe¥h¯}¸Ñ¤jªù¤F¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=4}] {"text":"	<¥d¥q> ¥h§a¡A°O±oª`·N¤£©w®Éªº¨µÅŞ¶¤°Ú¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=5}] {"text":"	<¨È¥[> ¶â¡K¡K§Ú¤@ª½·Q°İ¡A¬°¤°»òªÜ«½¥i¥H¾Ş±±»®´µ§J°Ú¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=6}] {"text":"	<®æÂÅ> »¡ªº¤]¬O¡A¼w¶®¨Ã¨S¦³¾ŞÁaªºÅv¯à§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=7}] {"text":"	<¨©ÅS> ®æÂÅ¡A§A¨S¨Æ°Õ¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=8}] {"text":"	<®æÂÅ> §Ú²{¦bÄ±±o¦n¦h¤F¡A­è­è³Q¦o¤@§ì®tÂI¨Sµh¦º§Ú¡K¡K©Ò¥H¨ì©³¬O¬°¤°»ò¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=9}] {"text":"	<¥d¥q> ³o¡K¡K§Ú¥i¯à¤]µLªk¦^µª¡C¦o¥Î¨Ó¾Ş±±»®´µ§Jªº¨Ã¤£¬O¯«³N©Î¬O¼w¶®ªºÅv¯à¡A¦Ü¤Ö¤£¬O¤@¯ë²½¥q¯à°µ¨ìªºµ{«×¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=10}] {"text":"	<¥d¥q> ÁöµM¦o¨Ã¨S¦³¸ò§Ú­ÌÁ¿­ì¦]¡A¦ı´ö©i»P´ö¦Ì¡X¡X¤§«e§A­Ì¨£¹Lªº¤Ï§Ü­x­º»â¡X¡X«o²q¥X¤F¤j·§ªº¥i¯à©Ê¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=11}] {"text":"	<¥d¥q> ³o­n±q°òÂ¦ªºªº­ì²z»¡°_¡G­º¥ı¡A¼w¶®ªºÅv¯à¬O¦@·P¡A¦]¦¹Í¢ªº¤l¥Á¯à¤j²¤·P¨ü¨ì©¼¦¹ªº·Qªk¡A´î¤Ö³\¦h¤£¥²­nªº½Ä¬ğ¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=12}] {"text":"	<¥d¥q> ¦Ó»®´µ§J¡X¡X¦p¦P¥Xµo«e¸ò§A­ÌÁ¿¹Lªº¡X¡X¬O¼w¶®¯«¤Oªº²£ª«¡AµÜ¼Ú¥d©ó¬O§Q¥Î³o¤@ÂI«Ø¥ß¤F¡uµÜ¼Ú§J°T®§ºô¸ô¡v¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=13}] {"text":"	<¥d¥q> ¦ÓªÜ«½¡K¡K«h¦³¥i¯à¬O¼w¶®ªº¯«¿ïªÌ¡C³o¼Ë¤@¨Ó¡A¦o´N¬Oµ¥¦P©ó¼w¶®ªº¦s¦b¡A¦ÛµM¥i¥H±±¨î©Ò¦³¼w¶®¯«¤Oªº³Ğ³yª«¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=14}] {"text":"	<¨©ÅS> ¯«¡X¡X¡I¡]¤pÁn¡^«y¡B¯«¿ïªÌ¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=15}] {"text":"	<®æÂÅ> ³Q¼w¶®¿Ë¦Û¿ï¤¤ªº¤H¶Ü¡K¡KÃø©Ç¦o¨­¤Wªº¯«¤O¿@«×³o»ò°ª¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=16}] {"text":"	<¨È¥[> µ¥¤@¤U¡A¿Ë¦Û¿ï¤¤¡H¦ı¬O¼w¶®¤£¬O¡X¡X	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=17}] {"text":"	<¥d¥q> ¹ï¡A³o¤]¬O§Ú­Ì©ÒÃhºÃªºÂI¡C¦Û±q®æÄõ¼w«°·À¤`¡B§Ú­Ìªº¤j²½¥q»P¼w¶®¯«¾¹³QµÜ¼Ú¥d¹Ü¨««á¡A¼w¶®ªº¥»Åé¦­´N³´¤J¨IºÎª¬ºA¡X¡X³o¥i¬O¤G¤Q´X¦~«eªº¨Æ±¡¡A§O»¡ªÜ«½¡A³s§Ú³£ÁÙ¨S¥X¥Í©O¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=18}] {"text":"	<¥d¥q> ¬JµM¦p¦¹¡AªÜ«½À³¸Ó¤£·|¬O¼w¶®ªº¯«¿ïªÌ¤~¹ï¡C¦ı¬OºØºØªº¸ñ¶H«o³£«ü¦V³o­Ó¥i¯à¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=19}] {"text":"	<¨È¥[> ¶â¡K¡KÃø¹D¨S¦³¤À¿ë¯«¿ïªÌ©M¤@¯ë¤Hªº¤èªk¶Ü¡H	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=20}] {"text":"	<¥d¥q> ¦³¬O¦³¡Aª½±µ¦V¯«½T»{´N±o¤F¡C¦ı§A¤]ª¾¹D¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=21}] {"text":"	<¨©ÅS> ©Î³\§Ú­Ì¯à±q¨ä¥L¦a¤è²q´ú¡H¦pªGªÜ«½Àò±o¤F¯«¿ïªÌªº¤O¶q¡A´NÀ³¸Ó·|·l¥¢¤°»òªF¦è¤~¹ï¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=22}] {"text":"	<¥d¥q> µá¨Èº¸ªº±Ğ¸q¶Ü¡H¨ú±Ë°Ú¡K¡K	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=23}] {"text":"	<®æÂÅ> §Ú·Q¨ì¦n¤èªk¤F¡I¥u­n©¹¦o¨­¤WÄéÅ]¤O¡A¬İ¦oªº¯«¤O·|¤£·|®ø´²¤£´N±o¤F¡H¯«¿ïªÌªº¯«¤O¬O¤£·|¬\ºÜªº§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=24}] {"text":"	<¨È¥[> ®æÂÅ¡A¤£­n·Q¨ì¤°»ò´N»¡¤°»ò¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=25}] {"text":"	<¥d¥q> ¡K¡K§Ú¯à²z¸Ñ§A­Ì·Q§Ë²M·¡Á¼¹Îªº¤ß±¡¡A¦ıªÜ«½¤]¬O§Ú­Ìªº¤@­û¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=26}] {"text":"	<¨©ÅS> ¤£¦n·N«ä¡A¬İ¦b¥L¬O§¯ºëªº¥÷¤W´NÄÇ¹L¥L§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=27}] {"text":"	<¥d¥q> ¨SÃö«Y¡A§Úª¾¹D§¯ºëªº­Ó©Ê¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=28}] {"text":"	<®æÂÅ> §Ú¤S¨S¦³¡X¡X	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=29}] {"text":"	<¨È¥[> ®æÂÅ¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=30}] {"text":"	<®æÂÅ> ¡K¡K­ó¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[tag=player,scores={st=31}] {"text":"	<¥d¥q> ¨º»ò¡AªÜ«½À³¸ÓÁÙ»İ­n¤@ÂI®É¶¡¥´¶}¤Ñ²´¤jªù¡A§A­Ì´N¥ı¥ğ®§¤@¤U§a¡C	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=2}] {"text":"	<äºåŠ > çœŸé¾å¤§çš„å»ºç¯‰ç‰©â€¦â€¦è·Ÿç¥æœ¨æœ‰å¾—æ¯”å•Šâ€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=3}] {"text":"	<èŠ™å¨ƒ> é‚£éº¼å¡å¸å¤§å“¥ï¼Œæˆ‘å°±æŒ‰ç…§è¨ˆç•«å»ç ´è§£å¤§é–€äº†ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<å¡å¸> å»å§ï¼Œè¨˜å¾—æ³¨æ„ä¸å®šæ™‚çš„å·¡é‚éšŠå•Šã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=5}] {"text":"	<äºåŠ > å—¯â€¦â€¦æˆ‘ä¸€ç›´æƒ³å•ï¼Œç‚ºä»€éº¼èŠ™å¨ƒå¯ä»¥æ“æ§èµ«æ–¯å…‹å•Šï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	<æ ¼è—> èªªçš„ä¹Ÿæ˜¯ï¼Œå¾·é›…ä¸¦æ²’æœ‰æ“ç¸±çš„æ¬Šèƒ½å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=7}] {"text":"	<è²éœ²> æ ¼è—ï¼Œä½ æ²’äº‹å•¦ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=8}] {"text":"	<æ ¼è—> æˆ‘ç¾åœ¨è¦ºå¾—å¥½å¤šäº†ï¼Œå‰›å‰›è¢«å¥¹ä¸€æŠ“å·®é»æ²’ç—›æ­»æˆ‘â€¦â€¦æ‰€ä»¥åˆ°åº•æ˜¯ç‚ºä»€éº¼ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=9}] {"text":"	<å¡å¸> é€™â€¦â€¦æˆ‘å¯èƒ½ä¹Ÿç„¡æ³•å›ç­”ã€‚å¥¹ç”¨ä¾†æ“æ§èµ«æ–¯å…‹çš„ä¸¦ä¸æ˜¯ç¥è¡“æˆ–æ˜¯å¾·é›…çš„æ¬Šèƒ½ï¼Œè‡³å°‘ä¸æ˜¯ä¸€èˆ¬ç¥­å¸èƒ½åšåˆ°çš„ç¨‹åº¦ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=10}] {"text":"	<å¡å¸> é›–ç„¶å¥¹ä¸¦æ²’æœ‰è·Ÿæˆ‘å€‘è¬›åŸå› ï¼Œä½†æ¹¯å§†èˆ‡æ¹¯ç±³â€”â€”ä¹‹å‰ä½ å€‘è¦‹éçš„åæŠ—è»é¦–é ˜â€”â€”å»çŒœå‡ºäº†å¤§æ¦‚çš„å¯èƒ½æ€§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=11}] {"text":"	<å¡å¸> é€™è¦å¾åŸºç¤çš„çš„åŸç†èªªèµ·ï¼šé¦–å…ˆï¼Œå¾·é›…çš„æ¬Šèƒ½æ˜¯å…±æ„Ÿï¼Œå› æ­¤ç¥‚çš„å­æ°‘èƒ½å¤§ç•¥æ„Ÿå—åˆ°å½¼æ­¤çš„æƒ³æ³•ï¼Œæ¸›å°‘è¨±å¤šä¸å¿…è¦çš„è¡çªã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=12}] {"text":"	<å¡å¸> è€Œèµ«æ–¯å…‹â€”â€”å¦‚åŒå‡ºç™¼å‰è·Ÿä½ å€‘è¬›éçš„â€”â€”æ˜¯å¾·é›…ç¥åŠ›çš„ç”¢ç‰©ï¼ŒèŠæ­å¡æ–¼æ˜¯åˆ©ç”¨é€™ä¸€é»å»ºç«‹äº†ã€ŒèŠæ­å…‹è¨Šæ¯ç¶²è·¯ã€ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=13}] {"text":"	<å¡å¸> è€ŒèŠ™å¨ƒâ€¦â€¦å‰‡æœ‰å¯èƒ½æ˜¯å¾·é›…çš„ç¥é¸è€…ã€‚é€™æ¨£ä¸€ä¾†ï¼Œå¥¹å°±æ˜¯ç­‰åŒæ–¼å¾·é›…çš„å­˜åœ¨ï¼Œè‡ªç„¶å¯ä»¥æ§åˆ¶æ‰€æœ‰å¾·é›…ç¥åŠ›çš„å‰µé€ ç‰©ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=14}] {"text":"	<è²éœ²> ç¥â€”â€”ï¼ï¼ˆå°è²ï¼‰å’³ã€ç¥é¸è€…ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=15}] {"text":"	<æ ¼è—> è¢«å¾·é›…è¦ªè‡ªé¸ä¸­çš„äººå—â€¦â€¦é›£æ€ªå¥¹èº«ä¸Šçš„ç¥åŠ›æ¿ƒåº¦é€™éº¼é«˜ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=16}] {"text":"	<äºåŠ > ç­‰ä¸€ä¸‹ï¼Œè¦ªè‡ªé¸ä¸­ï¼Ÿä½†æ˜¯å¾·é›…ä¸æ˜¯â€”â€”	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=17}] {"text":"	<å¡å¸> å°ï¼Œé€™ä¹Ÿæ˜¯æˆ‘å€‘æ‰€æ‡·ç–‘çš„é»ã€‚è‡ªå¾æ ¼è˜­å¾·åŸæ»…äº¡ã€æˆ‘å€‘çš„å¤§ç¥­å¸èˆ‡å¾·é›…ç¥å™¨è¢«èŠæ­å¡å¥ªèµ°å¾Œï¼Œå¾·é›…çš„æœ¬é«”æ—©å°±é™·å…¥æ²‰ç¡ç‹€æ…‹â€”â€”é€™å¯æ˜¯äºŒåå¹¾å¹´å‰çš„äº‹æƒ…ï¼Œåˆ¥èªªèŠ™å¨ƒï¼Œé€£æˆ‘éƒ½é‚„æ²’å‡ºç”Ÿå‘¢ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=18}] {"text":"	<å¡å¸> æ—¢ç„¶å¦‚æ­¤ï¼ŒèŠ™å¨ƒæ‡‰è©²ä¸æœƒæ˜¯å¾·é›…çš„ç¥é¸è€…æ‰å°ã€‚ä½†æ˜¯ç¨®ç¨®çš„è·¡è±¡å»éƒ½æŒ‡å‘é€™å€‹å¯èƒ½ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=19}] {"text":"	<äºåŠ > å—¯â€¦â€¦é›£é“æ²’æœ‰åˆ†è¾¨ç¥é¸è€…å’Œä¸€èˆ¬äººçš„æ–¹æ³•å—ï¼Ÿ	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=20}] {"text":"	<å¡å¸> æœ‰æ˜¯æœ‰ï¼Œç›´æ¥å‘ç¥ç¢ºèªå°±å¾—äº†ã€‚ä½†ä½ ä¹ŸçŸ¥é“ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=21}] {"text":"	<è²éœ²> æˆ–è¨±æˆ‘å€‘èƒ½å¾å…¶ä»–åœ°æ–¹çŒœæ¸¬ï¼Ÿå¦‚æœèŠ™å¨ƒç²å¾—äº†ç¥é¸è€…çš„åŠ›é‡ï¼Œå°±æ‡‰è©²æœƒæå¤±ä»€éº¼æ±è¥¿æ‰å°ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=22}] {"text":"	<å¡å¸> è²äºçˆ¾çš„æ•™ç¾©å—ï¼Ÿå–æ¨å•Šâ€¦â€¦	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=23}] {"text":"	<æ ¼è—> æˆ‘æƒ³åˆ°å¥½æ–¹æ³•äº†ï¼åªè¦å¾€å¥¹èº«ä¸ŠçŒé­”åŠ›ï¼Œçœ‹å¥¹çš„ç¥åŠ›æœƒä¸æœƒæ¶ˆæ•£ä¸å°±å¾—äº†ï¼Ÿç¥é¸è€…çš„ç¥åŠ›æ˜¯ä¸æœƒæ¯ç«­çš„å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=24}] {"text":"	<äºåŠ > æ ¼è—ï¼Œä¸è¦æƒ³åˆ°ä»€éº¼å°±èªªä»€éº¼ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=25}] {"text":"	<å¡å¸> â€¦â€¦æˆ‘èƒ½ç†è§£ä½ å€‘æƒ³å¼„æ¸…æ¥šè¬åœ˜çš„å¿ƒæƒ…ï¼Œä½†èŠ™å¨ƒä¹Ÿæ˜¯æˆ‘å€‘çš„ä¸€å“¡ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=26}] {"text":"	<è²éœ²> ä¸å¥½æ„æ€ï¼Œçœ‹åœ¨ä»–æ˜¯å¦–ç²¾çš„ä»½ä¸Šå°±é¥’éä»–å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=27}] {"text":"	<å¡å¸> æ²’é—œä¿‚ï¼Œæˆ‘çŸ¥é“å¦–ç²¾çš„å€‹æ€§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=28}] {"text":"	<æ ¼è—> æˆ‘åˆæ²’æœ‰â€”â€”	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=29}] {"text":"	<äºåŠ > æ ¼è—ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=30}] {"text":"	<æ ¼è—> â€¦â€¦å“¼ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	tellraw @a[scores={st=31}] {"text":"	<å¡å¸> é‚£éº¼ï¼ŒèŠ™å¨ƒæ‡‰è©²é‚„éœ€è¦ä¸€é»æ™‚é–“æ‰“é–‹å¤©çœ¼å¤§é–€ï¼Œä½ å€‘å°±å…ˆä¼‘æ¯ä¸€ä¸‹å§ã€‚	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	execute if entity @a[tag=player,scores={st=31}] run function a:dia/fin			
