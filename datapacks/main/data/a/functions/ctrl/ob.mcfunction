@@ -26,7 +26,7 @@ scoreboard objectives add check_temp dummy {"text":"骰子值check_temp"}
 scoreboard players set @a check_success 0
 scoreboard players set @a check_target 0
 
-#書庫
+#希斯迪亞
 scoreboard objectives add book minecraft.used:minecraft.carrot_on_a_stick
 
 #水池 see news
@@ -62,3 +62,7 @@ scoreboard objectives add h_a_m_ dummy {"text":"其他資料 - 小遊戲 - 赫�
 scoreboard objectives add goal dummy {"text":"當前目標"}
 scoreboard objectives setdisplay sidebar goal
 scoreboard players set   goal 0
+
+#梅爾維菈
+scoreboard objectives add malvila minecraft.used:minecraft.knowledge_book {"text":"書庫malvila"}
+

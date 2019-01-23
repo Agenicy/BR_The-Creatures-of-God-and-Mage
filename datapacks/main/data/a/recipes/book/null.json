@@ -2,11 +2,11 @@
   "type": "crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:command_block"
+      "item": "minecraft:knowledge_book"
     }
   ],
   "result": {
-    "item": "minecraft:command_block",
+    "item": "minecraft:knowledge_book",
 	"count":1	
 	}
 }

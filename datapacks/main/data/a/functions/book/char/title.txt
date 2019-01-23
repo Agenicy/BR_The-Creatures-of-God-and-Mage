@@ -1,6 +1,8 @@
 @/function a:book/char/gen/
 +dlx
 ##ag:亞加尼西 ‧ 戴洛克斯
-$1
+$2
 亞加，也就是我
 -
++yrs
++grd

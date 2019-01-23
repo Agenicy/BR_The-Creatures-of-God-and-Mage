@@ -57,7 +57,7 @@ changePageText = '\\"}]","{\\"text\\":\\"'
 endText1 = '\\"}","{\\"text\\":\\"[\\\\u5c07\\\\u66f8\\\\u672c\\\\u653e\\\\u5165\\\\u66f8\\\\u5eab]\\",\\"bold\\":true,\\"color\\":\\"blue\\",\\"clickEvent\\":{\\"action\\":\\"run_command\\",\\"value\\":\\"' + data.localPath
 endText2 = '\\"},\\"hoverEvent\\":{\\"action\\":\\"show_text\\",\\"value\\":\\"\\\\u9ede\\\\u9078\\\\u4f7f\\\\u7528\\"}}"],author:"",title:"'
 endText3 = '"}'
-with open('info.txt','r') as f:
+with open('info.txt','r',encoding='utf-8-sig') as f:
 	lines = f.readlines()
 for index,line in enumerate(lines):
 	line = line.replace('\t','')
@@ -67,7 +67,7 @@ for index,line in enumerate(lines):
 		charData2 = charData[1].split('-')
 		title = charData2[0]
 		tag = charData2[1]
-		last = 'scoreboard players set @a[tag=player] ' + fileName + ' 0' + '\n' + beforeText + '\n' + headText1 + title.center(14, '　') + headText2 + tag.center(12, '　')  + headText3
+		last = 'scoreboard players set @a[tag=player] ' + fileName + ' 0' + '\n' + beforeText + '\n' + headText1 + title.center(12, '　') + headText2 + tag.center(12, '　')  + headText3
 		last2 = headText4
 		temp.pageNumber = 0
 
@@ -99,7 +99,11 @@ for index,line in enumerate(lines):
 			tmp.write('clear @a minecraft:written_book{title:"' + title + '"}')			
 	else:
 		with io.open('gen/%s.mcfunction'%construct,'a',encoding='utf8')as tmp:
-			last2 += line[0:-1] + r'\\n'
-			tmp.write(line[0:-1])
-			tmp.write(r'\\n')
+			if line[0:4] == 'XSS=':
+				last2 += line[4:-1]
+				tmp.write(line[4:-1])
+			else:
+				last2 += line[0:-1] + r'\\n'
+				tmp.write(line[0:-1])
+				tmp.write(r'\\n')
 

@@ -1,1 +1,14 @@
-{}
+{
+  "a:root": {
+    "criteria": {
+      "auto": "2019-01-23 17:10:15 +0800"
+    },
+    "done": true
+  },
+  "a:malvella": {
+    "criteria": {
+      "book": "2019-01-23 17:11:59 +0800"
+    },
+    "done": true
+  }
+}

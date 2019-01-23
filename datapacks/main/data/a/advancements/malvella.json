@@ -1,0 +1,14 @@
+{
+   "criteria": {
+        "book": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "a:book/null"
+            }
+        }
+    },
+    "rewards": {
+        "function": "a:char_choose/detect"
+    },
+    "parent": "a:root"
+}
