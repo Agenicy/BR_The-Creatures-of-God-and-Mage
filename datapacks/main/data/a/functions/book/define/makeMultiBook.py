@@ -12,7 +12,7 @@ class data:#建立變數
 with open('title.txt','r') as f:
 	lines = f.readlines()
 for index,line in enumerate(lines):
-	#line = line.replace('\t','')
+	line = line.replace('\t','')
 	if line[0] == '+':
 		data.className = line[1:-1]#子分類檔名(預設book)
 	elif line[0] == '@':
@@ -22,7 +22,7 @@ for index,line in enumerate(lines):
 		data.bookData = line[2:-1].split(':')#讀取文字
 		data.fileName = data.bookData[0]#txt檔名
 		data.title = data.bookData[1]#書名
-		with open('gen/scoreboard.txt','a',encoding='utf8') as tmp:
+		with open('gen/scoreboard.mcfunction','a',encoding='utf8') as tmp:
 			str1 = 'scoreboard objectives add '
 			str2 = ' dummy {"text":"角色故事 - '
 			str3 = '"}'

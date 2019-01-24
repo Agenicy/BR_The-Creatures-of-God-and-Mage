@@ -1,5 +1,0 @@
-scoreboard objectives add gnm dummy {"text":"角色故事 - 術法相剋gnm"}
-scoreboard objectives add deya dummy {"text":"角色故事 - 德雅deya"}
-scoreboard objectives add fyr dummy {"text":"角色故事 - 菲亞爾fyr"}
-scoreboard objectives add nla dummy {"text":"角色故事 - 諾利雅nla"}
-scoreboard objectives add all dummy {"text":"角色故事 - 上位眾神all"}

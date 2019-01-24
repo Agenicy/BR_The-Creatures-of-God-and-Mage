@@ -27,7 +27,7 @@ scoreboard players set @a check_success 0
 scoreboard players set @a check_target 0
 
 #希斯迪亞
-scoreboard objectives add book minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add book minecraft.used:minecraft.carrot_on_a_stick {"text":"希斯迪亞book"}
 
 #水池 see news
 scoreboard objectives add news dummy {"text":"news答案計數器news"}
@@ -54,9 +54,9 @@ scoreboard players set num8 num 8
 scoreboard players set num9 num 9
 scoreboard players set num10 num 10
 
-#角色故事
-scoreboard objectives add ag dummy {"text":"角色故事 - 亞加尼西 ‧ 戴洛克斯ag"}
-scoreboard objectives add h_a_m_ dummy {"text":"其他資料 - 小遊戲 - 赫斯克與人類h_a_m_"}
+#角色故事(使用function #a:ob)
+#scoreboard objectives add ag dummy {"text":"角色故事 - 亞加尼西 ‧ 戴洛克斯ag"}
+#scoreboard objectives add h_a_m_ dummy {"text":"其他資料 - 小遊戲 - 赫斯克與人類h_a_m_"}
 
 #當前目標
 scoreboard objectives add goal dummy {"text":"當前目標"}
