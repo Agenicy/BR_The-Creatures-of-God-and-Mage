@@ -34,8 +34,8 @@ for index,line in enumerate(lines):
 			str3 = '"}'
 			tmp.write(str1 + data.fileName[data.bookNum] + str2 + data.title[data.bookNum] + data.fileName[data.bookNum] + str3 +'\n')
 		with open('gen/-scoreboard.mcfunction','a',encoding='utf8') as tmp:
-			str4 = 'scoreboard objectives add '
-			tmp.write(str4 + data.fileName[data.bookNum]'\n')
+			str4 = 'scoreboard objectives remove '
+			tmp.write(str4 + data.fileName[data.bookNum] + '\n')
 			
 	elif line[0] == '$':#版本號
 		data.fileNum.append(line[1:-1])#總共有幾個版本
