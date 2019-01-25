@@ -27,7 +27,10 @@ for index,line in enumerate(lines):
 			str2 = ' dummy {"text":"角色故事 - '
 			str3 = '"}'
 			tmp.write(str1 + data.bookData[0] + str2 + data.bookData[1] + data.bookData[0] + str3 +'\n')
-		
+		with open('gen/-scoreboard.mcfunction','a',encoding='utf8') as tmp:
+			str4 = 'scoreboard objectives add '
+			tmp.write(str4 + data.fileName[data.bookNum]'\n')
+			
 	elif line[0] == '$':#版本號
 		data.fileNum = line[1:-1]#總共有幾個版本
 

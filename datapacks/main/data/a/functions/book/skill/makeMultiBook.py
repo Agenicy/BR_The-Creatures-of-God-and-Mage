@@ -1,13 +1,13 @@
 import io
-
+'''title'''
 class data:#建立變數
 	localPath=''
-	bookData=''
-	fileName=''
-	title=''
-	fileNum=''
-	lore=''
+	fileName=[]
+	title=[]
+	fileNum=[]
+	lore=[]
 	className='book'
+	bookNum = -1
 	
 with open('title.txt','r') as f:
 	lines = f.readlines()
@@ -15,35 +15,42 @@ for index,line in enumerate(lines):
 	line = line.replace('\t','')
 	if line[0] == '+':
 		data.className = line[1:-1]#子分類檔名(預設book)
-	elif line[0] == '@':
-		data.localPath = line[1:-1]#檔案路徑
-		
-	elif line[0:2] == '##':#標題
-		data.bookData = line[2:-1].split(':')#讀取文字
-		data.fileName = data.bookData[0]#txt檔名
-		data.title = data.bookData[1]#書名
-		with open('gen/scoreboard.mcfunction','a',encoding='utf8') as tmp:
-			str1 = 'scoreboard objectives add '
-			str2 = ' dummy {"text":"角色故事 - '
-			str3 = '"}'
-			tmp.write(str1 + data.bookData[0] + str2 + data.bookData[1] + data.bookData[0] + str3 +'\n')
-		
-	elif line[0] == '$':#版本號
-		data.fileNum = line[1:-1]#總共有幾個版本
-
-	elif line[0] == '-':#一次寫入檔案
 		with io.open('gen/%s.mcfunction'%data.className,'a',encoding='utf8')as tmp:
 			titleOne = r'tellraw @a {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n------","color":"gold","extra":[{"text":"☆神奇的魔法書庫☆","color":"yellow"},{"text":"------","color":"gold"}]}'
 			titleTwo = r'tellraw @a {"text":"目前分頁: ","color":"gold","extra":[{"text":"其他文件","color":"aqua"},{"text":"  [回首頁]","color":"dark_green","hoverEvent":{"action":"show_text","value":"點選回首頁"},"clickEvent":{"action":"run_command","value":"/function a:book/book"}}]}'
 			tmp.write(titleOne+'\n'+titleTwo+'\n')
 			
-			for num in range(1,(int)(data.fileNum)+1):#重複fileNum次
-				tmp.write('tellraw @a[scores={' + data.fileName + '=' + str(num) + r'}] {"text":"● ' + data.title + r'","color":"green","hoverEvent":{"action":"show_text","value":"' + data.lore + r'"},"clickEvent":{"action":"run_command","value":"' + data.localPath + data.fileName + str(num) + r'"}}'+'\n')
+	elif line[0] == '@':
+		data.localPath = line[1:-1]#檔案路徑
+		
+	elif line[0:2] == '##':#標題
+		data.bookNum += 1#書本數+1
+		bookData = line[2:-1].split(':')#讀取文字
+		data.fileName.append(bookData[0])#txt檔名
+		data.title.append(bookData[1])#書名
+		with open('gen/scoreboard.mcfunction','a',encoding='utf8') as tmp:
+			str1 = 'scoreboard objectives add '
+			str2 = ' dummy {"text":"書本:'
+			str3 = '"}'
+			tmp.write(str1 + data.fileName[data.bookNum] + str2 + data.title[data.bookNum] + data.fileName[data.bookNum] + str3 +'\n')
+		with open('gen/-scoreboard.mcfunction','a',encoding='utf8') as tmp:
+			str4 = 'scoreboard objectives add '
+			tmp.write(str4 + data.fileName[data.bookNum]'\n')
+			
+	elif line[0] == '$':#版本號
+		data.fileNum.append(line[1:-1])#總共有幾個版本
+
+	elif line[0] == '-':#一次寫入檔案
+		with io.open('gen/%s.mcfunction'%data.className,'a',encoding='utf8')as tmp:
+			for place in range(1,data.bookNum+1):
+				for num in range(1,(int)(data.fileNum[place])+1):#重複fileNum次
+					tmp.write('tellraw @a[scores={' + data.fileName[place] + '=' + str(num) + r'}] {"text":"● ' + data.title[place] + r'","color":"green","hoverEvent":{"action":"show_text","value":"' + data.lore[place] + r'"},"clickEvent":{"action":"run_command","value":"' + data.localPath + data.fileName[place] + str(num) + r'"}}'+'\n')
 
 			tmp.write(r'tellraw @a {"text":"------------------------------","color":"gold"}')
-	else:#讀取lore
-		data.lore = line[0:-1]
+	elif line[0] != '\n':#讀取lore
+		data.lore.append(line[0:-1])
 
+'''book'''
 #make each book
 class temp:
 	pageNumber = 0
