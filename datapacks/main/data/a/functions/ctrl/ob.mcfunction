@@ -8,6 +8,8 @@ scoreboard objectives add stb dummy {"text":"蹲下次數stb"}
 scoreboard objectives add dia_choose trigger {"text":"分支劇情記號dia_choose"}
 scoreboard objectives add dia_st dummy {"text":"選項確認dia_st"}
 
+scoreboard objectives add ch dummy {"text":"章節表ch"}
+
 #技能檢定
 scoreboard objectives add str dummy {"text":"力量str"}
 scoreboard objectives add dex dummy {"text":"靈巧dex"}
@@ -54,10 +56,6 @@ scoreboard players set num8 num 8
 scoreboard players set num9 num 9
 scoreboard players set num10 num 10
 
-#角色故事(使用function #a:ob)
-#scoreboard objectives add ag dummy {"text":"角色故事 - 亞加尼西 ‧ 戴洛克斯ag"}
-#scoreboard objectives add h_a_m_ dummy {"text":"其他資料 - 小遊戲 - 赫斯克與人類h_a_m_"}
-
 #當前目標
 scoreboard objectives add goal dummy {"text":"當前目標"}
 scoreboard objectives setdisplay sidebar goal
@@ -65,4 +63,3 @@ scoreboard players set   goal 0
 
 #梅爾維菈
 scoreboard objectives add malvila minecraft.used:minecraft.knowledge_book {"text":"書庫malvila"}
-
