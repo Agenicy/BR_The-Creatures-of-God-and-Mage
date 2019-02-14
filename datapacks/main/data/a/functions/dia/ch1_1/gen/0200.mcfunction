@@ -14,12 +14,12 @@ tellraw @a[scores={st=12}] {"text":"<卡司> 你們也看到天空中閃爍的�
 tellraw @a[scores={st=13}] {"text":"<卡司> 在長遠的黑夜之中，星星必然會落下，但同時更多的星星也會緊接著升起。雖然我們的貢獻可能微不足道，但我們確實在一步步的接近光明。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=14}] {"text":"<卡司> 那麼，既然有條肯定會成功的道路在，我們何必放棄，等待萊歐卡對我們放下戒心的那天呢？要反抗，就要從一而終，不給他們任何瓦解我們的機會。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=15}] {"text":"<貝露> 原來如此……因為你們不是孤軍奮鬥嗎……我瞭解了。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
-execute if entity @a[tag=player,scores={st=15}] run function a:ch1_1/func/fua_appear
+execute if entity @a[tag=player,scores={st=15}] run function a:dia/ch1_1/func/fua_appear
 tellraw @a[scores={st=16}] {"text":"<芙娃> 吶，卡司大哥，我抓到一隻搗蛋的妖精了，該拿他怎麼辦啊？","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=17}] {"text":"<亞加> 格藍？他怎麼虛弱成這樣？把他還我！","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=18}] {"text":"<芙娃> 要就拿去吧（丟）。可別誤會，是他先找我麻煩的。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
-execute if entity @a[tag=player,scores={st=18}] run function a:ch1_1/func/glan_back
+execute if entity @a[tag=player,scores={st=18}] run function a:dia/ch1_1/func/glan_back
 tellraw @a[scores={st=19}] {"text":"【當前目標】檢查格藍的傷勢","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 execute if entity @a[tag=player,scores={st=19}] run scoreboard objectives modify goal displayname [{"text":"當前目標: ","color":"gold"},{"text":"檢查格藍的傷勢","color":"aqua"}]
-execute if entity @a[tag=player,scores={st=19}] run function a:ch1_1/func/god_update1
+execute if entity @a[tag=player,scores={st=19}] run function a:dia/ch1_1/func/god_update1
 execute if entity @a[tag=player,scores={st=19}] run function a:dia/fin

@@ -5,6 +5,7 @@
 		"a:book/define/gen/scoreboard",
 		"a:book/skill/gen/scoreboard",
 		"a:book/stage/door_skyeye/gen/scoreboard",
-		"a:book/stage/sys/gen/scoreboard"
+		"a:book/stage/sys/gen/scoreboard",
+		"camera:ctrl/ob"
 	]
 }

@@ -12,7 +12,7 @@ tellraw @a[scores={st=10}] {"text":"<格藍> 哈，被罵了吧！你這隻失�
 tellraw @a[scores={st=11}] {"text":"<芙娃> 你這無理的傢伙——","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=12}] {"text":"<貝露> 格藍，閉嘴。（伸手抓）","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=13}] {"text":"<格藍> 嗚哇！住手！不要用充滿神力的手碰我！我的身體在融解了！大名鼎鼎的無屬妖精格藍要消失在世界上了！","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
-tellraw @a[scores={st=14}] {"text":"<貝露> 願每次不幸都會帶來幸運，以菲亞爾之名祝福您。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
+tellraw @a[scores={st=14}] {"text":"<貝露> 願每次不幸都會帶來幸運，以菲亞爾之名保佑你。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=15}] {"text":"<格藍> 我……我能感受到魔力本源的召喚……主人，我不行了，我還來不及研究出施展大魔法的方法就要消失了……","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=16}] {"text":"<亞加> 你根本一點事都沒有好嗎，正經一點。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=17}] {"text":"<格藍> 誒？對誒，難怪沒什麼痛覺。但正常來說神力不是會牴觸構成我的魔力嗎？","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}

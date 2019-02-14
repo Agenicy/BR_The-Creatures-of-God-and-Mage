@@ -1,5 +1,5 @@
 tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
-execute if entity @a[tag=player,scores={st=1}] run function a:ch1_1/func/walk_in_road
+execute if entity @a[tag=player,scores={st=1}] run function a:dia/ch1_1/func/walk_in_road
 tellraw @a[scores={st=2}] {"text":"<貝露> ……有些赫斯克過來了。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=3}] {"text":"<卡司> 相信我，不會有事的。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=4}] {"text":"<亞加> （按照之前芙娃的說明來看，這時候應該……）","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
