@@ -24,9 +24,11 @@ function save:start_ch1/reset_blocks
 #scoreboard
 scoreboard objectives add 1_1_1_negitive dummy {"text":"#"}
 scoreboard objectives add 1_1_1_positive dummy {"text":"#"}
+scoreboard objectives add 1_1_1_talked dummy {"text":"#"}
 scoreboard objectives add 1_1_1_pliers dummy {"text":"#"}
 scoreboard objectives add 1_1_1_fail dummy {"text":"#"}
 scoreboard players set @a[tag=player] 1_1_1_negitive 0
 scoreboard players set @a[tag=player] 1_1_1_positive 0
+scoreboard players set @a[tag=player] 1_1_1_talked 0
 scoreboard players set @a[tag=player] 1_1_1_pliers 0
 scoreboard players set @a[tag=player] 1_1_1_fail 0

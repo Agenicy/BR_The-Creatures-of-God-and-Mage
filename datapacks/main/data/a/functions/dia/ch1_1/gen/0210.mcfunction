@@ -1,7 +1,7 @@
 tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 tellraw @a[scores={st=1}] {"text":"<格藍> 這就是……天眼嗎？","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 execute if entity @a[tag=player,scores={st=1}] run scoreboard objectives modify goal displayname [{"text":"當前目標: ","color":"gold"},{"text":"無","color":"aqua"}]
-execute if entity @a[tag=player,scores={st=1}] run function a:ch1_1/arrive_skyeye
+execute if entity @a[tag=player,scores={st=1}] run function a:ch1_1/func/arrive_skyeye
 tellraw @a[scores={st=2}] {"text":"<亞加> 真龐大的建築物……跟神木有得比啊……","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=3}] {"text":"<芙娃> 那麼卡司大哥，我就按照計畫去破解大門了。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=4}] {"text":"<卡司> 去吧，記得注意不定時的巡邏隊啊。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
@@ -17,7 +17,7 @@ tellraw @a[scores={st=13}] {"text":"<卡司> 而芙娃……則有可能是德�
 tellraw @a[scores={st=14}] {"text":"<貝露> 神——！（小聲）咳、神選者？","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=15}] {"text":"<格藍> 被德雅親自選中的人嗎……難怪她身上的神力濃度這麼高。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=16}] {"text":"<亞加> 等一下，親自選中？但是德雅不是——","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
-tellraw @a[scores={st=17}] {"text":"<卡司> 對，這也是我們所懷疑的點。自從格蘭德城滅亡、我們的大祭司與德雅神器被萊歐卡奪走後，德雅的本體早就陷入沉睡狀態——這可是二十幾年前的事情，別說芙娃，連我都還沒出生呢。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
+tellraw @a[scores={st=17}] {"text":"<卡司> 對，這也是我們所懷疑的點。自從格蘭德城滅亡、我們的大祭司與德雅神器被萊歐卡奪走後，德雅的本體早就陷入沉睡狀態——這可是六十幾年前的事情，別說芙娃，連我都還沒出生呢。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=18}] {"text":"<卡司> 既然如此，芙娃應該不會是德雅的神選者才對。但是種種的跡象卻都指向這個可能。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=19}] {"text":"<亞加> 嗯……難道沒有分辨神選者和一般人的方法嗎？","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=20}] {"text":"<卡司> 有是有，直接向神確認就得了。但你也知道。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
@@ -32,4 +32,5 @@ tellraw @a[scores={st=28}] {"text":"<格藍> 我又沒有——","clickEvent":{"
 tellraw @a[scores={st=29}] {"text":"<亞加> 格藍。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=30}] {"text":"<格藍> ……哼。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=31}] {"text":"<卡司> 那麼，芙娃應該還需要一點時間打開天眼大門，你們就先休息一下吧。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
+execute if entity @a[tag=player,scores={st=31}] run function a:ch1_1/func/god_update2
 execute if entity @a[tag=player,scores={st=31}] run function a:dia/fin

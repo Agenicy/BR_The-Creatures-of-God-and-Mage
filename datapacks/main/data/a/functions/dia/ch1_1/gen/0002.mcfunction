@@ -1,6 +1,6 @@
 tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 tellraw @a[scores={st=1}] {"text":"<卡司> 真是的，出發前不是問過你們，你們也都認為沒問題了嗎？怎麼還怕成這樣。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
-tellraw @a[scores={st=2}] {"text":"<貝露> 腦中模擬的跟實際體驗差很多啊，當時又不知道這裡會暗成這樣……","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
+tellraw @a[scores={st=2}] {"text":"<亞加> 腦中模擬的跟實際體驗差很多啊，當時又不知道這裡會暗成這樣……","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=3}] {"text":"<格藍> 就是嘛！之前你說過一條溪沒什麼，後來還不是怕得要死。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=4}] {"text":"<卡司> 喂喂，貓怕水是天經地義的事情！這是本性啊！","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=5}] {"text":"<格藍> 哦？你不是有一半人類血統嗎，應該沒那麼怕吧？","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}

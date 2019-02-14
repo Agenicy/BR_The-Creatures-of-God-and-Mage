@@ -63,3 +63,6 @@ scoreboard players set   goal 0
 
 #梅爾維菈
 scoreboard objectives add malvila minecraft.used:minecraft.knowledge_book {"text":"書庫malvila"}
+
+#leave game
+scoreboard objectives add leaveGame minecraft.custom:minecraft.leave_game {"text":"離開遊戲leaveGame"}

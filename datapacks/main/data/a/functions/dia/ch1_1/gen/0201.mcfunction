@@ -12,17 +12,17 @@ tellraw @a[scores={st=10}] {"text":"<亞加> ……不提這個，既然芙娃�
 tellraw @a[scores={st=11}] {"text":"<卡司> 那就讓芙娃說明一下探查結果吧。芙娃？","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=12}] {"text":"<芙娃> 啊，是！我們距離天眼已經不遠了，只要通過前面的街道後就能進入安全路段。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=13}] {"text":"<芙娃> 前面這條街是我們的商業大道，因此比較寬廣，巡邏的赫斯克也比較多。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
-execute if entity @a[tag=player,scores={st=13}] run function a:ch1_1/cam_street_road
+execute if entity @a[tag=player,scores={st=13}] run function a:ch1_1/func/cam_street_road
 tellraw @a[scores={st=14}] {"text":"<芙娃> 由於比較空曠的關係，並沒有辦法像以前一樣偷溜過去，想必只能靠卡司大哥帶我們隱身通過了。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
-execute if entity @a[tag=player,scores={st=14}] run function a:ch1_1/cam_street_air
+execute if entity @a[tag=player,scores={st=14}] run function a:ch1_1/func/cam_street_air
 tellraw @a[scores={st=15}] {"text":"<芙娃> 此外，這邊巡守的是實力比較好的赫斯克，除了動作敏捷，聽力也特別好。即使隱身過去也得小心腳步才行。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
-execute if entity @a[tag=player,scores={st=15}] run function a:ch1_1/cam_husk
+execute if entity @a[tag=player,scores={st=15}] run function a:ch1_1/func/cam_husk
 tellraw @a[scores={st=16}] {"text":"<芙娃> 以上就是這附近的報告分析，卡司大哥。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
-execute if entity @a[tag=player,scores={st=16}] run function a:ch1_1/cam_default
+execute if entity @a[tag=player,scores={st=16}] run function a:ch1_1/func/cam_default
 tellraw @a[scores={st=17}] {"text":"<卡司> 那麼，我們應該有兩條路可走：丟個誘餌吸引他們注意，或是直接隱身過去。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=18}] {"text":"<卡司> 隱身過去自然是沒問題，但是亞加你們好像不太習慣？既然如此，你決定要怎麼做吧。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=19}] {"text":"<亞加> 我嗎？那麼……","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 execute if entity @a[tag=player,scores={st=19}] run scoreboard objectives modify goal displayname [{"text":"當前目標: ","color":"gold"},{"text":"通過街道","color":"aqua"}]
-tellraw @a[scores={st=19}] {"text":"→［分析］丟個誘餌過去？","color":"aqua","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set 31"}}
-tellraw @a[scores={st=19}] {"text":"→［？］直接通過吧。","color":"aqua","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set 38"}}
+tellraw @a[scores={st=19}] {"text":"→［分析］丟個誘餌過去？","color":"aqua","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set 38"}}
+tellraw @a[scores={st=19}] {"text":"→［？］直接通過吧。","color":"aqua","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set "}}
 scoreboard players enable @a[tag=player] dia_choose
