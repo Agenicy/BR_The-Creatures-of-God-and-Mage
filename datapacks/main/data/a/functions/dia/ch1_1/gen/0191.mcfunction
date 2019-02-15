@@ -11,5 +11,5 @@ execute if entity @a[tag=player,scores={st=8}] run function a:dia/ch1_1/func/bat
 tellraw @a[scores={st=9}] {"text":"<卡司> ……這樣就擺平了，可惜受了點傷……","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=10}] {"text":"<貝露> 不要緊吧？我這邊有些藥品……","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=11}] {"text":"<卡司> 我沒關係的，休養一下就會好了……","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
-tellraw @a[scores={st=11}] {"text":"→繼續移動吧……","color":"aqua","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set "}}
+tellraw @a[scores={st=11}] {"text":"→繼續移動吧……","color":"aqua","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set 47"}}
 scoreboard players enable @a[tag=player] dia_choose

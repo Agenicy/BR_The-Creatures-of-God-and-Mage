@@ -11,7 +11,7 @@ for index,line in enumerate(lines):
 			tmp.write(newline + '\n')
 	elif line[0] == '%':#is a function
 		funcLine = line[0:-1].split('/')
-		funcName = funcLine[2]
+		funcName = funcLine[3]
 		with io.open('func/%s.mcfunction'%funcName,'a',encoding='utf8')as tmp:
 			tmp.close()
 		with io.open('gen/%s.mcfunction'%file,'a',encoding='utf8')as tmp:
@@ -19,4 +19,3 @@ for index,line in enumerate(lines):
 	else:
 		with io.open('gen/%s.mcfunction'%file,'a',encoding='utf8')as tmp:
 			tmp.write(line)
-			

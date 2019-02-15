@@ -23,6 +23,6 @@ tellraw @a[scores={st=17}] {"text":"<卡司> 那麼，我們應該有兩條路�
 tellraw @a[scores={st=18}] {"text":"<卡司> 隱身過去自然是沒問題，但是亞加你們好像不太習慣？既然如此，你決定要怎麼做吧。","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 tellraw @a[scores={st=19}] {"text":"<亞加> 我嗎？那麼……","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}
 execute if entity @a[tag=player,scores={st=19}] run scoreboard objectives modify goal displayname [{"text":"當前目標: ","color":"gold"},{"text":"通過街道","color":"aqua"}]
-tellraw @a[scores={st=19}] {"text":"→［分析］丟個誘餌過去？","color":"aqua","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set 38"}}
-tellraw @a[scores={st=19}] {"text":"→［？］直接通過吧。","color":"aqua","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set "}}
+tellraw @a[scores={st=19}] {"text":"→［分析］丟個誘餌過去？","color":"aqua","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set 31"}}
+tellraw @a[scores={st=19}] {"text":"→［？］直接通過吧。","color":"aqua","clickEvent":{"action":"run_command","value":"/execute store success score @s dia_st run trigger dia_choose set 38"}}
 scoreboard players enable @a[tag=player] dia_choose

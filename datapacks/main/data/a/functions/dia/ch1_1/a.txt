@@ -50,9 +50,9 @@
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0102#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<亞加> （那麼……）	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[scores={st=1}] {"text":"	→［力量／普通］徒手破壞吧！（會受傷？）	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 5"}}
-	tellraw @a[scores={st=1}] {"text":"	→［意志／簡單］吟唱風刃術切開柵欄。（發出噪音？）	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 8"}}
-	tellraw @a[scores={st=1}] {"text":"	→［成功］還是交給卡司來吧……（意志-1）	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 10"}}
+	tellraw @a[scores={st=1}] {"text":"	→［力量／普通］徒手破壞吧！（受傷風險）	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 5"}}
+	tellraw @a[scores={st=1}] {"text":"	→［意志／簡單］吟唱風刃術切開柵欄。（噪音風險）	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 8"}}
+	tellraw @a[scores={st=1}] {"text":"	→［成功］還是交給卡司來吧……（意志下降）	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 10"}}
 	tellraw @a[scores={st=1,1_1_1_pliers=1}] {"text":"	→［成功／隱藏路線］使用鉗子看看！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 11"}}
 	tellraw @a[scores={st=1}] {"text":"	→再想想看好了……	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 12"}}
 	scoreboard players enable @a[tag=player] dia_choose			
@@ -60,9 +60,10 @@
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		16	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		str	
 	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"力量\"}"}			
-	tellraw @a[scores={st=2,check_success=1}] {"text":"	→［成功］哼，小意思。	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 24"}}
-	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［失敗］［靈巧／普通］糟糕，手滑了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 6"}}
-	scoreboard players enable @a[tag=player] dia_choose			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	→［成功］哼，小意思。	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 0"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［失敗］［靈巧／普通］糟糕，手滑了——（受傷風險）	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 6"}}
+	%execute if entity @a[tag=player,scores={st=2}] run function a:dia/ch1_1/func/	try_destroy_ironbar		
+	execute if entity @a[tag=player,scores={st=2}] run function a:dia/fin			
 ##0102a0#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		14	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		dex	
@@ -79,21 +80,23 @@
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		11	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		wil	
 	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"意志\"}"}			
-	tellraw @a[scores={st=2,check_success=1}] {"text":"	→［成功］劈開鐵柵欄了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 24"}}
-	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［失敗］［精神／普通］失手了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 9"}}
-	scoreboard players enable @a[tag=player] dia_choose			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	→［成功］劈開鐵柵欄了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 0"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［失敗］［精神／普通］失手了！（噪音風險）	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 9"}}
+	%execute if entity @a[tag=player,scores={st=2}] run function a:dia/ch1_1/func/	try_destroy_ironbar		
+	execute if entity @a[tag=player,scores={st=2}] run function a:dia/fin			
 ##0102b0#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		16	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		men	
 	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"精神\"}"}			
 	tellraw @a[scores={st=2,check_success=1}] {"text":"	→［安全］還好沒有製造什麼噪音。再試試看吧。	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 4"}}
-	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［？］希望剛剛的聲音沒有引來赫斯克……	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 16"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［失敗］希望剛剛的聲音沒有引來赫斯克……	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 16"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0102c#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	scoreboard players remove 	#ag	 men 1	
 	tellraw @a[scores={st=2}] {"text":"	<卡司> 讓我來嗎？沒問題。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[scores={st=2}] {"text":"	→［成功］果然，我還是做不到任何事……	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_negitive run trigger dia_choose set 24"}}
-	scoreboard players enable @a[tag=player] dia_choose			
+	tellraw @a[scores={st=2}] {"text":"	→［成功］果然，我還是做不到任何事……	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_negitive run trigger dia_choose set 0"}}
+	%execute if entity @a[tag=player,scores={st=2}] run function a:dia/ch1_1/func/	destroy_ironbar		
+	execute if entity @a[tag=player,scores={st=2}] run function a:dia/fin			
 ##0102d#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<亞加> 雖然不知道為什麼有鉗子在這裡，但出現的真是及時。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=2}] {"text":"	<卡司> 那個鉗子可能是當初架設鐵柵欄時使用的，或許是因為沒用了才被丟下。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
@@ -101,8 +104,9 @@
 	tellraw @a[scores={st=4}] {"text":"	<貝露> 哥哥沒問題嗎？是不是遇到困難了？	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=5}] {"text":"	<亞加> 我沒問題的！我只是不太擅長剪這些人造物而已——成功了！	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=6}] {"text":"	<格藍> 哈，區區鐵柵欄也想擋住我們的任務，門都沒有！	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[scores={st=6}] {"text":"	→［成功］通過鐵柵欄	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_positive run trigger dia_choose set 24"}}
-	scoreboard players enable @a[tag=player] dia_choose			
+	tellraw @a[scores={st=6}] {"text":"	→［成功］通過鐵柵欄	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_positive run trigger dia_choose set 0"}}
+	%execute if entity @a[tag=player,scores={st=6}] run function a:dia/ch1_1/func/	destroy_ironbar		
+	execute if entity @a[tag=player,scores={st=6}] run function a:dia/fin			
 ##0101m#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<亞加> 或許我們可以……	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=1}] {"text":"	→［分析］強行通過？	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 4"}}
@@ -115,7 +119,8 @@
 ##0103a#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<亞加> 這是……鉗子？	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=1}] {"text":"	→［解鎖路線］拿起鉗子	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_pliers run trigger dia_choose set 0"}}
-	scoreboard players enable @a[tag=player] dia_choose			
+	%execute if entity @a[tag=player,scores={st=1}] run function a:dia/ch1_1/func/	get_pliers		
+	execute if entity @a[tag=player,scores={st=1}] run function a:dia/fin			
 ##0103b#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<亞加> 這邊好像可以直接跨過去……	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=2}] {"text":"	<格藍> 等等，遠處的哨塔上有赫斯克！	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
@@ -132,7 +137,8 @@
 	tellraw @a[scores={st=4}] {"text":"	<卡司> 路通了，大家快逃！	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=4}] {"text":"	→［目標失敗］倉皇逃跑	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_fail run trigger dia_choose set 22"}}
 	scoreboard players enable @a[tag=player] dia_choose			
-##0103b0#				
+##0103b0#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
+	%execute if entity @a[tag=player,scores={st=1}] run function a:dia/ch1_1/func/	go_through_roof		
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		10	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		agi	
 	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"敏捷\"}"}			
@@ -141,11 +147,12 @@
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0103b1#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<亞加> 哼哼，各位，我過來啦。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
+	%execute if entity @a[tag=player,scores={st=1}] run function a:dia/ch1_1/func/	conquer_ironbar		
 	tellraw @a[scores={st=2}] {"text":"	<格藍> 囂張什麼，要比的話我直接飛過鐵柵欄就比你快了。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=3}] {"text":"	<芙娃> 誒？居然有前人沒堵住的路線嗎……？	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=4}] {"text":"	<卡司> 翻過那邊確實是個方法，不過我記得高處也有不少赫斯克才對。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=5}] {"text":"	<卡司> 不過有我在就沒問題了，兩位，我帶你們隱身過去吧。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[scores={st=5}] {"text":"	→［目標達成］通過小巷子	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_positive run trigger dia_choose set 24"}}
+	tellraw @a[scores={st=5}] {"text":"	→［目標達成］通過小巷子	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run execute store success score @s 1_1_1_positive run trigger dia_choose set 0"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0103b2#				
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		12	
@@ -153,7 +160,8 @@
 	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"幸運\"}"}			
 	tellraw @a[scores={st=2,check_success=1}] {"text":"	→［安全］好像沒什麼聲音的樣子？	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 20"}}
 	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［失敗］可惡！還是被發現了嗎？	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 21"}}
-	scoreboard players enable @a[tag=player] dia_choose			
+	%execute if entity @a[tag=player,scores={st=2}] run function a:dia/ch1_1/func/	iron_sound		
+	execute if entity @a[tag=player,scores={st=2}] run function a:dia/fin			
 ##0103b3#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<格藍> 看上去是沒被發現。你也太莽撞了吧！	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=2}] {"text":"	<亞加> 我覺得可以嘛……事實不也證明沒問題嗎。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
@@ -186,7 +194,8 @@
 	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"敏捷\"}"}			
 	tellraw @a[scores={st=2,check_success=1}] {"text":"	→［成功］呼……我們做到了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 45"}}
 	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［失敗］可惡！就差這麼一點——	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
-	scoreboard players enable @a[tag=player] dia_choose			
+	%execute if entity @a[tag=player,scores={st=2}] run function a:dia/ch1_1/func/	dead_or_alive		
+	execute if entity @a[tag=player,scores={st=2}] run function a:dia/fin			
 ##0105#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<貝露> 這樣就成功通過了呢。接下來要去哪裡呢？	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=2}] {"text":"	<卡司> 這個方向的話，大概再通過兩個街區就可以回到預計的安全路徑上了。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
@@ -267,8 +276,8 @@
 	tellraw @a[scores={st=18}] {"text":"	<卡司> 隱身過去自然是沒問題，但是亞加你們好像不太習慣？既然如此，你決定要怎麼做吧。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=19}] {"text":"	<亞加> 我嗎？那麼……	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	execute if entity @a[tag=player,scores={st=19}] run scoreboard objectives modify goal displayname [{"text":"當前目標: ","color":"gold"},{"text":"通過街道","color":"aqua"}]			
-	tellraw @a[scores={st=19}] {"text":"	→［分析］丟個誘餌過去？	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 38"}}
-	tellraw @a[scores={st=19}] {"text":"	→［？］直接通過吧。	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=19}] {"text":"	→［分析］丟個誘餌過去？	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 31"}}
+	tellraw @a[scores={st=19}] {"text":"	→［？］直接通過吧。	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 38"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0201a#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<亞加> 如果要丟誘餌的話，有哪些選擇呢？	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
@@ -276,81 +285,83 @@
 	tellraw @a[scores={st=3}] {"text":"	<亞加> 我可以使用風刃術……雖然不太有把握。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=4}] {"text":"	<芙娃> 要丟誘餌的話，不是有隻現成的妖精嗎？反正妖精可以隨時回到主人身邊嘛。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=5}] {"text":"	<卡司> ……好，那麼就是兩種選擇了。你相信自己的實力嗎？選一個吧？	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[scores={st=5}] {"text":"	→［幸運／普通］還是麻煩你丟飛刀吧，我就不搶鋒頭了	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 35"}}
-	tellraw @a[scores={st=5}] {"text":"	→［意志／普通］我想試試風刃術	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 32"}}
-	tellraw @a[scores={st=5}] {"text":"	→我得再想想……	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=5}] {"text":"	→［幸運／普通］還是麻煩你丟飛刀吧，我就不搶鋒頭了	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 34"}}
+	tellraw @a[scores={st=5}] {"text":"	→［意志／普通］我想試試風刃術	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 35"}}
+	tellraw @a[scores={st=5}] {"text":"	→我得再想想……	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 32"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0201m#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<亞加> （那麼應該要……）	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[scores={st=1}] {"text":"	→［分析］丟個誘餌過去？	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 38"}}
-	tellraw @a[scores={st=1}] {"text":"	→［？］直接通過吧。	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=1}] {"text":"	→［分析］丟個誘餌過去？	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 33"}}
+	tellraw @a[scores={st=1}] {"text":"	→［？］直接通過吧。	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 38"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0201aa#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<亞加> （如果要丟誘餌的話……）	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[scores={st=1}] {"text":"	→［幸運／普通］讓卡司丟飛刀	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 35"}}
-	tellraw @a[scores={st=1}] {"text":"	→［意志／普通］自己用風刃術	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 32"}}
-	tellraw @a[scores={st=1}] {"text":"	→我得再想想……	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=1}] {"text":"	→［幸運／普通］讓卡司丟飛刀	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 34"}}
+	tellraw @a[scores={st=1}] {"text":"	→［意志／普通］自己用風刃術	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 35"}}
+	tellraw @a[scores={st=1}] {"text":"	→我得再想想……	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 32"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0202#				
+	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		12	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		luk	
 	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"幸運\"}"}			
-	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		1	
-	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［成功］赫斯克被吸引過去了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 37"}}
-	tellraw @a[scores={st=2,check_success=}] {"text":"	→［失敗］好像沒什麼效果？	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
-	scoreboard players enable @a[tag=player] dia_choose			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	→［成功］赫斯克被吸引過去了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 36"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［失敗］好像沒什麼效果？	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 37"}}
+	%execute if entity @a[tag=player,scores={st=2}] run function a:dia/ch1_1/func/	husk_move_or_not		
+	execute if entity @a[tag=player,scores={st=2}] run function a:dia/fin			
 ##0203#				
+	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		15	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		wil	
 	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"意志\"}"}			
-	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		1	
-	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［成功］赫斯克被吸引過去了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 37"}}
-	tellraw @a[scores={st=2,check_success=}] {"text":"	→［失敗］好像沒什麼效果？	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
-	scoreboard players enable @a[tag=player] dia_choose			
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	→［成功］赫斯克被吸引過去了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 36"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［失敗］好像沒什麼效果？	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 37"}}
+	%execute if entity @a[tag=player,scores={st=2}] run function a:dia/ch1_1/func/	husk_move_or_not		
+	execute if entity @a[tag=player,scores={st=2}] run function a:dia/fin			
 ##0204#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<卡司> 哦？沒想到誘餌意外的有效啊？	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=2}] {"text":"	<貝露> 哥哥果然厲害。現在我們應該可以放心通過了？	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=3}] {"text":"	<芙娃> 現在赫斯克的注意力都在那邊，稍為隱蔽一下應該就可以過去了。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=4}] {"text":"	<卡司> 那麼我們就直達天眼吧，希望別再出什麼事情打亂計畫。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	scoreboard players add 	#ag	  	
-	tellraw @a[scores={st=4}] {"text":"	→［通過獎勵］精神＋１	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=4}] {"text":"	→［通過獎勵］精神＋１	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 0"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0201mb#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
-	tellraw @a[scores={st=1}] {"text":"	→［？］看來只能直接通過了	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=1}] {"text":"	→［？］看來只能直接通過了	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 0"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0201b#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	%execute if entity @a[tag=player,scores={st=1}] run function a:dia/ch1_1/func/	walk_in_road		
 	tellraw @a[scores={st=2}] {"text":"	<貝露> ……有些赫斯克過來了。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=3}] {"text":"	<卡司> 相信我，不會有事的。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=4}] {"text":"	<亞加> （按照之前芙娃的說明來看，這時候應該……）	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[scores={st=4}] {"text":"	→［幸運／？］不該再前進了，快停下來！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 40"}}
-	tellraw @a[scores={st=4}] {"text":"	→［意志／？］維持腳步繼續走，以免撞上赫斯克。	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 43"}}
-	tellraw @a[scores={st=4}] {"text":"	→［敏捷／？］在他們靠近前快逃跑！再慢就來不及了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=4}] {"text":"	→［幸運／？］不該再前進了，快停下來！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 42"}}
+	tellraw @a[scores={st=4}] {"text":"	→［意志／？］維持腳步繼續走，以免撞上赫斯克。	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 40"}}
+	tellraw @a[scores={st=4}] {"text":"	→［敏捷／？］在他們靠近前快逃跑！再慢就來不及了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 43"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0205a#				
+	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		8	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		luk	
 	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"幸運\"}"}			
-	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		1	
-	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［成功］他們完全沒發現我們呢，看來是安全了。	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
-	tellraw @a[scores={st=2,check_success=}] {"text":"	→［失敗］他們怎麼轉過來了！難道是呼吸太大聲了嗎？	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	→［成功］他們完全沒發現我們呢，看來是安全了。	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 46"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［失敗］他們怎麼轉過來了！難道是呼吸太大聲了嗎？	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0206#				
+	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		12	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		wil	
 	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"意志\"}"}			
-	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		1	
-	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［成功］看來相信卡司是正確的。	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
-	tellraw @a[scores={st=2,check_success=}] {"text":"	→［失敗］糟糕、踢到石頭了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	→［成功］看來相信卡司是正確的。	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 46"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［失敗］糟糕、踢到石頭了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0207a#				
+	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		15	
 	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] 		agi	
 	execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"敏捷\"}"}			
-	execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 		1	
-	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［成功］通過街道了！果然先跑是正確的！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
-	tellraw @a[scores={st=2,check_success=}] {"text":"	→［失敗］可惡、被追上了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=2,check_success=1}] {"text":"	→［成功］通過街道了！果然先跑是正確的！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 46"}}
+	tellraw @a[scores={st=2,check_success=0}] {"text":"	→［失敗］可惡、被追上了！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 44"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0205#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<亞加> 等等，芙娃說過他們聽力特別好對吧？我們應該停下來。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=2}] {"text":"	<卡司> 腳步聲會引起注意嗎？我懂了，那我們先別往前走了。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=3}] {"text":"	<芙娃> 喂喂，這樣會不會太危險啊！我們站在路中間誒！	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[scores={st=3}] {"text":"	→等待赫斯克靠近吧——！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=3}] {"text":"	→等待赫斯克靠近吧——！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 39"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0207#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<亞加> 芙娃不是說過他們聽力特別好嗎？這樣下去會被發現的！	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
@@ -359,7 +370,7 @@
 	tellraw @a[scores={st=4}] {"text":"	<芙娃> 如果他們連呼吸聲都聽得到，那我們還是走為上策吧……	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=5}] {"text":"	<卡司> 切……好吧！戰略性避開！	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=6}] {"text":"	<赫斯克們> 是誰！快追！	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[scores={st=6}] {"text":"	→快跑啊！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=6}] {"text":"	→快跑啊！	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 41"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0191#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	%execute if entity @a[tag=player,scores={st=1}] run function a:dia/ch1_1/func/	battle		
@@ -374,20 +385,20 @@
 	tellraw @a[scores={st=9}] {"text":"	<卡司> ……這樣就擺平了，可惜受了點傷……	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=10}] {"text":"	<貝露> 不要緊吧？我這邊有些藥品……	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=11}] {"text":"	<卡司> 我沒關係的，休養一下就會好了……	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[scores={st=11}] {"text":"	→繼續移動吧……	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=11}] {"text":"	→繼續移動吧……	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 47"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0190#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	%execute if entity @a[tag=player,scores={st=1}] run function a:dia/ch1_1/func/	in_street		
 	tellraw @a[scores={st=2}] {"text":"	<貝露> 甩開了嗎……	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	tellraw @a[scores={st=3}] {"text":"	<卡司> 應該是安全了，但是還是不要停留太久比較好，趁著守衛都被吸引過來的時候趕快去天眼吧。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[scores={st=3}] {"text":"	→繼續移動吧……	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=3}] {"text":"	→繼續移動吧……	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 47"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0208#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	%execute if entity @a[tag=player,scores={st=1}] run function a:dia/ch1_1/func/	pass		
 	tellraw @a[scores={st=2}] {"text":"	<亞加> 這樣就安全通過了呢。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	scoreboard players add 	#ag	  	
+	scoreboard players add 	#ag	 men 1	
 	tellraw @a[scores={st=3}] {"text":"	<卡司> 是啊，接下來的路段就安全多了，先趕到天眼那邊再休息吧。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
-	tellraw @a[scores={st=3}] {"text":"	→［通過獎勵］精神+1	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set "}}
+	tellraw @a[scores={st=3}] {"text":"	→［通過獎勵］精神+1	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 47"}}
 	scoreboard players enable @a[tag=player] dia_choose			
 ##0210#	tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}			
 	tellraw @a[scores={st=1}] {"text":"	<格藍> 這就是……天眼嗎？	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
@@ -425,17 +436,6 @@
 	tellraw @a[scores={st=31}] {"text":"	<卡司> 那麼，芙娃應該還需要一點時間打開天眼大門，你們就先休息一下吧。	","clickEvent":{"action":"run_command","value":"/function a:dia/add"}}	
 	%execute if entity @a[tag=player,scores={st=31}] run function a:dia/ch1_1/func/	god_update2		
 	execute if entity @a[tag=player,scores={st=31}] run function a:dia/fin			
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
 				
 				
 				

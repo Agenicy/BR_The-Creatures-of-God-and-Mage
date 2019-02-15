@@ -1,4 +1,5 @@
-
+tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+execute if entity @a[tag=player,scores={st=1}] run function a:dia/ch1_1/func/go_through_roof
 execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players set @a[tag=player] check_target 10
 execute if score @a[tag=player,limit=1] st matches 1 run scoreboard players operation @a[tag=player] check_success = @a[tag=player,limit=1] agi
 execute if score @a[tag=player,limit=1] st matches 1 run summon armor_stand -3 31 31 {CustomNameVisible:0b,Tags:["check_type"],CustomName:"{\"text\":\"敏捷\"}"}
