@@ -596,13 +596,3 @@ execute if entity @a[tag=player,scores={st=31}] run function a:dia/fin
 
 
 
-
-
-
-
-
-
-
-
-
-

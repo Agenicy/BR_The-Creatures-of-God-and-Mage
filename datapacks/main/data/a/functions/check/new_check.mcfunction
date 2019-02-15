@@ -32,4 +32,5 @@ execute if score #dice_tmp check_success matches ..-1 run scoreboard players set
 execute if score @a[tag=player,limit=1] st matches ..1 if score @a[tag=player,limit=1] check_success matches 1 run tellraw @a[tag=player] {"text":"","extra":[{"text":"["},{"selector":"@e[tag=check_type]"},{"text":"檢定] "},{"score":{"name":"@a[tag=player,limit=1]","objective":"check_temp"}},{"text":" + "},{"score":{"name":"#dice_tmp","objective":"check_temp"},"color":"aqua"},{"text":" / ","color":"white"},{"score":{"name":"@a[tag=player,limit=1]","objective":"check_target"},"color":"green"}]}
 execute if score @a[tag=player,limit=1] st matches ..1 if score @a[tag=player,limit=1] check_success matches 0 run tellraw @a[tag=player] {"text":"","extra":[{"text":"["},{"selector":"@e[tag=check_type]"},{"text":"檢定] "},{"score":{"name":"@a[tag=player,limit=1]","objective":"check_temp"}},{"text":" + "},{"score":{"name":"#dice_tmp","objective":"check_temp"},"color":"aqua"},{"text":" / ","color":"white"},{"score":{"name":"@a[tag=player,limit=1]","objective":"check_target"},"color":"red"}]}
 
+scoreboard players reset #dice_tmp
 function a:dia/add
