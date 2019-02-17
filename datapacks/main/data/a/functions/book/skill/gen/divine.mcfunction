@@ -6,6 +6,6 @@ tellraw @a[scores={gnm=1}] {"text":"● 術法相剋","color":"green","hoverEven
 tellraw @a[scores={gnm=2}] {"text":"● 術法相剋","color":"green","hoverEvent":{"action":"show_text","value":"魔力與神力互相抗拒的現象"},"clickEvent":{"action":"run_command","value":"/function a:book/skill/gen/gnm2"}}
 tellraw @a[scores={ki=1}] {"text":"● 鬥氣","color":"green","hoverEvent":{"action":"show_text","value":"關於鬥氣的基礎知識(與劇情無關，純補充)"},"clickEvent":{"action":"run_command","value":"/function a:book/skill/gen/ki1"}}
 tellraw @a[scores={cha=1}] {"text":"● 神力追蹤","color":"green","hoverEvent":{"action":"show_text","value":"一種在精神界追蹤能量與資訊的神術"},"clickEvent":{"action":"run_command","value":"/function a:book/skill/gen/cha1"}}
-tellraw @a[scores={sync=1}] {"text":"● 權能－情感同步","color":"green","hoverEvent":{"action":"show_text","value":"德雅的基礎權能"},"clickEvent":{"action":"run_command","value":"/function a:book/skill/gen/sync1"}}
+tellraw @a[scores={sync=1}] {"text":"● 權能－同調","color":"green","hoverEvent":{"action":"show_text","value":"德雅的基礎權能"},"clickEvent":{"action":"run_command","value":"/function a:book/skill/gen/sync1"}}
 tellraw @a[scores={star=1}] {"text":"● 權能－星之眼","color":"green","hoverEvent":{"action":"show_text","value":"德雅的基礎權能"},"clickEvent":{"action":"run_command","value":"/function a:book/skill/gen/star1"}}
 tellraw @a {"text":"------------------------------","color":"gold"}

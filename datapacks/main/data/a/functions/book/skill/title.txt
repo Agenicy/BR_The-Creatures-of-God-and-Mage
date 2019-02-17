@@ -1,4 +1,4 @@
-@skill
+@/function a:book/skill/gen/
 
 +all
 ##mag:魔法
@@ -19,7 +19,7 @@ $1
 ##cha:神力追蹤
 $1
 一種在精神界追蹤能量與資訊的神術
-##sync:權能－情感同步
+##sync:權能－同調
 $1
 德雅的基礎權能
 ##star:權能－星之眼
