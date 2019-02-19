@@ -1,4 +1,4 @@
-tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+tellraw @a[scores={st=0}] [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{"text":"—————————————————————————————————————新對話————————————————————————————————————","color":"dark_gray"}]
 tellraw @a[scores={st=1}] {"text":"<格藍> 我、我的翅膀快融化了……那女人的神力濃度太高……","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}
 tellraw @a[scores={st=2}] {"text":"<亞加> 沒關係，灌點魔力就會回來的。你先休息一下，我幫你處理……","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}
 tellraw @a[scores={st=3}] {"text":"<卡司> 芙娃，神術使身上的神力對妖精有害，但不至於讓他傷成這樣吧。","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}

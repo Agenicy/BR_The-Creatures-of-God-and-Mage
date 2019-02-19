@@ -1,4 +1,4 @@
-tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+tellraw @a[scores={st=0}] [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{"text":"—————————————————————————————————————新對話————————————————————————————————————","color":"dark_gray"}]
 tellraw @a[scores={st=1}] {"text":"<格藍> 不好，赫斯克過來了！","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}
 tellraw @a[scores={st=2}] {"text":"<卡司> 唔、你們什麼時候到屋頂上了……快下來！","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}
 tellraw @a[scores={st=3}] {"text":"<芙娃> 你們就不能冷靜做事嗎？現在怎麼辦？","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}

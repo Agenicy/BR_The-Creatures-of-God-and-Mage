@@ -1,4 +1,4 @@
-tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+tellraw @a[scores={st=0}] [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{"text":"—————————————————————————————————————新對話————————————————————————————————————","color":"dark_gray"}]
 tellraw @a[scores={st=1}] {"text":"<亞加> 這是……鐵柵欄？","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}
 tellraw @a[scores={st=2}] {"text":"<芙娃> 這裡以前曾被當作抵禦萊歐卡的防線使用，大概是那時留下來的屏障吧？","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}
 tellraw @a[scores={st=3}] {"text":"<貝露> 嗯……從木頭的顏色來看，應該是見證過大戰的產物沒錯。","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}

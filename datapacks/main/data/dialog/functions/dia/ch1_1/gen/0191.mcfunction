@@ -1,4 +1,4 @@
-tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+tellraw @a[scores={st=0}] [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{"text":"—————————————————————————————————————新對話————————————————————————————————————","color":"dark_gray"}]
 tellraw @a[scores={st=1}] {"text":"<貝露> 哥哥救我！","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}
 tellraw @a[scores={st=2}] {"text":"<亞加> 格藍！用我的魔力！帶我們走！","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}
 tellraw @a[scores={st=3}] {"text":"<格藍> 可是——去他的！瞬間移動！","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}

@@ -1,4 +1,4 @@
-tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+tellraw @a[scores={st=0}] [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{"text":"—————————————————————————————————————新對話————————————————————————————————————","color":"dark_gray"}]
 tellraw @a[scores={st=1}] {"text":"<亞加> 卡司，其實這個方法行不通對吧？","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}
 tellraw @a[scores={st=2}] {"text":"<格藍> 果然只有魔法是可以信任的東西——扭曲光線隱身什麼的根本是邪魔歪道！","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}
 tellraw @a[scores={st=3}] {"text":"<卡司> 相信我就對了，我之前不是就這樣帶你們入城過了嗎？","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}

@@ -1,4 +1,4 @@
-tellraw @a[scores={st=0}] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+tellraw @a[scores={st=0}] [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{"text":"—————————————————————————————————————新對話————————————————————————————————————","color":"dark_gray"}]
 tellraw @a[scores={st=1}] {"text":"<格藍> 這就是……天眼嗎？","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}
 execute if entity @a[tag=player,scores={st=1}] run scoreboard objectives modify goal displayname [{"text":"當前目標: ","color":"gold"},{"text":"無","color":"aqua"}]
 execute if entity @a[tag=player,scores={st=1}] run function dialog:dia/ch1_1/func/arrive_skyeye
@@ -34,7 +34,6 @@ tellraw @a[scores={st=30}] {"text":"<格藍> ……哼。","clickEvent":{"action
 tellraw @a[scores={st=31}] {"text":"<卡司> 那麼，芙娃應該還需要一點時間打開天眼大門，你們就先休息一下吧。","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}
 execute if entity @a[tag=player,scores={st=31}] run function dialog:dia/ch1_1/func/god_update2
 execute if entity @a[tag=player,scores={st=31}] run function dialog:dia/fin
-
 
 
 

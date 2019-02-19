@@ -1,5 +1,7 @@
 scoreboard players set @a[tag=player] dia_choose 2
 
+summon armor_stand -6666 53 -6688 {NoGravity:1b,Invulnerable:1b,Tags:["target"]}
+function camera:cam/main
 function dialog:start_dialog
 
 #lane

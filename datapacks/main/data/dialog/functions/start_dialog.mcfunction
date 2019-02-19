@@ -1,5 +1,3 @@
-
-
 w @a[tag=admin] start dialog
 
 #start dia

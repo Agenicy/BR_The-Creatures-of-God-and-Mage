@@ -1,4 +1,5 @@
 w @a[tag=admin] stop dialog
+tellraw @a [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{"text":"————————————————————————————————————————————————————————————————————————————————","color":"dark_gray"}]
 
 #stop dia
 setblock -1 30 17 minecraft:air
