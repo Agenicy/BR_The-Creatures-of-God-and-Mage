@@ -14,4 +14,4 @@ kill @e[tag=check_type]
 scoreboard players operation @a[tag=player,limit=1] check_success -= @a[tag=player,limit=1] check_target
 scoreboard players set @a[tag=player,limit=1,scores={check_success=0..}] check_success 1
 scoreboard players set @a[tag=player,limit=1,scores={check_success=..-1}] check_success 0
-function a:dia/add
+function dialog:dia/add

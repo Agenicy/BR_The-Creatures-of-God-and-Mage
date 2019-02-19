@@ -1,1 +1,0 @@
-scoreboard players add @a st 1execute if entity @a[tag=player,scores={ch=1}] run function a:dia/add/ch1
