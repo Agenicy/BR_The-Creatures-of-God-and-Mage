@@ -1,4 +1,4 @@
-@/function a:book/char/gen/
+@/function a:book/char/
 +dlx
 ##ag:亞加尼西 ‧ 戴洛克斯
 $2

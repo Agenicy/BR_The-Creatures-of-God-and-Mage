@@ -1,4 +1,4 @@
-@/function a:book/define/gen/
+@/function a:book/define/
 
 +know
 ##grdd:格蘭德的興起與滅亡

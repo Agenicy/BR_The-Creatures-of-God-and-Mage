@@ -1,4 +1,4 @@
-@/function a:book/skill/gen/
+@/function a:book/skill/
 
 +all
 ##mag:Å]ªk

@@ -1,0 +1,14 @@
+scoreboard players set @a[tag=player] mag 2
+scoreboard players set @a[tag=player] div 2
+scoreboard players set @a[tag=player] gnm 2
+scoreboard players set @a[tag=player] ki 1
+scoreboard players set @a[tag=player] cha 1
+scoreboard players set @a[tag=player] sync 1
+scoreboard players set @a[tag=player] star 1
+scoreboard players set @a[tag=player] wnd 1
+scoreboard players set @a[tag=player] ice 1
+scoreboard players set @a[tag=player] human 1
+scoreboard players set @a[tag=player] elf 1
+scoreboard players set @a[tag=player] fairy 1
+scoreboard players set @a[tag=player] cat 1
+scoreboard players set @a[tag=player] husk 1

@@ -17,7 +17,7 @@ for index,line in enumerate(lines):
 		data.className = line[1:-1]#子分類檔名(預設book)
 		with io.open('gen/%s.mcfunction'%data.className,'a',encoding='utf8')as tmp:
 			titleOne = r'tellraw @a {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n------","color":"gold","extra":[{"text":"☆神奇的魔法書庫☆","color":"yellow"},{"text":"------","color":"gold"}]}'
-			titleTwo = r'tellraw @a {"text":"目前分頁: ","color":"gold","extra":[{"text":"其他文件","color":"aqua"},{"text":"  [回首頁]","color":"dark_green","hoverEvent":{"action":"show_text","value":"點選回首頁"},"clickEvent":{"action":"run_command","value":"/function a:book/book"}}]}'
+			titleTwo = r'tellraw @a {"text":"目前分頁: ","color":"gold","extra":[{"text":"其他文件","color":"aqua"},{"text":"  [回上頁]","color":"dark_green","hoverEvent":{"action":"show_text","value":"點選回上頁"},"clickEvent":{"action":"run_command","value":"' + data.localPath + r'book"}}]}'
 			tmp.write(titleOne+'\n'+titleTwo+'\n')
 			
 	elif line[0] == '@':
@@ -36,15 +36,20 @@ for index,line in enumerate(lines):
 		with open('gen/-scoreboard.mcfunction','a',encoding='utf8') as tmp:
 			str4 = 'scoreboard objectives remove '
 			tmp.write(str4 + data.fileName[data.bookNum] + '\n')
+		with open('gen/get_all_book.mcfunction','a',encoding='utf8') as tmp:
+			str5 = 'scoreboard players set @a[tag=player] '
+			tmp.write(str5 + data.fileName[data.bookNum] + ' ')#沒寫完的部分等到版本號時一併補完
 			
 	elif line[0] == '$':#版本號
 		data.fileNum.append(line[1:-1])#總共有幾個版本
+		with open('gen/get_all_book.mcfunction','a',encoding='utf8') as tmp:
+			tmp.write(line[1:-1] + '\n')
 
 	elif line[0] == '-':#一次寫入檔案
 		with io.open('gen/%s.mcfunction'%data.className,'a',encoding='utf8')as tmp:
-			for place in range(1,data.bookNum+1):
+			for place in range(0,data.bookNum+1):
 				for num in range(1,(int)(data.fileNum[place])+1):#重複fileNum次
-					tmp.write('tellraw @a[scores={' + data.fileName[place] + '=' + str(num) + r'}] {"text":"● ' + data.title[place] + r'","color":"green","hoverEvent":{"action":"show_text","value":"' + data.lore[place] + r'"},"clickEvent":{"action":"run_command","value":"' + data.localPath + data.fileName[place] + str(num) + r'"}}'+'\n')
+					tmp.write('tellraw @a[scores={' + data.fileName[place] + '=' + str(num) + r'}] {"text":"● ' + data.title[place] + r'","color":"green","hoverEvent":{"action":"show_text","value":"' + data.lore[place] + r'"},"clickEvent":{"action":"run_command","value":"' + data.localPath + 'gen/' + data.fileName[place] + str(num) + r'"}}'+'\n')
 
 			tmp.write(r'tellraw @a {"text":"------------------------------","color":"gold"}')
 	elif line[0] != '\n':#讀取lore
@@ -61,7 +66,7 @@ headText2 = r'\",\"color\":\"black\",\"extra\":[{\"text\":\"\\n\\n'
 headText3 = r'\",\"color\":\"black\"},{\"text\":\"\\n\\n\\n　　 [檢視最新內容]\\n\",\"color\":\"blue\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"點擊跳到上次閱讀進度\"},\"clickEvent\":{\"action\":\"change_page\",\"value\":\"'
 headText4 = r'\"}}]}","{\"text\":\"'
 changePageText = '\\"}]","{\\"text\\":\\"'
-endText1 = '\\"}","{\\"text\\":\\"[\\\\u5c07\\\\u66f8\\\\u672c\\\\u653e\\\\u5165\\\\u66f8\\\\u5eab]\\",\\"bold\\":true,\\"color\\":\\"blue\\",\\"clickEvent\\":{\\"action\\":\\"run_command\\",\\"value\\":\\"' + data.localPath
+endText1 = '\\"}","{\\"text\\":\\"[\\\\u5c07\\\\u66f8\\\\u672c\\\\u653e\\\\u5165\\\\u66f8\\\\u5eab]\\",\\"bold\\":true,\\"color\\":\\"blue\\",\\"clickEvent\\":{\\"action\\":\\"run_command\\",\\"value\\":\\"' + data.localPath + 'gen/'
 endText2 = '\\"},\\"hoverEvent\\":{\\"action\\":\\"show_text\\",\\"value\\":\\"\\\\u9ede\\\\u9078\\\\u4f7f\\\\u7528\\"}}"],author:"",title:"'
 endText3 = '"}'
 with open('info.txt','r',encoding='utf-8-sig') as f:
@@ -74,7 +79,7 @@ for index,line in enumerate(lines):
 		charData2 = charData[1].split('-')
 		title = charData2[0]
 		tag = charData2[1]
-		last = 'scoreboard players set @a[tag=player] ' + fileName + ' 0' + '\n' + beforeText + '\n' + headText1 + title.center(14, '　') + headText2 + tag.center(12, '　')  + headText3
+		last = 'scoreboard players set @a[tag=player] ' + fileName + ' 0' + '\n' + beforeText + '\n' + headText1 + title.center(12, '　') + headText2 + tag.center(12, '　')  + headText3
 		last2 = headText4
 		temp.pageNumber = 0
 

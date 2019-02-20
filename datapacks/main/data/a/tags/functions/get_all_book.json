@@ -1,0 +1,10 @@
+{
+	"values": [
+		"a:book/char/gen/get_all_book",
+		"a:book/define/gen/get_all_book",
+		"a:book/skill/gen/get_all_book",
+		"a:book/stage/door_skyeye/gen/get_all_book",
+		"a:book/stage/sys/gen/get_all_book"
+		
+	]
+}

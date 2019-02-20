@@ -1,4 +1,5 @@
-@/function a:book/stage/door_skyeye/gen
+@/function a:book/stage/door_skyeye/
++book
 ##h_a_m_:小遊戲 - 赫斯克與人類
 $2
 一個以赫斯克與人類數量作為提示的猜數字遊戲的說明文件

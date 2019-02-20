@@ -1,4 +1,4 @@
-@/function a:book/stage/sys/gen/
+@/function a:book/stage/sys/
 
 +book
 ##rule:¹CÀ¸³]©w
