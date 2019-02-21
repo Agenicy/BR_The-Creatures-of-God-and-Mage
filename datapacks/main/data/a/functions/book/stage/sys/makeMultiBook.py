@@ -14,6 +14,11 @@ with open('title.txt','r') as f:
 for index,line in enumerate(lines):
 	line = line.replace('\t','')
 	if line[0] == '+':
+		data.bookNum = -1
+		data.fileName.clear()
+		data.fileNum.clear()
+		data.title.clear()
+		data.lore.clear()
 		data.className = line[1:-1]#子分類檔名(預設book)
 		with io.open('gen/%s.mcfunction'%data.className,'a',encoding='utf8')as tmp:
 			titleOne = r'tellraw @a {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n------","color":"gold","extra":[{"text":"☆神奇的魔法書庫☆","color":"yellow"},{"text":"------","color":"gold"}]}'
@@ -60,7 +65,7 @@ for index,line in enumerate(lines):
 class temp:
 	pageNumber = 0
 
-beforeText = r'tellraw @a {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}'
+beforeText = r'tellraw @a[tag=!block_book_word] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}'
 headText1 = r'give @a minecraft:written_book{title:"",author:"",pages:["{\"text\":\"\\n\\n\\n'
 headText2 = r'\",\"color\":\"black\",\"extra\":[{\"text\":\"\\n\\n'
 headText3 = r'\",\"color\":\"black\"},{\"text\":\"\\n\\n\\n　　 [檢視最新內容]\\n\",\"color\":\"blue\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"點擊跳到上次閱讀進度\"},\"clickEvent\":{\"action\":\"change_page\",\"value\":\"'
@@ -90,6 +95,8 @@ for index,line in enumerate(lines):
 		temp.pageNumber += 1
 
 		with io.open('gen/%s.mcfunction'%construct,'a',encoding='utf8')as tmp:
+			tmp.write('clear @a minecraft:written_book{title:"' + title + '"}\n')
+
 			tmp.write(last + str(temp.pageNumber) + last2)
 			
 	elif line[0] == '&':
@@ -110,7 +117,7 @@ for index,line in enumerate(lines):
 			tmp.write('scoreboard players set @a[tag=player] ' + fileName + ' ' + fileNum + '\n')
 			tmp.write('clear @a minecraft:written_book{title:"' + title + '"}')			
 	else:
-		with io.open('gen/%s.mcfunction'%construct,'a',encoding='utf8')as tmp:
+		with io.open('gen/%s.mcfunction'%construct,'a',encoding='utf8')as tmp:			
 			if line[0:4] == 'XSS=':
 				last2 += line[4:-1]
 				tmp.write(line[4:-1])

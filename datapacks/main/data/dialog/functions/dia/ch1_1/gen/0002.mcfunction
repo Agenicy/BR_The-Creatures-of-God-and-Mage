@@ -1,4 +1,4 @@
-tellraw @a[scores={st=0}] [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{"text":"—————————————————————————————————————新對話————————————————————————————————————","color":"dark_gray"}]
+tellraw @a[scores={st=0}] [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"},{"text":"—————————————————————————————————————","color":"dark_gray"},{"text":"新對話","color":"gray"},{"text":"————————————————————————————————————","color":"dark_gray"}]
 tellraw @a[scores={st=1}] {"text":"<卡司> 真是的，出發前不是問過你們，你們也都認為沒問題了嗎？怎麼還怕成這樣。","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}
 tellraw @a[scores={st=2}] {"text":"<亞加> 腦中模擬的跟實際體驗差很多啊，當時又不知道這裡會暗成這樣……","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}
 tellraw @a[scores={st=3}] {"text":"<格藍> 就是嘛！之前你說過一條溪沒什麼，後來還不是怕得要死。","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}

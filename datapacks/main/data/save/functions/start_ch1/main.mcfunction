@@ -21,6 +21,16 @@ function save:start_ch1/place_pressure_plate
 #reset blocks
 function save:start_ch1/reset_blocks
 
+#reset #ag
+scoreboard players set #ag str 0
+scoreboard players set #ag dex 0
+scoreboard players set #ag agi 0
+scoreboard players set #ag con 0
+scoreboard players set #ag wil 0
+scoreboard players set #ag men 0
+scoreboard players set #ag int 0
+scoreboard players set #ag luk 0
+
 #scoreboard
 scoreboard objectives add 1_1_1_negitive dummy {"text":"#"}
 scoreboard objectives add 1_1_1_positive dummy {"text":"#"}
@@ -32,3 +42,4 @@ scoreboard players set @a[tag=player] 1_1_1_positive 0
 scoreboard players set @a[tag=player] 1_1_1_talked 0
 scoreboard players set @a[tag=player] 1_1_1_pliers 0
 scoreboard players set @a[tag=player] 1_1_1_fail 0
+

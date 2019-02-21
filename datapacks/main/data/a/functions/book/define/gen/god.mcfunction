@@ -1,11 +1,8 @@
 tellraw @a {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n------","color":"gold","extra":[{"text":"☆神奇的魔法書庫☆","color":"yellow"},{"text":"------","color":"gold"}]}
 tellraw @a {"text":"目前分頁: ","color":"gold","extra":[{"text":"其他文件","color":"aqua"},{"text":"  [回上頁]","color":"dark_green","hoverEvent":{"action":"show_text","value":"點選回上頁"},"clickEvent":{"action":"run_command","value":"/function a:book/define/book"}}]}
-tellraw @a[scores={grdd=1}] {"text":"● 格蘭德的興起與滅亡","color":"green","hoverEvent":{"action":"show_text","value":"關於格蘭德的歷史"},"clickEvent":{"action":"run_command","value":"/function a:book/define/gen/grdd1"}}
-tellraw @a[scores={nat=1}] {"text":"● 自然力的研究","color":"green","hoverEvent":{"action":"show_text","value":"有關自然力的解釋"},"clickEvent":{"action":"run_command","value":"/function a:book/define/gen/nat1"}}
-tellraw @a[scores={iro=1}] {"text":"● 鐵匠與鍛造師的差別","color":"green","hoverEvent":{"action":"show_text","value":"講解鐵匠與鍛造師在定義上的不同"},"clickEvent":{"action":"run_command","value":"/function a:book/define/gen/iro1"}}
-tellraw @a[scores={deya=1}] {"text":"● 德雅","color":"green","hoverEvent":{"action":"show_text","value":"同調與星光的德雅"},"clickEvent":{"action":"run_command","value":"/function a:book/define/gen/deya1"}}
-tellraw @a[scores={deya=2}] {"text":"● 德雅","color":"green","hoverEvent":{"action":"show_text","value":"同調與星光的德雅"},"clickEvent":{"action":"run_command","value":"/function a:book/define/gen/deya2"}}
-tellraw @a[scores={deya=3}] {"text":"● 德雅","color":"green","hoverEvent":{"action":"show_text","value":"同調與星光的德雅"},"clickEvent":{"action":"run_command","value":"/function a:book/define/gen/deya3"}}
+tellraw @a[scores={da=1}] {"text":"● 格奈拉","color":"green","hoverEvent":{"action":"show_text","value":"同步與星光的格奈拉"},"clickEvent":{"action":"run_command","value":"/function a:book/define/gen/da1"}}
+tellraw @a[scores={da=2}] {"text":"● 格奈拉","color":"green","hoverEvent":{"action":"show_text","value":"同步與星光的格奈拉"},"clickEvent":{"action":"run_command","value":"/function a:book/define/gen/da2"}}
+tellraw @a[scores={da=3}] {"text":"● 格奈拉","color":"green","hoverEvent":{"action":"show_text","value":"同步與星光的格奈拉"},"clickEvent":{"action":"run_command","value":"/function a:book/define/gen/da3"}}
 tellraw @a[scores={fyr=1}] {"text":"● 菲亞爾","color":"green","hoverEvent":{"action":"show_text","value":"並存與旋風的菲亞爾"},"clickEvent":{"action":"run_command","value":"/function a:book/define/gen/fyr1"}}
 tellraw @a[scores={fyr=2}] {"text":"● 菲亞爾","color":"green","hoverEvent":{"action":"show_text","value":"並存與旋風的菲亞爾"},"clickEvent":{"action":"run_command","value":"/function a:book/define/gen/fyr2"}}
 tellraw @a[scores={fyr=3}] {"text":"● 菲亞爾","color":"green","hoverEvent":{"action":"show_text","value":"並存與旋風的菲亞爾"},"clickEvent":{"action":"run_command","value":"/function a:book/define/gen/fyr3"}}

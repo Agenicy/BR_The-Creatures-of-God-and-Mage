@@ -1,1 +1,12 @@
-scoreboard players set @a[tag=player] ag 2
+scoreboard players set @a[tag=player] ag 1
+scoreboard players set @a[tag=player] br 1
+scoreboard players set @a[tag=player] gl 1
+scoreboard players set @a[tag=player] cats 1
+scoreboard players set @a[tag=player] fua 1
+scoreboard players set @a[tag=player] luxury 1
+scoreboard players set @a[tag=player] herka 1
+scoreboard players set @a[tag=player] dein 1
+scoreboard players set @a[tag=player] feir 1
+scoreboard players set @a[tag=player] tom 1
+scoreboard players set @a[tag=player] tommy 1
+scoreboard players set @a[tag=player] emily 1
