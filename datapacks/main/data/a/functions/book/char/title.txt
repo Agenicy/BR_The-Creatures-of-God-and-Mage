@@ -1,7 +1,7 @@
 @/function a:book/char/
 +team
 ##ag:亞加尼西 ‧ 戴洛克斯
-$1
+$5
 亞加，也就是我
 ##br:貝露 ‧ 戴洛克斯
 $1

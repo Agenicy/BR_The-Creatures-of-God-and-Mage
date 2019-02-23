@@ -45,16 +45,16 @@ scoreboard objectives add rope dummy {"text":"強力鉤繩計時器rope"}
 #密碼鎖
 scoreboard objectives add pw dummy {"text":"密碼pw"}
 scoreboard objectives add num dummy {"text":"數字num"}
-scoreboard players set num1 num 1
-scoreboard players set num2 num 2
-scoreboard players set num3 num 3
-scoreboard players set num4 num 4
-scoreboard players set num5 num 5
-scoreboard players set num6 num 6
-scoreboard players set num7 num 7
-scoreboard players set num8 num 8
-scoreboard players set num9 num 9
-scoreboard players set num10 num 10
+scoreboard players set #num1 num 1
+scoreboard players set #num2 num 2
+scoreboard players set #num3 num 3
+scoreboard players set #num4 num 4
+scoreboard players set #num5 num 5
+scoreboard players set #num6 num 6
+scoreboard players set #num7 num 7
+scoreboard players set #num8 num 8
+scoreboard players set #num9 num 9
+scoreboard players set #num10 num 10
 
 #當前目標
 scoreboard objectives add goal dummy {"text":"當前目標"}
