@@ -65,7 +65,7 @@ for index,line in enumerate(lines):
 class temp:
 	pageNumber = 0
 
-beforeText = r'tellraw @a[tag=!block_book_word] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}'
+beforeText = r'tellraw @a[tag=!block_book_word] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}'
 headText1 = r'give @a minecraft:written_book{title:"",author:"",pages:["{\"text\":\"\\n\\n\\n'
 headText2 = r'\",\"color\":\"black\",\"extra\":[{\"text\":\"\\n\\n'
 headText3 = r'\",\"color\":\"black\"},{\"text\":\"\\n\\n\\n　　 [檢視最新內容]\\n\",\"color\":\"blue\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"點擊跳到上次閱讀進度\"},\"clickEvent\":{\"action\":\"change_page\",\"value\":\"'

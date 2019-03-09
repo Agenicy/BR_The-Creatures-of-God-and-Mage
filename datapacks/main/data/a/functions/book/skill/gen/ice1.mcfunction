@@ -1,4 +1,4 @@
 clear @a minecraft:written_book{title:"冰箭術"}
 scoreboard players set @a[tag=player] ice 0
-tellraw @a[tag=!block_book_word] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+tellraw @a[tag=!block_book_word] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 give @a minecraft:written_book{title:"",author:"",pages:["{\"text\":\"\\n\\n\\n　　　　冰箭術　　　　　\",\"color\":\"black\",\"extra\":[{\"text\":\"\\n\\n　　　基礎元素魔法　　　\",\"color\":\"black\"},{\"text\":\"\\n\\n\\n　　 [檢視最新內容]\\n\",\"color\":\"blue\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"點擊跳到上次閱讀進度\"},\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1\"}}]}","{\"text\":\"　等級：Ｄ\\n　分類：元素魔法\\n　效果：射出一發冰箭，射中或穿透的地方會被凍結。\\n　所使用元素：水、寒冷\\n　咒語：Glacio Arrow\\n\"}","{\"text\":\"[\\u5c07\\u66f8\\u672c\\u653e\\u5165\\u66f8\\u5eab]\",\"bold\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function a:book/skill/gen/-ice1\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"\\u9ede\\u9078\\u4f7f\\u7528\"}}"],author:"",title:"冰箭術"}

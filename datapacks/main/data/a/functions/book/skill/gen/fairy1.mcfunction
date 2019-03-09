@@ -1,4 +1,4 @@
 clear @a minecraft:written_book{title:"魔力增幅"}
 scoreboard players set @a[tag=player] fairy 0
-tellraw @a[tag=!block_book_word] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+tellraw @a[tag=!block_book_word] {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
 give @a minecraft:written_book{title:"",author:"",pages:["{\"text\":\"\\n\\n\\n　　　　魔力增幅　　　　\",\"color\":\"black\",\"extra\":[{\"text\":\"\\n\\n　　妖精的種族力量　　　\",\"color\":\"black\"},{\"text\":\"\\n\\n\\n　　 [檢視最新內容]\\n\",\"color\":\"blue\",\"bold\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"點擊跳到上次閱讀進度\"},\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1\"}}]}","{\"text\":\"　妖精是很特別的生命體。他們無法單獨存在，卻又特立獨行。\\n　妖精是由魔力所構成，因此擁有無限的魔力。然而因為他們身體與精神強度的限制，施展出的魔法通常沒什麼傷害，頂多造成玩笑等級的損失罷了。\\n\"}]","{\"text\":\"　妖精的種族力量挽救了這個缺點。他們的力量名為魔力增幅，可以吸收別人的魔力，以增幅力作為媒介、與自己的力量融合後回傳給使用者。因此魔法體系中特別將透過妖精使用的妖精魔法給獨立出來。\\n\"}","{\"text\":\"[\\u5c07\\u66f8\\u672c\\u653e\\u5165\\u66f8\\u5eab]\",\"bold\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function a:book/skill/gen/-fairy1\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"\\u9ede\\u9078\\u4f7f\\u7528\"}}"],author:"",title:"魔力增幅"}

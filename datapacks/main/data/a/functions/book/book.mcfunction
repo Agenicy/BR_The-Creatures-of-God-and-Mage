@@ -11,8 +11,8 @@ tellraw @a[tag=!hideword] {"text":"● 分類: 其他文件","color":"green","ho
 
 tellraw @a[tag=!hideword] {"text":"------------------------------","color":"gold"}
 
-tellraw @s {"text":"------快速移動選項------","color":"gold"}
-tellraw @s {"text":" →主機關(世界重生點)","clickEvent":{"action":"run_command","value":"/tp @s -18 30 24 -90 0"},"color":"aqua"}
-tellraw @s {"text":" →格蘭德舊城區","clickEvent":{"action":"run_command","value":"/tp @s -6597 51 -6600"},"color":"aqua"}
-tellraw @s {"text":" →耶爾榭森林","clickEvent":{"action":"run_command","value":"/tp @s -2829 106 3294"},"color":"aqua"}
-tellraw @s {"text":"-------------------------","color":"gold"}
+tellraw @s[tag=admin] {"text":"------快速移動選項------","color":"gold"}
+tellraw @s[tag=admin] {"text":" →主機關(世界重生點)","clickEvent":{"action":"run_command","value":"/tp @s -18 30 24 -90 0"},"color":"aqua"}
+tellraw @s[tag=admin] {"text":" →格蘭德舊城區","clickEvent":{"action":"run_command","value":"/tp @s -6597 51 -6600"},"color":"aqua"}
+tellraw @s[tag=admin] {"text":" →耶爾榭森林","clickEvent":{"action":"run_command","value":"/tp @s -2829 106 3294"},"color":"aqua"}
+tellraw @s[tag=admin] {"text":"-------------------------","color":"gold"}

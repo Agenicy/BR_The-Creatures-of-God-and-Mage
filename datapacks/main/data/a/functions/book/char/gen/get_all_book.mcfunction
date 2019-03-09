@@ -1,4 +1,4 @@
-scoreboard players set @a[tag=player] ag 1
+scoreboard players set @a[tag=player] ag 5
 scoreboard players set @a[tag=player] br 1
 scoreboard players set @a[tag=player] gl 1
 scoreboard players set @a[tag=player] cats 1
