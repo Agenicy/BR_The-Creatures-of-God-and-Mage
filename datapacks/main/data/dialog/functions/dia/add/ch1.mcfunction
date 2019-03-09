@@ -46,3 +46,7 @@ execute if entity @a[tag=player,scores={dia_choose=45}] run function dialog:dia/
 execute if entity @a[tag=player,scores={dia_choose=46}] run function dialog:dia/ch1_1/gen/0190
 execute if entity @a[tag=player,scores={dia_choose=47}] run function dialog:dia/ch1_1/gen/0208
 execute if entity @a[tag=player,scores={dia_choose=48}] run function dialog:dia/ch1_1/gen/0210
+execute if entity @a[tag=player,scores={dia_choose=49}] run function dialog:dia/ch1_1/gen/0210a
+execute if entity @a[tag=player,scores={dia_choose=50}] run function dialog:dia/ch1_1/gen/0210b
+execute if entity @a[tag=player,scores={dia_choose=51}] run function dialog:dia/ch1_1/gen/0210c
+execute if entity @a[tag=player,scores={dia_choose=52}] run function dialog:dia/ch1_1/gen/0211

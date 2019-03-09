@@ -8,3 +8,7 @@ fill -6667 55 -6690 -6665 53 -6690 minecraft:iron_bars[east= true,west= true]
 
 #wooden door at lane2
 setblock -6708 48 -6720 minecraft:redstone_block
+
+
+#reset pliers
+data merge entity @e[tag=pliers,limit=1] {Item: {id: "minecraft:shears", Count: 1b}}

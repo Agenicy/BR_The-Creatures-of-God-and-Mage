@@ -203,6 +203,7 @@
 	tellraw @a[scores={st=2}] {"text":"	<卡司> 這個方向的話，大概再通過兩個街區就可以回到預計的安全路徑上了。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=3}] {"text":"	<芙娃> 我們暫時先休息一下吧？待會的遮蔽物有點少，我想確認附近還有哪些赫斯克在巡邏。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=4}] {"text":"	<卡司> 麻煩你了，就這麼辦吧。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
+	%execute if entity @a[tag=player,scores={st=4}] run function dialog:dia/ch1_1/func/	fua_and_glan_leave		
 	execute if entity @a[tag=player,scores={st=4}] run scoreboard players add 	#ag	 con 1	
 	tellraw @a[scores={st=4}] {"text":"	→［通過獎勵］體質+1	","color":"aqua","clickEvent":{"action":"run_command","value":"	/execute store success score @s dia_st run trigger dia_choose set 25"}}
 	scoreboard players enable @a[tag=player] dia_choose			
@@ -232,15 +233,15 @@
 	tellraw @a[scores={st=1}] {"text":"	<亞加> 卡司，我們準備好了。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=2}] {"text":"	<卡司> 是嗎？比我預期的快了一點。芙娃還在偵查呢，我們給她一些時間吧。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=3}] {"text":"	<貝露> ……卡司，可以問你一個問題嗎？	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
-	tellraw @a[scores={st=4}] {"text":"	<卡司> 請說？我也挺好奇菲亞爾的祭司是用什麼觀點在看著我們這些德雅追隨者的。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
+	tellraw @a[scores={st=4}] {"text":"	<卡司> 請說？我也挺好奇菲亞爾的祭司是用什麼觀點在看著我們這些格奈拉追隨者的。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=5}] {"text":"	<貝露> 這麼問可能有點冒犯，不過你也說過，在我們三人來這裡之前，你們反抗軍對於萊歐卡的神術完全沒有反擊之力……	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=6}] {"text":"	<貝露> 那麼你們為什麼還要堅持下來？我、我的意思是，就算萊歐卡完全統治了這個城市、甚至剝奪你們的神明與自由，他們還是得任命城內的人當官、掌權……	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=7}] {"text":"	<貝露> 難道你們沒有想過放棄檯面上的抵抗，取得信任後從內部瓦解他們嗎？	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=8}] {"text":"	<卡司> 這個嘛，這樣說好了。貝露，願星光隨著您的步伐閃爍？	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=9}] {"text":"	<貝露> 願、願遭遇危機時總會出現轉機……為什麼要突然打招呼呢？	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
-	tellraw @a[scores={st=10}] {"text":"	<卡司> 招呼語雖然普通，但卻能說明菲亞爾與德雅的差別。我們不相信發生壞事後一定會有好事，甚至可能會一直壞下去也說不定；相反的，我們相信的是團結的力量。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
-	tellraw @a[scores={st=11}] {"text":"	<卡司> 共感與星光的德雅，教義是「互助合作、永不放棄」。而這也是我們格蘭德居民的共同信仰。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
-	tellraw @a[scores={st=12}] {"text":"	<卡司> 你們也看到天空中閃爍的星光了吧？星光是德雅的化身，而我們，德雅的追隨者、格蘭德反抗軍的所有成員，就是那些星星。雖然星星無法像太陽一樣帶來光明，但若沒了星星，世界就會陷入全然的黑暗。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
+	tellraw @a[scores={st=10}] {"text":"	<卡司> 招呼語雖然普通，但卻能說明菲亞爾與格奈拉的差別。我們不相信發生壞事後一定會有好事，甚至可能會一直壞下去也說不定；相反的，我們相信的是團結的力量。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
+	tellraw @a[scores={st=11}] {"text":"	<卡司> 共感與星光的格奈拉，教義是「互助合作、永不放棄」。而這也是我們格蘭德居民的共同信仰。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
+	tellraw @a[scores={st=12}] {"text":"	<卡司> 你們也看到天空中閃爍的星光了吧？星光是格奈拉的化身，而我們，格奈拉的追隨者、格蘭德反抗軍的所有成員，就是那些星星。雖然星星無法像太陽一樣帶來光明，但若沒了星星，世界就會陷入全然的黑暗。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=13}] {"text":"	<卡司> 在長遠的黑夜之中，星星必然會落下，但同時更多的星星也會緊接著升起。雖然我們的貢獻可能微不足道，但我們確實在一步步的接近光明。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=14}] {"text":"	<卡司> 那麼，既然有條肯定會成功的道路在，我們何必放棄，等待萊歐卡對我們放下戒心的那天呢？要反抗，就要從一而終，不給他們任何瓦解我們的機會。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=15}] {"text":"	<貝露> 原來如此……因為你們不是孤軍奮鬥嗎……我瞭解了。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
@@ -439,19 +440,19 @@
 	tellraw @a[scores={st=3}] {"text":"	<芙娃> 那麼卡司大哥，我就按照計畫去破解大門了。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=4}] {"text":"	<卡司> 去吧，記得注意不定時的巡邏隊啊。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=5}] {"text":"	<亞加> 嗯……我一直想問，為什麼芙娃可以操控赫斯克啊？	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
-	tellraw @a[scores={st=6}] {"text":"	<格藍> 說的也是，德雅並沒有操縱的權能吧。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
+	tellraw @a[scores={st=6}] {"text":"	<格藍> 說的也是，格奈拉並沒有操縱的權能吧。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=7}] {"text":"	<貝露> 格藍，你沒事啦？	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=8}] {"text":"	<格藍> 我現在覺得好多了，剛剛被她一抓差點沒痛死我……所以到底是為什麼？	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
-	tellraw @a[scores={st=9}] {"text":"	<卡司> 這……我可能也無法回答。她用來操控赫斯克的並不是神術或是德雅的權能，至少不是一般祭司能做到的程度。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
+	tellraw @a[scores={st=9}] {"text":"	<卡司> 這……我可能也無法回答。她用來操控赫斯克的並不是神術或是格奈拉的權能，至少不是一般祭司能做到的程度。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=10}] {"text":"	<卡司> 雖然她並沒有跟我們講原因，但湯姆與湯米——之前你們見過的反抗軍首領——卻猜出了大概的可能性。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
-	tellraw @a[scores={st=11}] {"text":"	<卡司> 這要從基礎的的原理說起：首先，德雅的權能是共感，因此祂的子民能大略感受到彼此的想法，減少許多不必要的衝突。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
-	tellraw @a[scores={st=12}] {"text":"	<卡司> 而赫斯克——如同出發前跟你們講過的——是德雅神力的產物，萊歐卡於是利用這一點建立了「萊歐克訊息網路」。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
-	tellraw @a[scores={st=13}] {"text":"	<卡司> 而芙娃……則有可能是德雅的神選者。這樣一來，她就是等同於德雅的存在，自然可以控制所有德雅神力的創造物。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
+	tellraw @a[scores={st=11}] {"text":"	<卡司> 這要從基礎的的原理說起：首先，格奈拉的權能是同步，因此祂的子民能大略感受到彼此的想法，減少許多不必要的衝突。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
+	tellraw @a[scores={st=12}] {"text":"	<卡司> 而赫斯克——如同出發前跟你們講過的——是格奈拉神力的產物，萊歐卡於是利用這一點建立了「萊歐克訊息網路」。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
+	tellraw @a[scores={st=13}] {"text":"	<卡司> 而芙娃……則有可能是格奈拉的神選者。這樣一來，她就是等同於格奈拉的存在，自然可以控制所有格奈拉神力的創造物。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=14}] {"text":"	<貝露> 神——！（小聲）咳、神選者？	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
-	tellraw @a[scores={st=15}] {"text":"	<格藍> 被德雅親自選中的人嗎……難怪她身上的神力濃度這麼高。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
-	tellraw @a[scores={st=16}] {"text":"	<亞加> 等一下，親自選中？但是德雅不是——	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
-	tellraw @a[scores={st=17}] {"text":"	<卡司> 對，這也是我們所懷疑的點。自從格蘭德城滅亡、我們的大祭司與德雅神器被萊歐卡奪走後，德雅的本體早就陷入沉睡狀態——這可是六十幾年前的事情，別說芙娃，連我都還沒出生呢。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
-	tellraw @a[scores={st=18}] {"text":"	<卡司> 既然如此，芙娃應該不會是德雅的神選者才對。但是種種的跡象卻都指向這個可能。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
+	tellraw @a[scores={st=15}] {"text":"	<格藍> 被格奈拉親自選中的人嗎……難怪她身上的神力濃度這麼高。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
+	tellraw @a[scores={st=16}] {"text":"	<亞加> 等一下，親自選中？但是格奈拉不是——	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
+	tellraw @a[scores={st=17}] {"text":"	<卡司> 對，這也是我們所懷疑的點。自從格蘭德城滅亡、我們的大祭司與格奈拉神器被萊歐卡奪走後，格奈拉的本體早就陷入沉睡狀態——這可是六十幾年前的事情，別說芙娃，連我都還沒出生呢。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
+	tellraw @a[scores={st=18}] {"text":"	<卡司> 既然如此，芙娃應該不會是格奈拉的神選者才對。但是種種的跡象卻都指向這個可能。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=19}] {"text":"	<亞加> 嗯……難道沒有分辨神選者和一般人的方法嗎？	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=20}] {"text":"	<卡司> 有是有，直接向神確認就得了。但你也知道。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	tellraw @a[scores={st=21}] {"text":"	<貝露> 或許我們能從其他地方猜測？如果芙娃獲得了神選者的力量，就應該會損失什麼東西才對。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
@@ -468,7 +469,6 @@
 	%execute if entity @a[tag=player,scores={st=31}] run function dialog:dia/ch1_1/func/	god_update2		
 	%execute if entity @a[tag=player,scores={st=31}] run function dialog:dia/ch1_1/func/	savefile		
 	execute if entity @a[tag=player,scores={st=31}] run function dialog:dia/fin			
-				
 				
 				
 				
