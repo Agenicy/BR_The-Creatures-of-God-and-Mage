@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "第一章：潛行",
+            "color": "white"
+        },
+        "description": {
+            "text": "亞加離開了生活多年的森林，冒險前往「樂園」格蘭德城。",
+            "color": "yellow"
+        },
+        "icon": {
+            "item": "minecraft:fermented_spider_eye"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": true,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "auto": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "rewards": {
+    }
+}

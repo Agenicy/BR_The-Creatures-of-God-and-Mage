@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "第一幕：與他無關的革命任務"
+        },
+        "description": {
+            "text": "亞加等人離開了反抗軍基地，自信的往天眼大門的方向走去。究竟他們會採取什麼策略進入天眼呢？"
+        },
+        "icon": {
+            "item": "minecraft:fermented_spider_eye"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "rewards": {
+    },
+    "parent": "advancements:ch1/root"
+}

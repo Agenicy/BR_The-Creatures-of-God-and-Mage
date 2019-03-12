@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "第三幕：一定要保護的人(測試版尚未開放)"
+        },
+        "description": {
+            "text": "你曾發過誓，無論如何都要保護好她……"
+        },
+        "icon": {
+            "item": "minecraft:fermented_spider_eye"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+    },
+    "parent": "advancements:ch1/ch1-2"
+}

@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "第二章：尚未開放"
+        },
+        "description": {
+            "text": "破解了天眼大門之後，一行人朝著更深處的方向前進。"
+        },
+        "icon": {
+            "item": "minecraft:fermented_spider_eye"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+    },
+    "parent": "advancements:a/ch1"
+}
