@@ -7,3 +7,6 @@ function dialog:start_dialog
 
 #new
 setblock -6652 53 -6686 minecraft:jungle_pressure_plate
+
+#adv
+advancement revoke @a only advancements:ch1/ch1-1

@@ -43,3 +43,6 @@ scoreboard players set @a[tag=player] 1_1_1_talked 0
 scoreboard players set @a[tag=player] 1_1_1_pliers 0
 scoreboard players set @a[tag=player] 1_1_1_fail 0
 
+#advancement
+advancement grant @a from advancements:ch1/root
+advancement revoke @a only advancements:ch1/root

@@ -4,3 +4,5 @@ function dialog:start_dialog
 
 setblock ~ ~2 ~ air destroy
 
+#adv
+advancement revoke @a only advancements:ch1/ch1-1-0
