@@ -9,17 +9,17 @@
             "color": "yellow"
         },
         "icon": {
-            "item": "minecraft:fermented_spider_eye"
+            "item": "minecraft:chainmail_helmet"
         },
         "frame": "goal",
         "show_toast": false,
         "announce_to_chat": false,
-        "hidden": true,
+        "hidden": false,
         "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
     },
     "criteria": {
         "auto": {
-            "trigger": "minecraft:tick"
+            "trigger": "minecraft:impossible"
         }
     },
     "rewards": {

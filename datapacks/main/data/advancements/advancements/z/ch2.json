@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "第一章：潛行"
+            "text": "第二章：尚未開放"
         },
         "description": {
-            "text": "亞加離開了生活多年的森林，冒險前往「樂園」格蘭德城。"
+            "text": "破解了天眼大門之後，一行人朝著更深處的方向前進。"
         },
         "icon": {
             "item": "minecraft:fermented_spider_eye"
@@ -16,10 +16,10 @@
     },
     "criteria": {
         "command": {
-            "trigger": "minecraft:tick"
+            "trigger": "minecraft:impossible"
         }
     },
     "rewards": {
     },
-    "parent": "advancements:a/root"
+    "parent": "advancements:z/ch1"
 }

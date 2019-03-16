@@ -9,7 +9,7 @@
             "color": "yellow"
         },
         "icon": {
-            "item": "minecraft:fermented_spider_eye"
+            "item": "minecraft:writable_book"
         },
         "frame": "goal",
         "show_toast": false,
@@ -19,7 +19,7 @@
     },
     "criteria": {
         "auto": {
-            "trigger": "minecraft:tick"
+            "trigger": "minecraft:impossible"
         }
     },
     "rewards": {

@@ -1,7 +1,7 @@
 {
-  "advancements:ch1/root": {
+  "advancements:ch1/ch1-1-0": {
     "criteria": {
-      "auto": "2019-03-12 16:32:19 +0800"
+      "command": "2019-03-16 18:12:49 +0800"
     },
     "done": true
   },
@@ -11,21 +11,9 @@
     },
     "done": true
   },
-  "advancements:a/ch1": {
-    "criteria": {
-      "command": "2019-03-12 16:39:57 +0800"
-    },
-    "done": true
-  },
   "save:root": {
     "criteria": {
       "auto": "2019-02-13 14:42:57 +0800"
-    },
-    "done": true
-  },
-  "advancements:a/root": {
-    "criteria": {
-      "auto": "2019-03-12 16:39:57 +0800"
     },
     "done": true
   },
@@ -35,9 +23,9 @@
     },
     "done": true
   },
-  "advancements:ch1/ch1-1": {
+  "advancements:ch1/ch1-2": {
     "criteria": {
-      "command": "2019-03-12 16:33:32 +0800"
+      "command": "2019-03-16 18:03:55 +0800"
     },
     "done": true
   },

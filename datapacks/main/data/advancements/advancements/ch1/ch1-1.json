@@ -9,14 +9,13 @@
         "icon": {
             "item": "minecraft:fermented_spider_eye"
         },
-        "frame": "task",
+        "frame": "goal",
         "show_toast": false,
-        "announce_to_chat": false,
-        "hidden": true
+        "announce_to_chat": false
     },
     "criteria": {
         "command": {
-            "trigger": "minecraft:tick"
+            "trigger": "minecraft:impossible"
         }
     },
     "rewards": {
