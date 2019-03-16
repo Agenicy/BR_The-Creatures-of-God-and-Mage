@@ -5,3 +5,5 @@ tellraw @a {"text":"● 世界觀","color":"green","hoverEvent":{"action":"show_
 tellraw @a {"text":"● 神祇","color":"green","hoverEvent":{"action":"show_text","value":"關於各種神祇的知識"},"clickEvent":{"action":"run_command","value":"/function a:book/define/gen/god"}}
 
 tellraw @a {"text":"------------------------------","color":"gold"}
+
+function a:book/book_bgs

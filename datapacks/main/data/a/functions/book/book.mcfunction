@@ -8,6 +8,7 @@ tellraw @a[tag=!hideword] {"text":"● 分類: 世界觀/神祇","color":"green"
 
 tellraw @a[tag=!hideword] {"text":"● 分類: 其他文件","color":"green","hoverEvent":{"action":"show_text","value":"在關卡中取得，助於解開謎題的文件"},"clickEvent":{"action":"run_command","value":"/function a:book/stage/book"}}
 
+function a:book/book_bgs
 
 tellraw @a[tag=!hideword] {"text":"------------------------------","color":"gold"}
 

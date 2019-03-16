@@ -1,0 +1,1 @@
+execute at @a[tag=player] run playsound minecraft:page block @a ~ ~ ~ 1 1

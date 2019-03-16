@@ -5,3 +5,5 @@ tellraw @a {"text":"● 子目錄: 遊戲說明","color":"green","hoverEvent":{"
 tellraw @a {"text":"● 子目錄: 天眼大門","color":"green","hoverEvent":{"action":"show_text","value":"在解開天眼大門陣法時取得的文件"},"clickEvent":{"action":"run_command","value":"/function a:book/stage/door_skyeye/gen/book"}}
 
 tellraw @a {"text":"------------------------------","color":"gold"}
+
+function a:book/book_bgs

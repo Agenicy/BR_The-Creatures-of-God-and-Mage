@@ -7,3 +7,5 @@ tellraw @a {"text":"● 魔法","color":"green","hoverEvent":{"action":"show_tex
 tellraw @a {"text":"● 種族力量","color":"green","hoverEvent":{"action":"show_text","value":"各種族特殊力量的說明"},"clickEvent":{"action":"run_command","value":"/function a:book/skill/gen/special"}}
 
 tellraw @a {"text":"------------------------------","color":"gold"}
+
+function a:book/book_bgs

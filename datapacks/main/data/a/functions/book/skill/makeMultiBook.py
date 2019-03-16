@@ -24,6 +24,7 @@ for index,line in enumerate(lines):
 			titleOne = r'tellraw @a {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n------","color":"gold","extra":[{"text":"☆神奇的魔法書庫☆","color":"yellow"},{"text":"------","color":"gold"}]}'
 			titleTwo = r'tellraw @a {"text":"目前分頁: ","color":"gold","extra":[{"text":"其他文件","color":"aqua"},{"text":"  [回上頁]","color":"dark_green","hoverEvent":{"action":"show_text","value":"點選回上頁"},"clickEvent":{"action":"run_command","value":"' + data.localPath + r'book"}}]}'
 			tmp.write(titleOne+'\n'+titleTwo+'\n')
+			tmp.write(r'function a:book/book_bgs'+'\n')
 			
 	elif line[0] == '@':
 		data.localPath = line[1:-1]#檔案路徑
