@@ -15,4 +15,4 @@ setblock -6663 58 -6706 air
 
 #lane2
 setblock -6674 53 -6696 air
-
+setblock -6677 53 -6695 air

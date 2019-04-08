@@ -1,0 +1,1 @@
+setblock -6677 53 -6695 minecraft:jungle_pressure_plate

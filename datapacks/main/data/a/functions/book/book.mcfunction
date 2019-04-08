@@ -14,6 +14,6 @@ tellraw @a[tag=!hideword] {"text":"------------------------------","color":"gold
 
 tellraw @s[tag=admin] {"text":"------快速移動選項------","color":"gold"}
 tellraw @s[tag=admin] {"text":" →主機關(世界重生點)","clickEvent":{"action":"run_command","value":"/tp @s -18 30 24 -90 0"},"color":"aqua"}
-tellraw @s[tag=admin] {"text":" →格蘭德舊城區","clickEvent":{"action":"run_command","value":"/tp @s -6597 51 -6600"},"color":"aqua"}
+tellraw @s[tag=admin] {"text":" →格蘭德舊城區","clickEvent":{"action":"run_command","value":"/tp @s -6667 53 -6637 90 45"},"color":"aqua"}
 tellraw @s[tag=admin] {"text":" →耶爾榭森林","clickEvent":{"action":"run_command","value":"/tp @s -2829 106 3294"},"color":"aqua"}
 tellraw @s[tag=admin] {"text":"-------------------------","color":"gold"}

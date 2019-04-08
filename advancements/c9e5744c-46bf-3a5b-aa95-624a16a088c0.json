@@ -1,4 +1,10 @@
 {
+  "advancements:ch1/ch1-1-0": {
+    "criteria": {
+      "command": "2019-04-09 00:52:20 +0800"
+    },
+    "done": true
+  },
   "dialog:root": {
     "criteria": {
       "auto": "2019-03-16 17:32:51 +0800"
@@ -20,6 +26,12 @@
   "a:root": {
     "criteria": {
       "auto": "2019-03-16 17:32:51 +0800"
+    },
+    "done": true
+  },
+  "advancements:ch1/ch1-1": {
+    "criteria": {
+      "command": "2019-04-09 00:47:17 +0800"
     },
     "done": true
   },

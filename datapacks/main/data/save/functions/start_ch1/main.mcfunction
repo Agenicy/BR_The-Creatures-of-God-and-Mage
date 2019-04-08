@@ -1,5 +1,8 @@
 w @a[tag=admin] reload ch1
 
+#npc
+function save:start_ch1/reset_npc
+
 #player start place
 tp @a[tag=player] -6628 45 -6663 0 0
 
