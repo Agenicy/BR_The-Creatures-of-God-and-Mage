@@ -1,0 +1,1 @@
+function a:glan/remove_glan
