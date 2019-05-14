@@ -74,7 +74,7 @@ headText4 = r'\"}}]}","{\"text\":\"'
 changePageText = '\\"}]","{\\"text\\":\\"'
 endText1 = '\\"}","{\\"text\\":\\"[\\\\u5c07\\\\u66f8\\\\u672c\\\\u653e\\\\u5165\\\\u66f8\\\\u5eab]\\",\\"bold\\":true,\\"color\\":\\"blue\\",\\"clickEvent\\":{\\"action\\":\\"run_command\\",\\"value\\":\\"' + data.localPath + 'gen/'
 endText2 = '\\"},\\"hoverEvent\\":{\\"action\\":\\"show_text\\",\\"value\\":\\"\\\\u9ede\\\\u9078\\\\u4f7f\\\\u7528\\"}}"],author:"",title:"'
-endText3 = '"}'
+endText3 = r'"}'
 with open('info.txt','r',encoding='utf-8-sig') as f:
 	lines = f.readlines()
 for index,line in enumerate(lines):
@@ -112,7 +112,7 @@ for index,line in enumerate(lines):
 			tmp.write(destruct)
 			tmp.write(endText2)
 			tmp.write(title)
-			tmp.write(endText3 + '\n')
+			tmp.write(endText3)
 			
 		with io.open('gen/%s.mcfunction'%destruct,'a',encoding='utf8')as tmp:
 			tmp.write('scoreboard players set @a[tag=player] ' + fileName + ' ' + fileNum + '\n')
