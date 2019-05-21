@@ -66,3 +66,6 @@ scoreboard objectives add malvila minecraft.used:minecraft.knowledge_book {"text
 
 #leave game
 scoreboard objectives add leaveGame minecraft.custom:minecraft.leave_game {"text":"離開遊戲leaveGame"}
+
+#camera
+scoreboard objectives add time dummy {"text":"camera計時器time"}
