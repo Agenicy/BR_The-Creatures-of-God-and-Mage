@@ -1,3 +1,6 @@
+#小巷 柵欄後
+#通過柵欄，根據擲骰結果更改畫面右側目標文字
+
 setblock -1 55 19 minecraft:redstone_block
 effect clear @a[tag=player] minecraft:slowness
 

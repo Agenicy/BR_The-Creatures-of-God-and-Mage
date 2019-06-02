@@ -1,3 +1,6 @@
+#小巷A/B 存檔點1/2
+#顯示成績結算，並問玩家是否存檔
+
 scoreboard players reset @s book
 tellraw @a[tag=!hideword] [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n———————————————————————————————————","color":"aqua"},{"text":"結算成績"},{"text":"———————————————————————————————————"}]
 tellraw @a[tag=!hideword] {"text":"能力值成長總和：","color":"green"}

@@ -1,7 +1,4 @@
-#if success
-#animate
-execute if entity @a[scores={check_success=1}] run setblock -1 55 25 minecraft:redstone_block
+#小巷B
+#內容搬移到in_street 和 transport 中
+#所以現在是空的
 
-#if not
-#animate
-execute if entity @a[scores={check_success=0}] run setblock -1 55 27 minecraft:redstone_block

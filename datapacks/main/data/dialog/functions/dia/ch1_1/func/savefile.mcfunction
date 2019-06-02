@@ -1,3 +1,5 @@
+#最終存檔
+
 scoreboard players operation #ag str += @a[tag=player,limit=1] str
 scoreboard players operation #ag dex += @a[tag=player,limit=1] dex
 scoreboard players operation #ag agi += @a[tag=player,limit=1] agi

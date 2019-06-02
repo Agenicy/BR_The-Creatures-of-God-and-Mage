@@ -1,3 +1,6 @@
+#小巷
+#嘗試徒手/風刃破壞鐵柵欄，進行擲骰判定後的特效
+
 w @a[tag=admin] try destroy ironbar
 
 #book
@@ -16,6 +19,7 @@ execute if entity @a[scores={check_success=1}] run setblock -6657 58 -6694 air
 execute if entity @a[scores={check_success=1}] run setblock -6663 58 -6706 air
 
 #if not
+
 
 #both
 playsound minecraft:block.anvil.place block @a -6666 54 -6690 10 2

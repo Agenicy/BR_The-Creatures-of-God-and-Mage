@@ -469,8 +469,8 @@
 	tellraw @a[scores={st=31}] {"text":"	<卡司> 那麼，芙娃應該還需要一點時間打開天眼大門，你們就先休息一下吧。	","clickEvent":{"action":"run_command","value":"/function dialog:dia/add"}}	
 	%execute if entity @a[tag=player,scores={st=31}] run function dialog:dia/ch1_1/func/	god_update2		
 	%execute if entity @a[tag=player,scores={st=31}] run function dialog:dia/ch1_1/func/	savefile		
+	%execute if entity @a[tag=player,scores={st=31}] run function dialog:dia/ch1_1/func/	end_demo		
 	execute if entity @a[tag=player,scores={st=31}] run function dialog:dia/fin			
-				
 				
 				
 				
